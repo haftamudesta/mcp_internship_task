@@ -18,3 +18,4 @@ node_modules
 # information for Eclipse / Flash Builder.
 
 /src/generated/prisma
+.env
