@@ -206,3 +206,6 @@
 {"timestamp":"2026-06-03T17:42:00.020Z","level":"info","message":"Running reservation expiration job"}
 {"timestamp":"2026-06-03T17:42:00.093Z","level":"info","message":"Found 0 expired reservations"}
 {"timestamp":"2026-06-03T17:42:00.093Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 73ms"}
+{"timestamp":"2026-06-03T17:43:00.018Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-03T17:43:00.086Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-03T17:43:00.088Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 69ms"}
