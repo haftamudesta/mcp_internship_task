@@ -168,3 +168,10 @@ export interface CheckoutResult {
   status: string;
   totalAmount: number;
 }
+
+export interface TokenPayload {
+  id: string;
+  email: string;
+  iat?: number;
+  exp?: number;
+}
