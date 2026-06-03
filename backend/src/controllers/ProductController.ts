@@ -48,7 +48,6 @@ export class ProductController {
     req: Request, 
     res: Response<ApiResponse<Product>>
   ): Promise<Response> {
-    // Handle params.id properly - ensure it's a string
     const { id } = req.params;
     const productId = Array.isArray(id) ? id[0] : id;
     
@@ -113,7 +112,6 @@ export class ProductController {
     req: AuthRequest,
     res: Response<ApiResponse<Product>>
   ): Promise<Response> {
-    // Handle params.id properly - ensure it's a string
     const { id } = req.params;
     const productId = Array.isArray(id) ? id[0] : id;
     
@@ -166,7 +164,6 @@ export class ProductController {
     req: AuthRequest,
     res: Response<ApiResponse<null>>
   ): Promise<Response> {
-    // Handle params.id properly - ensure it's a string
     const { id } = req.params;
     const productId = Array.isArray(id) ? id[0] : id;
     

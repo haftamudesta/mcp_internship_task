@@ -155,7 +155,6 @@ export class ReservationController {
       });
     }
 
-    // Handle params.id properly - ensure it's a string
     const { id } = req.params;
     const reservationId = Array.isArray(id) ? id[0] : id;
     

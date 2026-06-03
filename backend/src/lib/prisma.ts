@@ -1,10 +1,8 @@
 import { config } from 'dotenv';
 import { resolve } from 'path';
 
-// Explicitly load .env from the project root
 config({ path: resolve(process.cwd(), '.env') });
 
-// Correct import for Prisma 7 - use the main client, not /extension
 import { PrismaClient } from '@prisma/client';
 import { PrismaPg } from '@prisma/adapter-pg';
 import { Pool } from 'pg';
@@ -23,8 +21,6 @@ const getPrismaClient = () => {
     }
 
     console.log('Creating PrismaClient with adapter...');
-    
-    // For Prisma 7.x with PostgreSQL
     const pool = new Pool({ connectionString: databaseUrl });
     const adapter = new PrismaPg(pool);
     
@@ -32,7 +28,6 @@ const getPrismaClient = () => {
   } catch (error) {
     console.error('Failed to create PrismaClient with adapter:', error);
     console.log('Falling back to basic PrismaClient...');
-    // Fallback to basic client
     return new PrismaClient();
   }
 };

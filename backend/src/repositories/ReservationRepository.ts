@@ -1,10 +1,12 @@
-import { ReservationStatus, Prisma } from '@prisma/client';
+import { Prisma } from '@prisma/client';
 import { BaseRepository } from './BaseRepository';
 import { Reservation, Product } from '../types';
 
 export interface ReservationWithProduct extends Reservation {
   product: Product;
 }
+
+type ReservationStatus = 'ACTIVE' | 'COMPLETED' | 'EXPIRED' | 'CANCELLED';
 
 export class ReservationRepository extends BaseRepository {
   async create(data: {
@@ -17,12 +19,16 @@ export class ReservationRepository extends BaseRepository {
     const result = await client.reservation.create({
       data: {
         ...data,
-        status: ReservationStatus.ACTIVE
+        status: 'ACTIVE'
       }
     });
     
     return {
-      ...result,
+      id: result.id,
+      userId: result.userId,
+      productId: result.productId,
+      quantity: result.quantity,
+      status: result.status as Reservation['status'],
       expiresAt: result.expiresAt,
       createdAt: result.createdAt,
       updatedAt: result.updatedAt
@@ -72,7 +78,7 @@ export class ReservationRepository extends BaseRepository {
       where: {
         userId,
         productId,
-        status: ReservationStatus.ACTIVE,
+        status: 'ACTIVE',
         expiresAt: { gt: new Date() }
       }
     });
@@ -94,7 +100,7 @@ export class ReservationRepository extends BaseRepository {
   async findExpiredReservations(): Promise<ReservationWithProduct[]> {
     const results = await this.prisma.reservation.findMany({
       where: {
-        status: ReservationStatus.ACTIVE,
+        status: 'ACTIVE',
         expiresAt: { lt: new Date() }
       },
       include: { 
@@ -126,7 +132,7 @@ export class ReservationRepository extends BaseRepository {
 
   async updateStatus(
     id: string, 
-    status: Reservation['status'], 
+    status: ReservationStatus, 
     tx?: Prisma.TransactionClient
   ): Promise<Reservation> {
     const client = this.getTransactionClient(tx);
@@ -151,7 +157,7 @@ export class ReservationRepository extends BaseRepository {
     const results = await this.prisma.reservation.findMany({
       where: {
         userId,
-        status: ReservationStatus.ACTIVE,
+        status: 'ACTIVE',
         expiresAt: { gt: new Date() }
       },
       include: {

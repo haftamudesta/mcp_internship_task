@@ -16,7 +16,6 @@ export const requestLogger = (req: Request, res: Response, next: NextFunction): 
     userAgent: req.get('user-agent')
   });
   
-  // Log response on finish
   res.on('finish', () => {
     const duration = Date.now() - start;
     const level = res.statusCode >= 400 ? 'error' : 'info';

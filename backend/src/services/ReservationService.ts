@@ -12,7 +12,6 @@ const reservationRepo = new ReservationRepository();
 const inventoryLogRepo = new InventoryLogRepository();
 const orderRepo = new OrderRepository();
 
-// Use string literals instead of enums
 const ReservationStatus = {
   ACTIVE: 'ACTIVE',
   COMPLETED: 'COMPLETED',
@@ -41,7 +40,6 @@ export class ReservationService {
 
     try {
       const result = await prisma.$transaction(async (tx) => {
-        // Get product with lock
         const product = await tx.product.findUnique({
           where: { id: productId }
         });
@@ -55,7 +53,6 @@ export class ReservationService {
           throw new Error('Insufficient stock');
         }
 
-        // Check for existing active reservation
         const existingReservation = await tx.reservation.findFirst({
           where: {
             userId,
@@ -69,7 +66,6 @@ export class ReservationService {
           throw new Error('Active reservation already exists for this product');
         }
 
-        // Update stock
         const updatedProduct = await tx.product.update({
           where: { id: productId },
           data: {
@@ -83,7 +79,6 @@ export class ReservationService {
           throw new Error('Stock would become negative');
         }
 
-        // Create reservation
         const reservation = await tx.reservation.create({
           data: {
             userId,
@@ -94,7 +89,6 @@ export class ReservationService {
           }
         });
 
-        // Log inventory change
         await tx.inventoryLog.create({
           data: {
             productId,
@@ -150,7 +144,6 @@ export class ReservationService {
           throw new Error('Reservation has expired');
         }
 
-        // Get current product stock
         const product = await tx.product.findUnique({
           where: { id: reservation.productId }
         });
@@ -159,7 +152,6 @@ export class ReservationService {
           throw new Error('Product not found');
         }
 
-        // Create order
         const order = await tx.order.create({
           data: {
             userId: reservation.userId,
@@ -171,13 +163,11 @@ export class ReservationService {
           }
         });
 
-        // Update reservation status
         await tx.reservation.update({
           where: { id: reservationId },
           data: { status: ReservationStatus.COMPLETED }
         });
 
-        // Log inventory change
         await tx.inventoryLog.create({
           data: {
             productId: reservation.productId,
@@ -227,7 +217,6 @@ export class ReservationService {
     for (const reservation of expiredReservations) {
       try {
         await prisma.$transaction(async (tx) => {
-          // Get current stock before restore
           const product = await tx.product.findUnique({
             where: { id: reservation.productId }
           });
@@ -236,7 +225,6 @@ export class ReservationService {
             throw new Error(`Product ${reservation.productId} not found`);
           }
 
-          // Restore stock
           const updatedProduct = await tx.product.update({
             where: { id: reservation.productId },
             data: {
@@ -246,13 +234,11 @@ export class ReservationService {
             }
           });
 
-          // Update reservation status
           await tx.reservation.update({
             where: { id: reservation.id },
             data: { status: ReservationStatus.EXPIRED }
           });
 
-          // Log stock restoration
           await tx.inventoryLog.create({
             data: {
               productId: reservation.productId,
@@ -304,7 +290,6 @@ export class ReservationService {
         throw new Error(`Cannot cancel reservation that is ${reservation.status.toLowerCase()}`);
       }
 
-      // Get current product stock
       const product = await tx.product.findUnique({
         where: { id: reservation.productId }
       });
@@ -323,13 +308,11 @@ export class ReservationService {
         }
       });
 
-      // Update reservation status
       await tx.reservation.update({
         where: { id: reservationId },
         data: { status: ReservationStatus.CANCELLED }
       });
 
-      // Log cancellation
       await tx.inventoryLog.create({
         data: {
           productId: reservation.productId,

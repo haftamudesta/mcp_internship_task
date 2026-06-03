@@ -32,7 +32,6 @@ class Server {
   }
 
   private initializeMiddleware(): void {
-    // Security middleware
     this.app.use(helmet());
     this.app.use(additionalSecurityHeaders);
     this.app.use(cors({
@@ -67,7 +66,7 @@ class Server {
     // Root endpoint
     this.app.get('/', (_req, res) => {
       res.json({
-        name: 'Limited-Stock Product Drop System',
+        name: 'Limited Stock Product Drop System',
         version: '1.0.0',
         status: 'running',
         endpoints: {
@@ -87,7 +86,6 @@ class Server {
   }
 
   private initializeErrorHandling(): void {
-    // 404 handler for undefined routes
     this.app.use((_req, res) => {
       res.status(404).json({
         success: false,
@@ -96,7 +94,6 @@ class Server {
       });
     });
 
-    // Global error handler
     this.app.use(errorHandler);
   }
 
@@ -109,10 +106,8 @@ class Server {
   private async gracefulShutdown(): Promise<void> {
     logger.info('Received shutdown signal, closing gracefully...');
     
-    // Stop the expiration job
     this.expirationJob.stop();
     
-    // Close the HTTP server if it exists
     if (this.serverInstance) {
       await new Promise((resolve) => {
         this.serverInstance.close(resolve);
@@ -120,7 +115,6 @@ class Server {
       logger.info('HTTP server closed');
     }
     
-    // Disconnect from database
     await prisma.$disconnect();
     logger.info('Database connection closed');
     
@@ -129,7 +123,6 @@ class Server {
 
   public async start(): Promise<void> {
     try {
-      // Test database connection
       await prisma.$connect();
       logger.info('Database connected successfully');
       
@@ -158,7 +151,6 @@ class Server {
   }
 }
 
-// Create and start server
 const server = new Server();
 server.start().catch((error) => {
   logger.error('Unhandled error during server start:', error);

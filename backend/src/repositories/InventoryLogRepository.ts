@@ -1,6 +1,8 @@
-import { ChangeType, Prisma } from '@prisma/client';
+import { Prisma } from '@prisma/client';
 import { BaseRepository } from './BaseRepository';
 import { InventoryLog } from '../types';
+
+type ChangeType = 'RESERVATION_CREATE' | 'RESERVATION_EXPIRE' | 'RESERVATION_COMPLETE' | 'RESERVATION_CANCEL' | 'STOCK_RESTORE' | 'ORDER_CREATE';
 
 export class InventoryLogRepository extends BaseRepository {
   async create(data: {
@@ -14,7 +16,6 @@ export class InventoryLogRepository extends BaseRepository {
   }, tx?: Prisma.TransactionClient): Promise<InventoryLog> {
     const client = this.getTransactionClient(tx);
     
-    // Convert metadata to a plain object for Prisma
     const metadataValue = data.metadata 
       ? JSON.parse(JSON.stringify(data.metadata))
       : null;
@@ -22,7 +23,7 @@ export class InventoryLogRepository extends BaseRepository {
     const result = await client.inventoryLog.create({
       data: {
         productId: data.productId,
-        changeType: data.changeType as ChangeType,
+        changeType: data.changeType as string,
         quantity: data.quantity,
         oldStock: data.oldStock,
         newStock: data.newStock,
@@ -31,7 +32,6 @@ export class InventoryLogRepository extends BaseRepository {
       }
     });
     
-    // Convert the result metadata back to Record or null
     const parsedMetadata = result.metadata && typeof result.metadata === 'object'
       ? result.metadata as Record<string, unknown>
       : null;

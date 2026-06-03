@@ -44,10 +44,9 @@ export class AuthService {
       }
     });
 
-    // Create token payload
     const payload: TokenPayload = { id: user.id, email: user.email };
     
-    // Sign token with explicit any to bypass TypeScript overload issue
+  
     const token = (jwt as any).sign(payload, this.JWT_SECRET, { expiresIn: this.JWT_EXPIRES_IN });
 
     logger.info(`New user registered: ${user.email}`, { userId: user.id });
