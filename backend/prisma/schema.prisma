@@ -1,9 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Get a free hosted Postgres database in seconds: `npx create-db`
-
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -27,7 +21,7 @@ model Product {
   id             String        @id @default(uuid())
   name           String
   description    String?
-  price          Decimal       @db.Decimal(10,2)
+  price          Float
   totalStock     Int
   availableStock Int
   createdAt      DateTime      @default(now())
@@ -38,17 +32,17 @@ model Product {
 }
 
 model Reservation {
-  id         String           @id @default(uuid())
+  id         String   @id @default(uuid())
   userId     String
   productId  String
   quantity   Int
-  status     ReservationStatus @default(ACTIVE)
+  status     String   @default("ACTIVE")
   expiresAt  DateTime
-  createdAt  DateTime         @default(now())
-  updatedAt  DateTime         @updatedAt
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
   
-  user       User             @relation(fields: [userId], references: [id], onDelete: Cascade)
-  product    Product          @relation(fields: [productId], references: [id], onDelete: Cascade)
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
   order      Order?
   
   @@index([userId])
@@ -57,57 +51,34 @@ model Reservation {
 }
 
 model Order {
-  id            String      @id @default(uuid())
+  id            String       @id @default(uuid())
   userId        String
   productId     String
-  reservationId String?     @unique
+  reservationId String?      @unique
   quantity      Int
-  totalAmount   Decimal     @db.Decimal(10,2)
-  status        OrderStatus @default(PENDING)
-  createdAt     DateTime    @default(now())
-  updatedAt     DateTime    @updatedAt
+  totalAmount   Float
+  status        String       @default("PENDING")
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
   
-  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
-  product       Product     @relation(fields: [productId], references: [id], onDelete: Cascade)
-  reservation   Reservation? @relation(fields: [reservationId], references: [id])
+  user          User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  product       Product      @relation(fields: [productId], references: [id], onDelete: Cascade)
+  reservation   Reservation? @relation(fields: [reservationId], references: [id])  // Made optional with ?
 }
 
 model InventoryLog {
-  id         String     @id @default(uuid())
+  id         String   @id @default(uuid())
   productId  String
-  changeType ChangeType
+  changeType String
   quantity   Int
   oldStock   Int
   newStock   Int
   reason     String
   metadata   Json?
-  createdAt  DateTime   @default(now())
+  createdAt  DateTime @default(now())
   
-  product    Product    @relation(fields: [productId], references: [id], onDelete: Cascade)
+  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
   
   @@index([productId])
   @@index([createdAt])
-}
-
-enum ReservationStatus {
-  ACTIVE
-  COMPLETED
-  EXPIRED
-  CANCELLED
-}
-
-enum OrderStatus {
-  PENDING
-  COMPLETED
-  FAILED
-  REFUNDED
-}
-
-enum ChangeType {
-  RESERVATION_CREATE
-  RESERVATION_EXPIRE
-  RESERVATION_COMPLETE
-  RESERVATION_CANCEL
-  STOCK_RESTORE
-  ORDER_CREATE
 }
