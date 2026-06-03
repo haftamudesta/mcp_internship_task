@@ -12,6 +12,8 @@ const reservationRepo = new ReservationRepository();
 const inventoryLogRepo = new InventoryLogRepository();
 const orderRepo = new OrderRepository();
 
+const EXPIRATION_MINUTES = parseInt(process.env.RESERVATION_EXPIRATION_MINUTES || '5', 10);
+
 const ReservationStatus = {
   ACTIVE: 'ACTIVE',
   COMPLETED: 'COMPLETED',
@@ -34,9 +36,17 @@ export class ReservationService {
     productId: string,
     quantity: number
   ): Promise<CreateReservationResult> {
-    const fiveMinutesLater = new Date();
-    fiveMinutesLater.setMinutes(fiveMinutesLater.getMinutes() + 5);
+    const expirationTime = new Date();
+    expirationTime.setMinutes(expirationTime.getMinutes() + EXPIRATION_MINUTES);
+    
     const startTime = Date.now();
+
+    logger.info(`Creating reservation with ${EXPIRATION_MINUTES} minute expiration`, {
+      userId,
+      productId,
+      quantity,
+      expiresAt: expirationTime.toISOString()
+    });
 
     try {
       const result = await prisma.$transaction(async (tx) => {
@@ -85,7 +95,7 @@ export class ReservationService {
             productId,
             quantity,
             status: ReservationStatus.ACTIVE,
-            expiresAt: fiveMinutesLater
+            expiresAt: expirationTime
           }
         });
 
@@ -96,8 +106,13 @@ export class ReservationService {
             quantity,
             oldStock: product.availableStock,
             newStock: updatedProduct.availableStock,
-            reason: `Reservation created: ${reservation.id}`,
-            metadata: { reservationId: reservation.id, userId }
+            reason: `Reservation created with ${EXPIRATION_MINUTES}min expiration: ${reservation.id}`,
+            metadata: { 
+              reservationId: reservation.id, 
+              userId,
+              expirationMinutes: EXPIRATION_MINUTES,
+              expiresAt: expirationTime.toISOString()
+            }
           }
         });
 
@@ -107,7 +122,13 @@ export class ReservationService {
       });
 
       metricsCollector.addResponseTime(Date.now() - startTime);
-      logger.info(`Reservation created successfully: ${result.id}`, { userId, productId, quantity });
+      logger.info(`Reservation created successfully: ${result.id}`, { 
+        userId, 
+        productId, 
+        quantity,
+        expiresAt: result.expiresAt,
+        expirationMinutes: EXPIRATION_MINUTES
+      });
 
       return {
         id: result.id,
@@ -246,8 +267,11 @@ export class ReservationService {
               quantity: reservation.quantity,
               oldStock: product.availableStock,
               newStock: updatedProduct.availableStock,
-              reason: `Reservation expired: ${reservation.id}`,
-              metadata: { reservationId: reservation.id }
+              reason: `Reservation expired after ${EXPIRATION_MINUTES} minutes: ${reservation.id}`,
+              metadata: { 
+                reservationId: reservation.id,
+                expirationMinutes: EXPIRATION_MINUTES
+              }
             }
           });
 
@@ -298,7 +322,6 @@ export class ReservationService {
         throw new Error('Product not found');
       }
 
-      // Restore stock
       const updatedProduct = await tx.product.update({
         where: { id: reservation.productId },
         data: {
@@ -320,7 +343,7 @@ export class ReservationService {
           quantity: reservation.quantity,
           oldStock: product.availableStock,
           newStock: updatedProduct.availableStock,
-          reason: `Reservation cancelled: ${reservation.id}`,
+          reason: `Reservation cancelled by user: ${reservation.id}`,
           metadata: { reservationId }
         }
       });
