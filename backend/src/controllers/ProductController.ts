@@ -48,8 +48,19 @@ export class ProductController {
     req: Request, 
     res: Response<ApiResponse<Product>>
   ): Promise<Response> {
+    // Handle params.id properly - ensure it's a string
     const { id } = req.params;
-    const product = await productService.getProductById(id);
+    const productId = Array.isArray(id) ? id[0] : id;
+    
+    if (!productId) {
+      return res.status(400).json({
+        success: false,
+        error: 'Invalid product ID',
+        message: 'Product ID is required'
+      });
+    }
+    
+    const product = await productService.getProductById(productId);
     
     if (!product) {
       return res.status(404).json({
@@ -102,7 +113,17 @@ export class ProductController {
     req: AuthRequest,
     res: Response<ApiResponse<Product>>
   ): Promise<Response> {
+    // Handle params.id properly - ensure it's a string
     const { id } = req.params;
+    const productId = Array.isArray(id) ? id[0] : id;
+    
+    if (!productId) {
+      return res.status(400).json({
+        success: false,
+        error: 'Invalid product ID',
+        message: 'Product ID is required'
+      });
+    }
     
     const validation = CreateProductSchema.partial().safeParse(req.body);
     if (!validation.success) {
@@ -117,7 +138,7 @@ export class ProductController {
     }
 
     try {
-      const product = await productService.updateProduct(id, validation.data);
+      const product = await productService.updateProduct(productId, validation.data);
       
       if (!product) {
         return res.status(404).json({
@@ -145,10 +166,20 @@ export class ProductController {
     req: AuthRequest,
     res: Response<ApiResponse<null>>
   ): Promise<Response> {
+    // Handle params.id properly - ensure it's a string
     const { id } = req.params;
+    const productId = Array.isArray(id) ? id[0] : id;
+    
+    if (!productId) {
+      return res.status(400).json({
+        success: false,
+        error: 'Invalid product ID',
+        message: 'Product ID is required'
+      });
+    }
     
     try {
-      const deleted = await productService.deleteProduct(id);
+      const deleted = await productService.deleteProduct(productId);
       
       if (!deleted) {
         return res.status(404).json({
