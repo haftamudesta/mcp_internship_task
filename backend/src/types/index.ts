@@ -175,3 +175,12 @@ export interface TokenPayload {
   iat?: number;
   exp?: number;
 }
+
+export const CreateProductSchema = z.object({
+  name: z.string().min(1, 'Product name is required'),
+  description: z.string().optional(),
+  price: z.number().positive('Price must be positive'),
+  totalStock: z.number().int().positive('Total stock must be a positive integer')
+});
+
+export type CreateProductInput = z.infer<typeof CreateProductSchema>;
