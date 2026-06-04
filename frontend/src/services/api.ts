@@ -48,7 +48,6 @@ class ApiClient {
       throw new Error('Network error. Please check your connection.');
     }
     
-    // Extract error message from response if available
     const data = error.response?.data as ApiErrorResponse;
     if (data?.error) {
       throw new Error(data.error);
@@ -74,7 +73,6 @@ class ApiClient {
     localStorage.removeItem('auth_token');
   }
 
-  // Type guard to check if response is successful
   private isSuccessResponse<T>(response: ApiResponse<T>): response is ApiSuccessResponse<T> {
     return response.success === true;
   }
@@ -83,7 +81,7 @@ class ApiClient {
     const response = await this.client.post<ApiResponse<AuthResponse>>('/api/auth/register', {
       email,
       password,
-      confirmPassword: password, // ← FIXED: Added confirmPassword field
+      // No confirmPassword - backend schema doesn't have it
       name: name || undefined
     });
     

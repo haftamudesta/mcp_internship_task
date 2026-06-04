@@ -15,19 +15,25 @@ export const SignUpPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    // Client-side validation only
     if (password !== confirmPassword) {
       setPasswordError("Passwords do not match");
+      return;
+    }
+
+    if (password.length < 6) {
+      setPasswordError("Password must be at least 6 characters");
       return;
     }
 
     setPasswordError("");
 
     try {
+      // Only send email, password, name (no confirmPassword)
       await register(email, password, name);
       navigate("/products");
     } catch (err) {
-      // Error handled by auth hook
-      console.log("Some thing want wrong!!");
+      console.log("Something went wrong!!");
     }
   };
 
@@ -98,10 +104,14 @@ export const SignUpPage: React.FC = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                placeholder="Create a password"
+                placeholder="Create a password (min 6 characters)"
                 required
+                minLength={6}
               />
             </div>
+            <p className="text-xs text-gray-500 mt-1">
+              Password must be at least 6 characters
+            </p>
           </div>
 
           <div>
@@ -135,7 +145,7 @@ export const SignUpPage: React.FC = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-indigo-600 text-white py-2 rounded-lg font-semibold hover:bg-indigo-700 disabled:opacity-50 transition-colors"
+            className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-2 rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700 disabled:opacity-50 transition-all duration-200"
           >
             {loading ? "Creating account..." : "Sign Up"}
           </button>

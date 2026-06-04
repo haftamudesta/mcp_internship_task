@@ -12,7 +12,8 @@
     "prisma:studio": "prisma studio",
     "prisma:reset": "prisma migrate reset",
     "clean": "rm -rf dist",
-    "build:clean": "npm run clean && npm run build"
+    "build:clean": "npm run clean && npm run build",
+    "populate:products": "ts-node src/populateProducts.ts"
   },
   "keywords": [],
   "author": "",

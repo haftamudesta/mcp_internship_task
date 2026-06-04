@@ -1,23 +1,11 @@
-import * as bcrypt from 'bcryptjs';
-import * as jwt from 'jsonwebtoken';
+import bcrypt from 'bcryptjs';
 import { prisma } from '../lib/prisma';
 import { AuthResponse } from '../types';
 import { logger } from '../utils/logger';
-
-interface TokenPayload {
-  id: string;
-  email: string;
-}
+import { generateToken, verifyToken, JWTPayload } from '../utils/jwt';
 
 export class AuthService {
   private readonly SALT_ROUNDS = 10;
-  private readonly JWT_SECRET: string;
-  private readonly JWT_EXPIRES_IN: string;
-
-  constructor() {
-    this.JWT_SECRET = process.env.JWT_SECRET || 'default-secret-key-change-in-production';
-    this.JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN || '7d';
-  }
 
   async register(email: string, password: string, name?: string): Promise<AuthResponse> {
     const existingUser = await prisma.user.findUnique({
@@ -44,10 +32,7 @@ export class AuthService {
       }
     });
 
-    const payload: TokenPayload = { id: user.id, email: user.email };
-    
-  
-    const token = (jwt as any).sign(payload, this.JWT_SECRET, { expiresIn: this.JWT_EXPIRES_IN });
+    const token = generateToken({ id: user.id, email: user.email });
 
     logger.info(`New user registered: ${user.email}`, { userId: user.id });
 
@@ -75,8 +60,7 @@ export class AuthService {
       throw new Error('Invalid email or password');
     }
 
-    const payload: TokenPayload = { id: user.id, email: user.email };
-    const token = (jwt as any).sign(payload, this.JWT_SECRET, { expiresIn: this.JWT_EXPIRES_IN });
+    const token = generateToken({ id: user.id, email: user.email });
 
     logger.info(`User logged in: ${user.email}`, { userId: user.id });
 
@@ -117,13 +101,7 @@ export class AuthService {
     });
   }
 
-  verifyToken(token: string): TokenPayload | null {
-    try {
-      const decoded = (jwt as any).verify(token, this.JWT_SECRET) as TokenPayload;
-      return decoded;
-    } catch (error) {
-      logger.error('Token verification failed', { error });
-      return null;
-    }
+  verifyToken(token: string): JWTPayload | null {
+    return verifyToken(token);
   }
 }

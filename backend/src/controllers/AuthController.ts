@@ -13,8 +13,14 @@ interface AuthRequest extends Request {
 
 export class AuthController {
   async register(req: Request, res: Response<ApiResponse<AuthResponse>>): Promise<Response> {
+    console.log('=== Registration Request ===');
+    console.log('Request body:', req.body);
+    
     const validation = RegisterSchema.safeParse(req.body);
+    console.log('Validation passed:', validation.success);
+    
     if (!validation.success) {
+      console.log('Validation errors:', validation.error.issues);
       return res.status(400).json({
         success: false,
         error: 'Validation failed',
@@ -27,7 +33,9 @@ export class AuthController {
 
     try {
       const { email, password, name } = validation.data;
+      console.log('Calling authService.register...');
       const result = await authService.register(email, password, name);
+      console.log('Registration successful!');
 
       return res.status(201).json({
         success: true,
@@ -35,6 +43,7 @@ export class AuthController {
         message: 'Registration successful'
       });
     } catch (error) {
+      console.error('Registration error:', error);
       const errorMessage = error instanceof Error ? error.message : 'Registration failed';
       
       if (errorMessage.includes('already exists')) {

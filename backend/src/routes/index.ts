@@ -8,9 +8,6 @@ import metricsRoutes from './metricsRoutes';
 
 const router = Router();
 
-// API versioning
-// const apiPrefix = '/api/v1';
-
 router.use('/health', healthRoutes);
 router.use('/metrics', metricsRoutes);
 router.use('/auth', authRoutes);

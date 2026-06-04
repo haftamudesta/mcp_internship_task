@@ -5,11 +5,8 @@ import { ApiErrorResponse } from '../types';
 export const validate = (schema: ZodSchema) => {
   return async (req: Request, res: Response<ApiErrorResponse>, next: NextFunction): Promise<void> => {
     try {
-      await schema.parseAsync({
-        body: req.body,
-        query: req.query,
-        params: req.params
-      });
+      const validatedData = await schema.parseAsync(req.body);
+      req.body = validatedData;
       next();
     } catch (error) {
       if (error instanceof ZodError) {
