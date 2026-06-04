@@ -7,7 +7,6 @@ import {
   Clock,
   TrendingUp,
   Users,
-  ShoppingBag,
 } from "lucide-react";
 import { AdvancedMarquee } from "../components/AdvancedMarquee";
 
@@ -34,7 +33,7 @@ export const HomePage: React.FC = () => {
   ];
 
   const stats = [
-    { value: "100+", label: "Concurrent Users", icon: Users },
+    { value: "1000+", label: "Concurrent Users", icon: Users },
     { value: "5min", label: "Reservation Window", icon: Clock },
     { value: "Real-time", label: "Stock Updates", icon: TrendingUp },
   ];
@@ -91,7 +90,7 @@ export const HomePage: React.FC = () => {
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {features.map((feature, index) => {
+        {features.map((feature, _) => {
           const Icon = feature.icon;
           return (
             <div
