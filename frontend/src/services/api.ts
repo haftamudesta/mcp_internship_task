@@ -83,6 +83,7 @@ class ApiClient {
     const response = await this.client.post<ApiResponse<AuthResponse>>('/api/auth/register', {
       email,
       password,
+      confirmPassword: password, // ← FIXED: Added confirmPassword field
       name: name || undefined
     });
     
