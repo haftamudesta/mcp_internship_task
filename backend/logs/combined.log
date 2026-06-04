@@ -1338,3 +1338,242 @@
 {"timestamp":"2026-06-04T15:06:00.019Z","level":"info","message":"Running reservation expiration job"}
 {"timestamp":"2026-06-04T15:06:00.091Z","level":"info","message":"Found 0 expired reservations"}
 {"timestamp":"2026-06-04T15:06:00.093Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 75ms"}
+{"timestamp":"2026-06-04T15:07:00.027Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:07:00.143Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:07:00.143Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 116ms"}
+{"timestamp":"2026-06-04T15:08:00.030Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:08:00.089Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:08:00.089Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 59ms"}
+{"timestamp":"2026-06-04T15:09:00.026Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:09:00.075Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:09:00.076Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 50ms"}
+{"timestamp":"2026-06-04T15:10:00.024Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:10:00.092Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:10:00.092Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 68ms"}
+{"timestamp":"2026-06-04T15:11:00.033Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:11:00.097Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:11:00.098Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 65ms"}
+{"timestamp":"2026-06-04T15:12:00.047Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:12:00.120Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:12:00.121Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 74ms"}
+{"timestamp":"2026-06-04T15:13:00.037Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:13:00.229Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:13:00.230Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 193ms"}
+{"timestamp":"2026-06-04T15:14:00.026Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:14:00.119Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:14:00.120Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 94ms"}
+{"timestamp":"2026-06-04T15:15:00.025Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:15:00.113Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:15:00.114Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 89ms"}
+{"timestamp":"2026-06-04T15:16:00.024Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:16:00.101Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:16:00.102Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 78ms"}
+{"timestamp":"2026-06-04T15:17:00.019Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:17:00.146Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:17:00.147Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 128ms"}
+{"timestamp":"2026-06-04T15:18:00.034Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:18:00.131Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:18:00.133Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 99ms"}
+{"timestamp":"2026-06-04T15:19:00.047Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:19:00.147Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:19:00.149Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 101ms"}
+{"timestamp":"2026-06-04T15:20:00.042Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:20:00.082Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:20:00.083Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 41ms"}
+{"timestamp":"2026-06-04T15:21:00.033Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:21:00.110Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:21:00.112Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 79ms"}
+{"timestamp":"2026-06-04T15:22:00.040Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:22:00.139Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:22:00.140Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 100ms"}
+{"timestamp":"2026-06-04T15:23:00.050Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:23:00.111Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:23:00.112Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 62ms"}
+{"timestamp":"2026-06-04T15:24:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:24:00.108Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:24:00.109Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 86ms"}
+{"timestamp":"2026-06-04T15:25:00.042Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:25:00.134Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:25:00.135Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 93ms"}
+{"timestamp":"2026-06-04T15:26:00.027Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:26:00.094Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:26:00.094Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 67ms"}
+{"timestamp":"2026-06-04T15:27:00.020Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:27:00.091Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:27:00.092Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 72ms"}
+{"timestamp":"2026-06-04T15:28:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:28:00.151Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:28:00.152Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 129ms"}
+{"timestamp":"2026-06-04T15:29:00.041Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:29:00.116Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:29:00.117Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 76ms"}
+{"timestamp":"2026-06-04T15:30:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:30:00.134Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:30:00.134Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 113ms"}
+{"timestamp":"2026-06-04T15:31:00.032Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:31:00.113Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:31:00.113Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 81ms"}
+{"timestamp":"2026-06-04T15:32:00.041Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:32:00.125Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:32:00.126Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 85ms"}
+{"timestamp":"2026-06-04T15:33:00.015Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:33:00.110Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:33:00.110Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 95ms"}
+{"timestamp":"2026-06-04T15:34:00.022Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:34:00.105Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:34:00.105Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 83ms"}
+{"timestamp":"2026-06-04T15:35:00.029Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:35:00.120Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:35:00.121Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 92ms"}
+{"timestamp":"2026-06-04T15:36:00.016Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:36:00.093Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:36:00.093Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 77ms"}
+{"timestamp":"2026-06-04T15:37:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:37:00.092Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:37:00.093Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 70ms"}
+{"timestamp":"2026-06-04T15:38:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:38:00.126Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:38:00.126Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 105ms"}
+{"timestamp":"2026-06-04T15:39:00.017Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:39:00.086Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:39:00.087Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 70ms"}
+{"timestamp":"2026-06-04T15:40:00.042Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:40:00.121Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:40:00.122Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 80ms"}
+{"timestamp":"2026-06-04T15:41:00.025Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:41:00.206Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:41:00.206Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 181ms"}
+{"timestamp":"2026-06-04T15:42:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:42:00.102Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:42:00.102Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 81ms"}
+{"timestamp":"2026-06-04T15:43:00.029Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:43:00.096Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:43:00.096Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 67ms"}
+{"timestamp":"2026-06-04T15:44:00.027Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:44:00.103Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:44:00.103Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 76ms"}
+{"timestamp":"2026-06-04T15:45:00.027Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:45:00.104Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:45:00.105Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 78ms"}
+{"timestamp":"2026-06-04T15:46:00.029Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:46:00.115Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:46:00.115Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 86ms"}
+{"timestamp":"2026-06-04T15:47:00.028Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:47:00.076Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:47:00.076Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 48ms"}
+{"timestamp":"2026-06-04T15:48:00.017Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:48:00.098Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:48:00.099Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 82ms"}
+{"timestamp":"2026-06-04T15:49:00.029Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:49:00.097Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:49:00.098Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 69ms"}
+{"timestamp":"2026-06-04T15:50:00.044Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:50:00.118Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:50:00.119Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 75ms"}
+{"timestamp":"2026-06-04T15:51:00.025Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:51:00.078Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:51:00.079Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 54ms"}
+{"timestamp":"2026-06-04T15:52:00.030Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:52:00.085Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:52:00.086Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 56ms"}
+{"timestamp":"2026-06-04T15:53:00.018Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:53:00.057Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:53:00.058Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 40ms"}
+{"timestamp":"2026-06-04T15:53:58.886Z","level":"debug","message":"GET /health - Request received","body":{},"query":{},"params":{},"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-04T15:53:58.917Z","level":"info","message":"GET / - 200 - 31ms","statusCode":200,"duration":"31ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-04T15:53:58.918Z","level":"debug","message":"GET /health - Request received","body":{},"query":{},"params":{},"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-04T15:53:58.921Z","level":"info","message":"GET / - 200 - 3ms","statusCode":200,"duration":"3ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-04T15:54:00.029Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:54:00.035Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:54:00.036Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 7ms"}
+{"timestamp":"2026-06-04T15:55:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:55:00.080Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:55:00.080Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 57ms"}
+{"timestamp":"2026-06-04T15:56:00.014Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:56:00.045Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:56:00.045Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 31ms"}
+{"timestamp":"2026-06-04T15:57:00.061Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T15:57:00.104Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T15:57:00.105Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 44ms"}
+{"timestamp":"2026-06-04T16:42:00.031Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:42:00.191Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:42:00.191Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 160ms"}
+{"timestamp":"2026-06-04T16:43:00.031Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:43:00.184Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:43:00.185Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 154ms"}
+{"timestamp":"2026-06-04T16:44:00.030Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:44:00.080Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:44:00.081Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 51ms"}
+{"timestamp":"2026-06-04T16:45:00.022Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:45:00.183Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:45:00.184Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 162ms"}
+{"timestamp":"2026-06-04T16:46:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:46:00.114Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:46:00.114Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 93ms"}
+{"timestamp":"2026-06-04T16:47:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:47:00.063Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:47:00.063Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 42ms"}
+{"timestamp":"2026-06-04T16:48:00.032Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:48:00.083Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:48:00.083Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 51ms"}
+{"timestamp":"2026-06-04T16:49:00.022Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:49:00.047Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:49:00.047Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 25ms"}
+{"timestamp":"2026-06-04T16:49:42.527Z","level":"debug","message":"GET /health - Request received","body":{},"query":{},"params":{},"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-04T16:49:42.562Z","level":"info","message":"GET / - 200 - 35ms","statusCode":200,"duration":"35ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-04T16:49:42.564Z","level":"debug","message":"GET /health - Request received","body":{},"query":{},"params":{},"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-04T16:49:42.568Z","level":"info","message":"GET / - 200 - 4ms","statusCode":200,"duration":"4ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-04T16:50:00.020Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:50:00.051Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:50:00.051Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 31ms"}
+{"timestamp":"2026-06-04T16:51:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:51:00.063Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:51:00.064Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 41ms"}
+{"timestamp":"2026-06-04T16:52:00.020Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:52:00.063Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:52:00.063Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 43ms"}
+{"timestamp":"2026-06-04T16:53:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:53:00.076Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:53:00.077Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 54ms"}
+{"timestamp":"2026-06-04T16:54:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:54:00.062Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:54:00.062Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 39ms"}
+{"timestamp":"2026-06-04T16:55:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:55:00.062Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:55:00.062Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 39ms"}
+{"timestamp":"2026-06-04T16:56:00.024Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:56:00.072Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:56:00.072Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 48ms"}
+{"timestamp":"2026-06-04T16:57:00.026Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:57:00.058Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:57:00.058Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 32ms"}
+{"timestamp":"2026-06-04T16:58:00.026Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:58:00.060Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:58:00.060Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 34ms"}
+{"timestamp":"2026-06-04T16:59:00.025Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T16:59:00.059Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T16:59:00.060Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 35ms"}
+{"timestamp":"2026-06-04T17:00:00.025Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T17:00:00.178Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T17:00:00.178Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 153ms"}
+{"timestamp":"2026-06-04T17:01:00.017Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T17:01:00.046Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T17:01:00.046Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 29ms"}
+{"timestamp":"2026-06-04T17:02:00.032Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T17:02:00.078Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T17:02:00.078Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 46ms"}
+{"timestamp":"2026-06-04T17:03:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T17:03:00.048Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T17:03:00.049Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 28ms"}
+{"timestamp":"2026-06-04T17:04:00.032Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T17:04:00.079Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T17:04:00.079Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 47ms"}
+{"timestamp":"2026-06-04T17:05:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T17:05:00.054Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T17:05:00.054Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 33ms"}
+{"timestamp":"2026-06-04T17:06:00.025Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T17:06:00.063Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T17:06:00.064Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 39ms"}
+{"timestamp":"2026-06-04T17:07:00.030Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-04T17:07:00.082Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-04T17:07:00.083Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 53ms"}
