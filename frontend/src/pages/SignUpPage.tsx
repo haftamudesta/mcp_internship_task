@@ -57,7 +57,7 @@ export const SignUpPage: React.FC = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                placeholder="John Doe"
+                placeholder="Haftamu Desta"
               />
             </div>
           </div>
@@ -77,7 +77,7 @@ export const SignUpPage: React.FC = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                placeholder="you@example.com"
+                placeholder="haftamu@example.com"
                 required
               />
             </div>
