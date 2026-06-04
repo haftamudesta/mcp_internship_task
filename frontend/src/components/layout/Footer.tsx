@@ -6,7 +6,7 @@ import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-gray-900 text-white mt-auto">
+    <footer className="bg-linear-to-r from-gray-900 via-gray-800 to-gray-900 text-white mt-auto">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -44,17 +44,17 @@ export const Footer: React.FC = () => {
             <h3 className="font-semibold mb-4">Legal</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="#" className="hover:text-white">
+                <a href="/term-of-service" className="hover:text-white">
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <a href="/privacy-policy" className="hover:text-white">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <a href="/refund-policy" className="hover:text-white">
                   Refund Policy
                 </a>
               </li>
@@ -62,7 +62,7 @@ export const Footer: React.FC = () => {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Follow Us</h3>
+            <h3 className="font-semibold mb-4">Follow Me</h3>
             <div className="flex gap-4">
               <a
                 href="https://github.com/haftamudesta"
@@ -70,7 +70,10 @@ export const Footer: React.FC = () => {
               >
                 <BsGithub className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a
+                href="https://twitter.com/DestaHftamu?t=NQ4ovkdWbsfsjh62NFEXFg&s=09"
+                className="text-gray-400 hover:text-white"
+              >
                 <BsTwitter className="h-5 w-5" />
               </a>
               <a
