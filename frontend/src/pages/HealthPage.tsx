@@ -37,7 +37,7 @@ export const HealthPage: React.FC = () => {
 
   useEffect(() => {
     fetchHealth();
-    const interval = setInterval(fetchHealth, 30000); // Refresh every 30 seconds
+    const interval = setInterval(fetchHealth, 30000);
     return () => clearInterval(interval);
   }, []);
 
@@ -81,8 +81,10 @@ export const HealthPage: React.FC = () => {
   return (
     <div className="space-y-8">
       <div className="text-center">
-        <h1 className="text-3xl font-bold text-gray-900">System Health</h1>
-        <p className="text-gray-600 mt-2">Monitor the status of our services</p>
+        <h1 className="text-6xl font-bold text-gray-900">System Health</h1>
+        <p className="text-gray-600 mt-2 font-bold text-3xl">
+          Monitor the status of my services
+        </p>
       </div>
 
       {error && (
@@ -95,7 +97,10 @@ export const HealthPage: React.FC = () => {
         {statusItems.map((item) => {
           const Icon = item.icon;
           return (
-            <div key={item.label} className="bg-white rounded-xl shadow-sm p-6">
+            <div
+              key={item.label}
+              className="bg-emerald-300 rounded-xl shadow-sm p-6"
+            >
               <div className="flex items-center justify-between mb-4">
                 <Icon className="h-6 w-6 text-gray-400" />
                 {item.isGood ? (
@@ -115,7 +120,7 @@ export const HealthPage: React.FC = () => {
         })}
       </div>
 
-      <div className="bg-white rounded-xl shadow-sm p-6">
+      <div className="bg-linear-to-r from-green-400 via-green-100 to-pink-600 rounded-xl shadow-sm p-6">
         <h2 className="text-lg font-semibold text-gray-900 mb-4">
           System Information
         </h2>
