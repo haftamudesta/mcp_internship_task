@@ -5183,3 +5183,944 @@
 {"timestamp":"2026-06-05T14:54:35.161Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
 {"timestamp":"2026-06-05T14:54:35.162Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
 {"timestamp":"2026-06-05T14:54:35.162Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T14:54:43.893Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T14:54:43.911Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T14:54:43.911Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T14:54:43.913Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T14:54:43.914Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T14:54:43.914Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T14:54:43.914Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T14:54:43.914Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T14:54:43.915Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T14:55:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T14:55:00.229Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T14:55:00.229Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 208ms"}
+{"timestamp":"2026-06-05T14:56:00.045Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T14:56:00.091Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T14:56:00.092Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 47ms"}
+{"timestamp":"2026-06-05T14:57:00.024Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T14:57:00.072Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T14:57:00.072Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 48ms"}
+{"timestamp":"2026-06-05T14:58:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T14:58:00.050Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T14:58:00.051Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 30ms"}
+{"timestamp":"2026-06-05T14:59:00.026Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T14:59:00.056Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T14:59:00.057Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 31ms"}
+{"timestamp":"2026-06-05T14:59:28.646Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T14:59:28.668Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T14:59:28.668Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T14:59:28.672Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T14:59:28.673Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T14:59:28.674Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T14:59:28.674Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T14:59:28.675Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T14:59:28.675Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T15:00:00.025Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:00:00.114Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:00:00.114Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 89ms"}
+{"timestamp":"2026-06-05T15:00:42.465Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T15:00:42.485Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T15:00:42.486Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T15:00:42.491Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T15:00:42.491Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T15:00:42.492Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T15:00:42.492Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T15:00:42.492Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T15:00:42.493Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T15:01:00.027Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:01:00.192Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:01:00.193Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 166ms"}
+{"timestamp":"2026-06-05T15:02:00.018Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:02:00.075Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:02:00.075Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 57ms"}
+{"timestamp":"2026-06-05T15:03:00.020Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:03:00.071Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:03:00.071Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 51ms"}
+{"timestamp":"2026-06-05T15:04:00.030Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:04:00.071Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:04:00.072Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 42ms"}
+{"timestamp":"2026-06-05T15:05:00.028Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:05:00.066Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:05:00.066Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 38ms"}
+{"timestamp":"2026-06-05T15:05:57.693Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T15:05:57.714Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T15:05:57.715Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T15:05:57.718Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T15:05:57.718Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T15:05:57.719Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T15:05:57.719Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T15:05:57.719Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T15:05:57.720Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T15:06:00.032Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:06:00.126Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:06:00.126Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 94ms"}
+{"timestamp":"2026-06-05T15:06:13.118Z","level":"info","message":"New user registered: test@example.com","userId":"e976e00a-4125-464e-ac55-1df840cd1077"}
+{"timestamp":"2026-06-05T15:06:13.145Z","level":"info","message":"Found 1 expired reservations"}
+{"timestamp":"2026-06-05T15:06:13.253Z","level":"info","message":"New user registered: test@example.com","userId":"9be8ea7e-c6b8-4502-86be-1953e04210ee"}
+{"timestamp":"2026-06-05T15:06:13.334Z","level":"info","message":"New user registered: test@example.com","userId":"96979e86-3fa3-4fe3-870d-9add3a813fb5"}
+{"timestamp":"2026-06-05T15:06:13.344Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"96979e86-3fa3-4fe3-870d-9add3a813fb5","productId":"non-existent-id","quantity":1,"expiresAt":"2026-06-05T15:11:13.344Z"}
+{"timestamp":"2026-06-05T15:06:13.350Z","level":"error","message":"Failed to create reservation","error":{},"userId":"96979e86-3fa3-4fe3-870d-9add3a813fb5","productId":"non-existent-id","quantity":1}
+{"timestamp":"2026-06-05T15:06:13.428Z","level":"info","message":"New user registered: test@example.com","userId":"7f5e214e-eee0-4dde-a6a8-ca23057ee4fe"}
+{"timestamp":"2026-06-05T15:06:13.430Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"7f5e214e-eee0-4dde-a6a8-ca23057ee4fe","productId":"170be7c4-d722-40d4-be87-02e02f2d64de","quantity":20,"expiresAt":"2026-06-05T15:11:13.430Z"}
+{"timestamp":"2026-06-05T15:06:13.432Z","level":"error","message":"Failed to create reservation","error":{},"userId":"7f5e214e-eee0-4dde-a6a8-ca23057ee4fe","productId":"170be7c4-d722-40d4-be87-02e02f2d64de","quantity":20}
+{"timestamp":"2026-06-05T15:06:13.515Z","level":"info","message":"New user registered: test@example.com","userId":"2998839b-5b79-435e-a90b-706984b00e48"}
+{"timestamp":"2026-06-05T15:06:13.517Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"2998839b-5b79-435e-a90b-706984b00e48","productId":"1e0fbc51-1840-4915-a171-6f9bc27e3831","quantity":1,"expiresAt":"2026-06-05T15:11:13.517Z"}
+{"timestamp":"2026-06-05T15:06:13.545Z","level":"info","message":"Reservation created successfully: 33c40d5a-0f0a-4418-b0dd-b04ee65b7875","userId":"2998839b-5b79-435e-a90b-706984b00e48","productId":"1e0fbc51-1840-4915-a171-6f9bc27e3831","quantity":1,"expiresAt":"2026-06-05T15:11:13.517Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:06:13.547Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"2998839b-5b79-435e-a90b-706984b00e48","productId":"1e0fbc51-1840-4915-a171-6f9bc27e3831","quantity":1,"expiresAt":"2026-06-05T15:11:13.547Z"}
+{"timestamp":"2026-06-05T15:06:13.554Z","level":"error","message":"Failed to create reservation","error":{},"userId":"2998839b-5b79-435e-a90b-706984b00e48","productId":"1e0fbc51-1840-4915-a171-6f9bc27e3831","quantity":1}
+{"timestamp":"2026-06-05T15:06:13.660Z","level":"info","message":"New user registered: test@example.com","userId":"b73d6976-4f8c-495f-a24a-25bde9483db9"}
+{"timestamp":"2026-06-05T15:06:13.663Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"b73d6976-4f8c-495f-a24a-25bde9483db9","productId":"a1eb3902-8928-432f-80b3-52d76ed59a44","quantity":1,"expiresAt":"2026-06-05T15:11:13.663Z"}
+{"timestamp":"2026-06-05T15:06:13.673Z","level":"info","message":"Reservation created successfully: 74a57782-1773-44b6-8250-c2f87e62f2f0","userId":"b73d6976-4f8c-495f-a24a-25bde9483db9","productId":"a1eb3902-8928-432f-80b3-52d76ed59a44","quantity":1,"expiresAt":"2026-06-05T15:11:13.663Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:06:13.687Z","level":"info","message":"Checkout completed successfully: e4504314-a1d6-4432-9dc4-761061bd89be","reservationId":"74a57782-1773-44b6-8250-c2f87e62f2f0"}
+{"timestamp":"2026-06-05T15:06:13.801Z","level":"info","message":"New user registered: test@example.com","userId":"fcb228a3-4a91-4c3b-b398-07955a036676"}
+{"timestamp":"2026-06-05T15:06:13.808Z","level":"error","message":"Checkout failed","error":{},"reservationId":"non-existent-id"}
+{"timestamp":"2026-06-05T15:06:13.921Z","level":"info","message":"New user registered: test@example.com","userId":"b0f6e81a-fa30-44f5-b2e8-5931f91e635e"}
+{"timestamp":"2026-06-05T15:06:13.931Z","level":"error","message":"Checkout failed","error":{},"reservationId":"ccf06c8d-09f1-4f92-9a42-b1443299d576"}
+{"timestamp":"2026-06-05T15:07:00.029Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:07:00.081Z","level":"info","message":"Found 1 expired reservations"}
+{"timestamp":"2026-06-05T15:07:00.139Z","level":"info","message":"Expired 1 reservations and restored stock - took 110ms"}
+{"timestamp":"2026-06-05T15:08:00.022Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:08:00.054Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:08:00.055Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 33ms"}
+{"timestamp":"2026-06-05T15:08:04.562Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T15:08:04.580Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T15:08:04.581Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T15:08:04.583Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T15:08:04.583Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T15:08:04.584Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T15:08:04.584Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T15:08:04.585Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T15:08:04.585Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T15:08:11.915Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T15:08:11.932Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T15:08:11.932Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T15:08:11.935Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T15:08:11.936Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T15:08:11.936Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T15:08:11.936Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T15:08:11.937Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T15:08:11.937Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T15:08:39.303Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T15:08:39.328Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T15:08:39.331Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T15:08:39.333Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T15:08:39.334Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T15:08:39.334Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T15:08:39.334Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T15:08:39.335Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T15:08:39.335Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T15:08:59.879Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T15:08:59.898Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T15:08:59.899Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T15:08:59.901Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T15:08:59.901Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T15:08:59.902Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T15:08:59.902Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T15:08:59.902Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T15:08:59.903Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T15:09:00.030Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:09:00.146Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:09:00.146Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 116ms"}
+{"timestamp":"2026-06-05T15:10:00.030Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:10:00.068Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:10:00.068Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 38ms"}
+{"timestamp":"2026-06-05T15:10:17.136Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T15:10:17.153Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T15:10:17.153Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T15:10:17.156Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T15:10:17.156Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T15:10:17.157Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T15:10:17.157Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T15:10:17.157Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T15:10:17.158Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T15:10:49.766Z","level":"info","message":"New user registered: test_1780672249663_0.46182340216096085@example.com","userId":"1b7f0aa6-681b-4052-81a4-ded88777cb68"}
+{"timestamp":"2026-06-05T15:10:49.774Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"1b7f0aa6-681b-4052-81a4-ded88777cb68","productId":"1a944861-bd78-485c-8953-c0e3198b0498","quantity":1,"expiresAt":"2026-06-05T15:15:49.773Z"}
+{"timestamp":"2026-06-05T15:10:49.803Z","level":"info","message":"Reservation created successfully: eed784e5-69be-4e58-945b-3d296d23f8d3","userId":"1b7f0aa6-681b-4052-81a4-ded88777cb68","productId":"1a944861-bd78-485c-8953-c0e3198b0498","quantity":1,"expiresAt":"2026-06-05T15:15:49.773Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:10:49.877Z","level":"info","message":"New user registered: test_1780672249811_0.7427603968808127@example.com","userId":"213d3956-7202-456b-bce1-3f2afa340c2f"}
+{"timestamp":"2026-06-05T15:10:49.879Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"213d3956-7202-456b-bce1-3f2afa340c2f","productId":"non-existent-id","quantity":1,"expiresAt":"2026-06-05T15:15:49.879Z"}
+{"timestamp":"2026-06-05T15:10:49.881Z","level":"error","message":"Failed to create reservation","error":{},"userId":"213d3956-7202-456b-bce1-3f2afa340c2f","productId":"non-existent-id","quantity":1}
+{"timestamp":"2026-06-05T15:10:50.042Z","level":"info","message":"New user registered: test_1780672249979_0.11591781740516649@example.com","userId":"baeddb32-f050-4119-9020-d4f7e165ea6e"}
+{"timestamp":"2026-06-05T15:10:50.044Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"baeddb32-f050-4119-9020-d4f7e165ea6e","productId":"fea97bd6-bc67-46ad-95d7-3af8dea33f45","quantity":20,"expiresAt":"2026-06-05T15:15:50.044Z"}
+{"timestamp":"2026-06-05T15:10:50.046Z","level":"error","message":"Failed to create reservation","error":{},"userId":"baeddb32-f050-4119-9020-d4f7e165ea6e","productId":"fea97bd6-bc67-46ad-95d7-3af8dea33f45","quantity":20}
+{"timestamp":"2026-06-05T15:10:50.110Z","level":"info","message":"New user registered: test_1780672250050_0.15020900833583717@example.com","userId":"9dbb6f99-358c-48c8-ba91-c60c94871886"}
+{"timestamp":"2026-06-05T15:10:50.112Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"9dbb6f99-358c-48c8-ba91-c60c94871886","productId":"76784bd8-fc7a-4b6f-8920-1ecf5212c2b7","quantity":1,"expiresAt":"2026-06-05T15:15:50.112Z"}
+{"timestamp":"2026-06-05T15:10:50.118Z","level":"info","message":"Reservation created successfully: d4f42917-b50e-4b80-b047-5b8037fdcf7c","userId":"9dbb6f99-358c-48c8-ba91-c60c94871886","productId":"76784bd8-fc7a-4b6f-8920-1ecf5212c2b7","quantity":1,"expiresAt":"2026-06-05T15:15:50.112Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:10:50.118Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"9dbb6f99-358c-48c8-ba91-c60c94871886","productId":"76784bd8-fc7a-4b6f-8920-1ecf5212c2b7","quantity":1,"expiresAt":"2026-06-05T15:15:50.118Z"}
+{"timestamp":"2026-06-05T15:10:50.121Z","level":"error","message":"Failed to create reservation","error":{},"userId":"9dbb6f99-358c-48c8-ba91-c60c94871886","productId":"76784bd8-fc7a-4b6f-8920-1ecf5212c2b7","quantity":1}
+{"timestamp":"2026-06-05T15:10:50.199Z","level":"info","message":"New user registered: test_1780672250130_0.7564442132108742@example.com","userId":"0338a562-d3e9-48a1-96a0-6807a36a9524"}
+{"timestamp":"2026-06-05T15:10:50.200Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"0338a562-d3e9-48a1-96a0-6807a36a9524","productId":"13123811-c140-4907-871c-e51431c4dce0","quantity":1,"expiresAt":"2026-06-05T15:15:50.200Z"}
+{"timestamp":"2026-06-05T15:10:50.206Z","level":"info","message":"Reservation created successfully: 786955e6-58cb-4b91-9688-3f1ecc4d65b1","userId":"0338a562-d3e9-48a1-96a0-6807a36a9524","productId":"13123811-c140-4907-871c-e51431c4dce0","quantity":1,"expiresAt":"2026-06-05T15:15:50.200Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:10:50.220Z","level":"info","message":"Checkout completed successfully: 6ca3ef5b-40ab-4eb0-a9d2-55233744e31a","reservationId":"786955e6-58cb-4b91-9688-3f1ecc4d65b1"}
+{"timestamp":"2026-06-05T15:10:50.295Z","level":"info","message":"New user registered: test_1780672250232_0.2370015212765777@example.com","userId":"ed91e901-5336-4e77-b421-7af22d243f53"}
+{"timestamp":"2026-06-05T15:10:50.299Z","level":"error","message":"Checkout failed","error":{},"reservationId":"non-existent-id"}
+{"timestamp":"2026-06-05T15:10:50.384Z","level":"info","message":"New user registered: test_1780672250303_0.38924021957646415@example.com","userId":"7514a91e-328e-43a7-b253-7b22eb1fa8d2"}
+{"timestamp":"2026-06-05T15:10:50.389Z","level":"error","message":"Checkout failed","error":{},"reservationId":"bc75c28a-e95c-4d03-9342-e687a205c820"}
+{"timestamp":"2026-06-05T15:10:50.923Z","level":"info","message":"New user registered: test_1780672250853_0.951263000405886@example.com","userId":"107efd10-7aa2-4a89-9bbf-ddf7b8bc410a"}
+{"timestamp":"2026-06-05T15:10:50.931Z","level":"info","message":"Found 1 expired reservations"}
+{"timestamp":"2026-06-05T15:10:51.014Z","level":"info","message":"New user registered: test_1780672250951_0.40733360479653125@example.com","userId":"60348912-e5af-49aa-8733-133da635a12e"}
+{"timestamp":"2026-06-05T15:10:51.021Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:10:51.092Z","level":"info","message":"New user registered: test_1780672251026_0.7698291965808499@example.com","userId":"60333328-a3bb-458c-be9f-34e009d6ec6f"}
+{"timestamp":"2026-06-05T15:10:51.099Z","level":"info","message":"Found 2 expired reservations"}
+{"timestamp":"2026-06-05T15:10:51.605Z","level":"info","message":"New user registered: test_1780672251520_0.5643212436664324@example.com","userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061"}
+{"timestamp":"2026-06-05T15:10:51.608Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1,"expiresAt":"2026-06-05T15:15:51.608Z"}
+{"timestamp":"2026-06-05T15:10:51.608Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1,"expiresAt":"2026-06-05T15:15:51.608Z"}
+{"timestamp":"2026-06-05T15:10:51.608Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1,"expiresAt":"2026-06-05T15:15:51.608Z"}
+{"timestamp":"2026-06-05T15:10:51.609Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1,"expiresAt":"2026-06-05T15:15:51.609Z"}
+{"timestamp":"2026-06-05T15:10:51.609Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1,"expiresAt":"2026-06-05T15:15:51.609Z"}
+{"timestamp":"2026-06-05T15:10:51.610Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1,"expiresAt":"2026-06-05T15:15:51.610Z"}
+{"timestamp":"2026-06-05T15:10:51.610Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1,"expiresAt":"2026-06-05T15:15:51.610Z"}
+{"timestamp":"2026-06-05T15:10:51.610Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1,"expiresAt":"2026-06-05T15:15:51.610Z"}
+{"timestamp":"2026-06-05T15:10:51.611Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1,"expiresAt":"2026-06-05T15:15:51.611Z"}
+{"timestamp":"2026-06-05T15:10:51.611Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1,"expiresAt":"2026-06-05T15:15:51.611Z"}
+{"timestamp":"2026-06-05T15:10:51.647Z","level":"info","message":"Reservation created successfully: 844d0591-9f93-476a-849d-852c1cf878d9","userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1,"expiresAt":"2026-06-05T15:15:51.608Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:10:51.681Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.689Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.691Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.701Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.702Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.707Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.712Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.715Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.717Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8ae54e17-fd18-45d7-a6bf-7d9e4c886061","productId":"8369ca5d-31ae-4dd3-8ca8-203559c933db","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.799Z","level":"info","message":"New user registered: test_1780672251734_0.0047453792269682715@example.com","userId":"166784cb-0138-491f-9477-0b3f75d109b2"}
+{"timestamp":"2026-06-05T15:10:51.801Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.801Z"}
+{"timestamp":"2026-06-05T15:10:51.801Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.801Z"}
+{"timestamp":"2026-06-05T15:10:51.801Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.801Z"}
+{"timestamp":"2026-06-05T15:10:51.802Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.802Z"}
+{"timestamp":"2026-06-05T15:10:51.802Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.802Z"}
+{"timestamp":"2026-06-05T15:10:51.802Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.802Z"}
+{"timestamp":"2026-06-05T15:10:51.802Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.802Z"}
+{"timestamp":"2026-06-05T15:10:51.803Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.803Z"}
+{"timestamp":"2026-06-05T15:10:51.803Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.803Z"}
+{"timestamp":"2026-06-05T15:10:51.803Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.803Z"}
+{"timestamp":"2026-06-05T15:10:51.803Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.803Z"}
+{"timestamp":"2026-06-05T15:10:51.803Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.803Z"}
+{"timestamp":"2026-06-05T15:10:51.804Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.804Z"}
+{"timestamp":"2026-06-05T15:10:51.804Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.804Z"}
+{"timestamp":"2026-06-05T15:10:51.804Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.804Z"}
+{"timestamp":"2026-06-05T15:10:51.804Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.804Z"}
+{"timestamp":"2026-06-05T15:10:51.805Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.805Z"}
+{"timestamp":"2026-06-05T15:10:51.805Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.805Z"}
+{"timestamp":"2026-06-05T15:10:51.805Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.805Z"}
+{"timestamp":"2026-06-05T15:10:51.805Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.805Z"}
+{"timestamp":"2026-06-05T15:10:51.825Z","level":"info","message":"Reservation created successfully: 8a850558-259c-4574-aabe-d54c3f79d2a1","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.801Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:10:51.830Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.834Z","level":"info","message":"Reservation created successfully: 9c577269-69d1-44ca-847f-3745f97b1613","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.802Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:10:51.837Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.839Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.840Z","level":"info","message":"Reservation created successfully: 567687fa-d9d3-4c31-84b1-e49658d20275","userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1,"expiresAt":"2026-06-05T15:15:51.802Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:10:51.842Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.842Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.844Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.845Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.848Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.848Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.849Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.851Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.852Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.853Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.853Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.854Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.855Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:10:51.855Z","level":"error","message":"Failed to create reservation","error":{},"userId":"166784cb-0138-491f-9477-0b3f75d109b2","productId":"17746406-8cd1-49c8-a377-a5e6bc8ea33d","quantity":1}
+{"timestamp":"2026-06-05T15:11:00.038Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:11:00.155Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:11:00.155Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 117ms"}
+{"timestamp":"2026-06-05T15:12:01.399Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T15:12:01.416Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T15:12:01.417Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T15:12:01.420Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T15:12:01.420Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T15:12:01.420Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T15:12:01.421Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T15:12:01.421Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T15:12:01.421Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T15:12:05.304Z","level":"info","message":"New user registered: user_1780672325206_0_0.07498448344599784@example.com","userId":"37f93ec5-3771-4fcd-b3f7-3f22413b72f7"}
+{"timestamp":"2026-06-05T15:12:05.306Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"37f93ec5-3771-4fcd-b3f7-3f22413b72f7","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.306Z"}
+{"timestamp":"2026-06-05T15:12:05.337Z","level":"info","message":"Reservation created successfully: 19e48503-045e-4789-9f4f-69ba54bc403a","userId":"37f93ec5-3771-4fcd-b3f7-3f22413b72f7","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.306Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:12:05.407Z","level":"info","message":"New user registered: user_1780672325307_1_0.13482563067790165@example.com","userId":"ffbabcc5-e9aa-4d90-9bf3-fdc104fb0ac8"}
+{"timestamp":"2026-06-05T15:12:05.408Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"ffbabcc5-e9aa-4d90-9bf3-fdc104fb0ac8","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.408Z"}
+{"timestamp":"2026-06-05T15:12:05.475Z","level":"info","message":"New user registered: user_1780672325409_2_0.08265485083579982@example.com","userId":"83e0bd44-4c6a-4bd2-b274-f50e6279d85e"}
+{"timestamp":"2026-06-05T15:12:05.476Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"83e0bd44-4c6a-4bd2-b274-f50e6279d85e","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.476Z"}
+{"timestamp":"2026-06-05T15:12:05.478Z","level":"info","message":"Reservation created successfully: 77ea52c1-3d49-4c88-9e46-d93bd5451654","userId":"ffbabcc5-e9aa-4d90-9bf3-fdc104fb0ac8","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.408Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:12:05.483Z","level":"info","message":"Reservation created successfully: d80c0e1a-521e-444d-b81f-d850587f0418","userId":"83e0bd44-4c6a-4bd2-b274-f50e6279d85e","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.476Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:12:05.561Z","level":"info","message":"New user registered: user_1780672325476_3_0.1718285215754285@example.com","userId":"ab17fe3b-39df-42c7-a921-c7d9b99aab26"}
+{"timestamp":"2026-06-05T15:12:05.562Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"ab17fe3b-39df-42c7-a921-c7d9b99aab26","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.561Z"}
+{"timestamp":"2026-06-05T15:12:05.623Z","level":"info","message":"New user registered: user_1780672325562_4_0.21462572000293534@example.com","userId":"39a4494d-4924-49a5-9199-f5f45ca8a4ac"}
+{"timestamp":"2026-06-05T15:12:05.624Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"39a4494d-4924-49a5-9199-f5f45ca8a4ac","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.624Z"}
+{"timestamp":"2026-06-05T15:12:05.683Z","level":"info","message":"Reservation created successfully: 8574b233-e31f-44bf-9070-c4a0c4ed8448","userId":"ab17fe3b-39df-42c7-a921-c7d9b99aab26","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.561Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:12:05.687Z","level":"info","message":"New user registered: user_1780672325624_5_0.3717164109211959@example.com","userId":"8684754a-6cc0-4bc4-99e0-1e8482fce230"}
+{"timestamp":"2026-06-05T15:12:05.687Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8684754a-6cc0-4bc4-99e0-1e8482fce230","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.687Z"}
+{"timestamp":"2026-06-05T15:12:05.748Z","level":"info","message":"Reservation created successfully: 2431cbfe-9329-4b91-a2dd-7a0fac206e5b","userId":"39a4494d-4924-49a5-9199-f5f45ca8a4ac","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.624Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:12:05.750Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8684754a-6cc0-4bc4-99e0-1e8482fce230","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1}
+{"timestamp":"2026-06-05T15:12:05.751Z","level":"info","message":"New user registered: user_1780672325688_6_0.7847947632854126@example.com","userId":"b6bb3028-6364-41eb-b522-8845ff30f5e9"}
+{"timestamp":"2026-06-05T15:12:05.752Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"b6bb3028-6364-41eb-b522-8845ff30f5e9","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.752Z"}
+{"timestamp":"2026-06-05T15:12:05.813Z","level":"error","message":"Failed to create reservation","error":{},"userId":"b6bb3028-6364-41eb-b522-8845ff30f5e9","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1}
+{"timestamp":"2026-06-05T15:12:05.816Z","level":"info","message":"New user registered: user_1780672325752_7_0.38383912551863353@example.com","userId":"e69a3661-c002-4f74-b703-b0c16cff5973"}
+{"timestamp":"2026-06-05T15:12:05.816Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"e69a3661-c002-4f74-b703-b0c16cff5973","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.816Z"}
+{"timestamp":"2026-06-05T15:12:05.877Z","level":"error","message":"Failed to create reservation","error":{},"userId":"e69a3661-c002-4f74-b703-b0c16cff5973","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1}
+{"timestamp":"2026-06-05T15:12:05.878Z","level":"info","message":"New user registered: user_1780672325816_8_0.7673150816801753@example.com","userId":"c5d7cf7b-abea-40f3-8533-a43a377f3987"}
+{"timestamp":"2026-06-05T15:12:05.878Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"c5d7cf7b-abea-40f3-8533-a43a377f3987","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.878Z"}
+{"timestamp":"2026-06-05T15:12:05.941Z","level":"error","message":"Failed to create reservation","error":{},"userId":"c5d7cf7b-abea-40f3-8533-a43a377f3987","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1}
+{"timestamp":"2026-06-05T15:12:05.944Z","level":"info","message":"New user registered: user_1780672325879_9_0.8106704250200121@example.com","userId":"c5921566-ea51-4372-aa2c-04af0ecda312"}
+{"timestamp":"2026-06-05T15:12:05.945Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"c5921566-ea51-4372-aa2c-04af0ecda312","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1,"expiresAt":"2026-06-05T15:17:05.945Z"}
+{"timestamp":"2026-06-05T15:12:05.947Z","level":"error","message":"Failed to create reservation","error":{},"userId":"c5921566-ea51-4372-aa2c-04af0ecda312","productId":"fe7f29f6-5780-4d40-9aa7-4d0764eb5d3d","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.020Z","level":"info","message":"New user registered: user_1780672325958_0_0.33470527748046264@example.com","userId":"9cc79187-1761-409c-a1f1-03cba96578ef"}
+{"timestamp":"2026-06-05T15:12:06.021Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"9cc79187-1761-409c-a1f1-03cba96578ef","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.021Z"}
+{"timestamp":"2026-06-05T15:12:06.087Z","level":"info","message":"New user registered: user_1780672326021_1_0.2416568584636858@example.com","userId":"d10d18f3-d061-452a-8adf-a9d6059bf321"}
+{"timestamp":"2026-06-05T15:12:06.087Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"d10d18f3-d061-452a-8adf-a9d6059bf321","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.087Z"}
+{"timestamp":"2026-06-05T15:12:06.146Z","level":"info","message":"Reservation created successfully: 188cb6c5-bf2d-464f-b6a7-3818b7d581a3","userId":"9cc79187-1761-409c-a1f1-03cba96578ef","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.021Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:12:06.150Z","level":"info","message":"New user registered: user_1780672326087_2_0.08262389774044165@example.com","userId":"c8745f4c-ae3e-47ca-804f-b0701e1bd807"}
+{"timestamp":"2026-06-05T15:12:06.150Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"c8745f4c-ae3e-47ca-804f-b0701e1bd807","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.150Z"}
+{"timestamp":"2026-06-05T15:12:06.151Z","level":"info","message":"Reservation created successfully: 025ed2fc-ae70-404a-96e6-9bba8f92c8eb","userId":"d10d18f3-d061-452a-8adf-a9d6059bf321","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.087Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:12:06.212Z","level":"info","message":"New user registered: user_1780672326150_3_0.5631583597585086@example.com","userId":"d47e9cec-c269-491b-8e8d-a2017f50ab7c"}
+{"timestamp":"2026-06-05T15:12:06.212Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"d47e9cec-c269-491b-8e8d-a2017f50ab7c","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.212Z"}
+{"timestamp":"2026-06-05T15:12:06.270Z","level":"info","message":"Reservation created successfully: ed8f9359-d37f-4031-a0ac-06abf22b7098","userId":"c8745f4c-ae3e-47ca-804f-b0701e1bd807","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.150Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:12:06.272Z","level":"error","message":"Failed to create reservation","error":{},"userId":"d47e9cec-c269-491b-8e8d-a2017f50ab7c","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.274Z","level":"info","message":"New user registered: user_1780672326213_4_0.735529211011605@example.com","userId":"3b311fa5-fe72-4316-9618-9709aeb530dc"}
+{"timestamp":"2026-06-05T15:12:06.274Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"3b311fa5-fe72-4316-9618-9709aeb530dc","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.274Z"}
+{"timestamp":"2026-06-05T15:12:06.334Z","level":"error","message":"Failed to create reservation","error":{},"userId":"3b311fa5-fe72-4316-9618-9709aeb530dc","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.337Z","level":"info","message":"New user registered: user_1780672326275_5_0.5952672604543667@example.com","userId":"74d98a89-58d0-4c9d-9543-f5f66200895b"}
+{"timestamp":"2026-06-05T15:12:06.337Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"74d98a89-58d0-4c9d-9543-f5f66200895b","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.337Z"}
+{"timestamp":"2026-06-05T15:12:06.397Z","level":"error","message":"Failed to create reservation","error":{},"userId":"74d98a89-58d0-4c9d-9543-f5f66200895b","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.399Z","level":"info","message":"New user registered: user_1780672326337_6_0.8074848552342571@example.com","userId":"ec7b1434-ac99-4568-adc6-edac38740dac"}
+{"timestamp":"2026-06-05T15:12:06.400Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"ec7b1434-ac99-4568-adc6-edac38740dac","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.400Z"}
+{"timestamp":"2026-06-05T15:12:06.461Z","level":"error","message":"Failed to create reservation","error":{},"userId":"ec7b1434-ac99-4568-adc6-edac38740dac","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.464Z","level":"info","message":"New user registered: user_1780672326400_7_0.3077577464812422@example.com","userId":"b36ad1bf-ff72-409f-9ee2-8270571f2913"}
+{"timestamp":"2026-06-05T15:12:06.464Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"b36ad1bf-ff72-409f-9ee2-8270571f2913","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.464Z"}
+{"timestamp":"2026-06-05T15:12:06.523Z","level":"error","message":"Failed to create reservation","error":{},"userId":"b36ad1bf-ff72-409f-9ee2-8270571f2913","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.525Z","level":"info","message":"New user registered: user_1780672326464_8_0.654824871505749@example.com","userId":"4464aa30-28ec-4047-8a28-925c6c2b0199"}
+{"timestamp":"2026-06-05T15:12:06.526Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"4464aa30-28ec-4047-8a28-925c6c2b0199","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.526Z"}
+{"timestamp":"2026-06-05T15:12:06.586Z","level":"error","message":"Failed to create reservation","error":{},"userId":"4464aa30-28ec-4047-8a28-925c6c2b0199","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.589Z","level":"info","message":"New user registered: user_1780672326526_9_0.39823800912056107@example.com","userId":"561734bd-942b-47bf-b4a0-c9de0ede9b45"}
+{"timestamp":"2026-06-05T15:12:06.589Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"561734bd-942b-47bf-b4a0-c9de0ede9b45","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.589Z"}
+{"timestamp":"2026-06-05T15:12:06.651Z","level":"error","message":"Failed to create reservation","error":{},"userId":"561734bd-942b-47bf-b4a0-c9de0ede9b45","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.654Z","level":"info","message":"New user registered: user_1780672326590_10_0.8827262090822936@example.com","userId":"6a9b23c9-d1d2-46d6-b1ce-12bf9153417c"}
+{"timestamp":"2026-06-05T15:12:06.654Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"6a9b23c9-d1d2-46d6-b1ce-12bf9153417c","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.654Z"}
+{"timestamp":"2026-06-05T15:12:06.716Z","level":"error","message":"Failed to create reservation","error":{},"userId":"6a9b23c9-d1d2-46d6-b1ce-12bf9153417c","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.719Z","level":"info","message":"New user registered: user_1780672326654_11_0.06336397872729749@example.com","userId":"1d77e9e8-a2cf-42ab-920f-e0c401b3e98f"}
+{"timestamp":"2026-06-05T15:12:06.719Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"1d77e9e8-a2cf-42ab-920f-e0c401b3e98f","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.719Z"}
+{"timestamp":"2026-06-05T15:12:06.781Z","level":"error","message":"Failed to create reservation","error":{},"userId":"1d77e9e8-a2cf-42ab-920f-e0c401b3e98f","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.784Z","level":"info","message":"New user registered: user_1780672326720_12_0.7483849890206149@example.com","userId":"06a9c37c-06dd-4e76-8c85-db17dd114313"}
+{"timestamp":"2026-06-05T15:12:06.784Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"06a9c37c-06dd-4e76-8c85-db17dd114313","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.784Z"}
+{"timestamp":"2026-06-05T15:12:06.843Z","level":"error","message":"Failed to create reservation","error":{},"userId":"06a9c37c-06dd-4e76-8c85-db17dd114313","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.846Z","level":"info","message":"New user registered: user_1780672326784_13_0.1470914529803149@example.com","userId":"6e1e49f5-f9f0-4a3d-9558-57be93e34453"}
+{"timestamp":"2026-06-05T15:12:06.846Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"6e1e49f5-f9f0-4a3d-9558-57be93e34453","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.846Z"}
+{"timestamp":"2026-06-05T15:12:06.906Z","level":"error","message":"Failed to create reservation","error":{},"userId":"6e1e49f5-f9f0-4a3d-9558-57be93e34453","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.909Z","level":"info","message":"New user registered: user_1780672326847_14_0.2506683888393664@example.com","userId":"690b4b53-017f-45ab-950c-95e93a026993"}
+{"timestamp":"2026-06-05T15:12:06.909Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"690b4b53-017f-45ab-950c-95e93a026993","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.909Z"}
+{"timestamp":"2026-06-05T15:12:06.974Z","level":"error","message":"Failed to create reservation","error":{},"userId":"690b4b53-017f-45ab-950c-95e93a026993","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:06.977Z","level":"info","message":"New user registered: user_1780672326909_15_0.47462238187458383@example.com","userId":"6570e47a-9b9d-43c5-952f-e7293795867a"}
+{"timestamp":"2026-06-05T15:12:06.978Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"6570e47a-9b9d-43c5-952f-e7293795867a","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:06.978Z"}
+{"timestamp":"2026-06-05T15:12:07.036Z","level":"error","message":"Failed to create reservation","error":{},"userId":"6570e47a-9b9d-43c5-952f-e7293795867a","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.039Z","level":"info","message":"New user registered: user_1780672326978_16_0.4426315170626922@example.com","userId":"cc760ecf-1ea6-4faa-9ee5-e3c0e3ba2f86"}
+{"timestamp":"2026-06-05T15:12:07.039Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"cc760ecf-1ea6-4faa-9ee5-e3c0e3ba2f86","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:07.039Z"}
+{"timestamp":"2026-06-05T15:12:07.100Z","level":"error","message":"Failed to create reservation","error":{},"userId":"cc760ecf-1ea6-4faa-9ee5-e3c0e3ba2f86","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.103Z","level":"info","message":"New user registered: user_1780672327040_17_0.8651699822718615@example.com","userId":"394582df-1757-4d36-bd21-c4fdea0d6215"}
+{"timestamp":"2026-06-05T15:12:07.103Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"394582df-1757-4d36-bd21-c4fdea0d6215","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:07.103Z"}
+{"timestamp":"2026-06-05T15:12:07.164Z","level":"error","message":"Failed to create reservation","error":{},"userId":"394582df-1757-4d36-bd21-c4fdea0d6215","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.167Z","level":"info","message":"New user registered: user_1780672327103_18_0.03443821006507841@example.com","userId":"289a22ed-5f65-4756-876c-86d22fcd2c63"}
+{"timestamp":"2026-06-05T15:12:07.167Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"289a22ed-5f65-4756-876c-86d22fcd2c63","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:07.167Z"}
+{"timestamp":"2026-06-05T15:12:07.233Z","level":"error","message":"Failed to create reservation","error":{},"userId":"289a22ed-5f65-4756-876c-86d22fcd2c63","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.236Z","level":"info","message":"New user registered: user_1780672327167_19_0.9348558462114216@example.com","userId":"e7a54dd6-5693-4be3-bd2e-8969e49dfb51"}
+{"timestamp":"2026-06-05T15:12:07.237Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"e7a54dd6-5693-4be3-bd2e-8969e49dfb51","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1,"expiresAt":"2026-06-05T15:17:07.237Z"}
+{"timestamp":"2026-06-05T15:12:07.239Z","level":"error","message":"Failed to create reservation","error":{},"userId":"e7a54dd6-5693-4be3-bd2e-8969e49dfb51","productId":"8ef0154a-606c-41d0-ae2d-1c661721406b","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.321Z","level":"info","message":"New user registered: user_1780672327257_0_0.4248761238010055@example.com","userId":"9767bbc7-7800-42d3-8e76-e8dfdd99c3b0"}
+{"timestamp":"2026-06-05T15:12:07.322Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"9767bbc7-7800-42d3-8e76-e8dfdd99c3b0","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:07.322Z"}
+{"timestamp":"2026-06-05T15:12:07.412Z","level":"info","message":"New user registered: user_1780672327322_1_0.42539673218773055@example.com","userId":"fa92b655-c674-4715-8ebb-069675e913d8"}
+{"timestamp":"2026-06-05T15:12:07.413Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"fa92b655-c674-4715-8ebb-069675e913d8","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:07.413Z"}
+{"timestamp":"2026-06-05T15:12:07.479Z","level":"info","message":"Reservation created successfully: 823fe601-d399-4282-b59c-b247b9746212","userId":"9767bbc7-7800-42d3-8e76-e8dfdd99c3b0","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:07.322Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:12:07.481Z","level":"error","message":"Failed to create reservation","error":{},"userId":"fa92b655-c674-4715-8ebb-069675e913d8","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.483Z","level":"info","message":"New user registered: user_1780672327413_2_0.976246592488974@example.com","userId":"939847a4-718e-4434-8f2c-e3749379df04"}
+{"timestamp":"2026-06-05T15:12:07.483Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"939847a4-718e-4434-8f2c-e3749379df04","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:07.483Z"}
+{"timestamp":"2026-06-05T15:12:07.543Z","level":"error","message":"Failed to create reservation","error":{},"userId":"939847a4-718e-4434-8f2c-e3749379df04","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.545Z","level":"info","message":"New user registered: user_1780672327483_3_0.4205094569684633@example.com","userId":"75da8ea1-e7c2-48f9-a2d8-3eb8e9a9c70f"}
+{"timestamp":"2026-06-05T15:12:07.546Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"75da8ea1-e7c2-48f9-a2d8-3eb8e9a9c70f","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:07.546Z"}
+{"timestamp":"2026-06-05T15:12:07.606Z","level":"error","message":"Failed to create reservation","error":{},"userId":"75da8ea1-e7c2-48f9-a2d8-3eb8e9a9c70f","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.610Z","level":"info","message":"New user registered: user_1780672327546_4_0.6829868837189201@example.com","userId":"4f266f8d-b001-4bbd-9fbb-0b80366e1656"}
+{"timestamp":"2026-06-05T15:12:07.611Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"4f266f8d-b001-4bbd-9fbb-0b80366e1656","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:07.611Z"}
+{"timestamp":"2026-06-05T15:12:07.672Z","level":"error","message":"Failed to create reservation","error":{},"userId":"4f266f8d-b001-4bbd-9fbb-0b80366e1656","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.675Z","level":"info","message":"New user registered: user_1780672327612_5_0.43293662912440034@example.com","userId":"446ee971-9b21-49b7-b6f1-abb0a4bc104e"}
+{"timestamp":"2026-06-05T15:12:07.675Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"446ee971-9b21-49b7-b6f1-abb0a4bc104e","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:07.675Z"}
+{"timestamp":"2026-06-05T15:12:07.735Z","level":"error","message":"Failed to create reservation","error":{},"userId":"446ee971-9b21-49b7-b6f1-abb0a4bc104e","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.738Z","level":"info","message":"New user registered: user_1780672327675_6_0.3466250415383314@example.com","userId":"749b5c2f-dace-41a8-bfeb-706e27966be2"}
+{"timestamp":"2026-06-05T15:12:07.738Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"749b5c2f-dace-41a8-bfeb-706e27966be2","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:07.738Z"}
+{"timestamp":"2026-06-05T15:12:07.796Z","level":"error","message":"Failed to create reservation","error":{},"userId":"749b5c2f-dace-41a8-bfeb-706e27966be2","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.799Z","level":"info","message":"New user registered: user_1780672327738_7_0.5604273942603029@example.com","userId":"6cf70f49-00f8-40c0-9d77-98a359235b48"}
+{"timestamp":"2026-06-05T15:12:07.800Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"6cf70f49-00f8-40c0-9d77-98a359235b48","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:07.800Z"}
+{"timestamp":"2026-06-05T15:12:07.857Z","level":"error","message":"Failed to create reservation","error":{},"userId":"6cf70f49-00f8-40c0-9d77-98a359235b48","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.860Z","level":"info","message":"New user registered: user_1780672327800_8_0.9160597609712793@example.com","userId":"e82a0c31-71ac-4f3e-9f26-b5b741d71758"}
+{"timestamp":"2026-06-05T15:12:07.861Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"e82a0c31-71ac-4f3e-9f26-b5b741d71758","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:07.861Z"}
+{"timestamp":"2026-06-05T15:12:07.920Z","level":"error","message":"Failed to create reservation","error":{},"userId":"e82a0c31-71ac-4f3e-9f26-b5b741d71758","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.923Z","level":"info","message":"New user registered: user_1780672327861_9_0.7989373996348703@example.com","userId":"546c3fc3-f55b-4af8-a3e1-0824fc82d327"}
+{"timestamp":"2026-06-05T15:12:07.923Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"546c3fc3-f55b-4af8-a3e1-0824fc82d327","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:07.923Z"}
+{"timestamp":"2026-06-05T15:12:07.983Z","level":"error","message":"Failed to create reservation","error":{},"userId":"546c3fc3-f55b-4af8-a3e1-0824fc82d327","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:07.986Z","level":"info","message":"New user registered: user_1780672327923_10_0.22729338526954823@example.com","userId":"3d72801b-cfe5-4e55-af68-9d542ec06cb3"}
+{"timestamp":"2026-06-05T15:12:07.987Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"3d72801b-cfe5-4e55-af68-9d542ec06cb3","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:07.987Z"}
+{"timestamp":"2026-06-05T15:12:08.054Z","level":"error","message":"Failed to create reservation","error":{},"userId":"3d72801b-cfe5-4e55-af68-9d542ec06cb3","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:08.057Z","level":"info","message":"New user registered: user_1780672327987_11_0.8629021841618139@example.com","userId":"15071cfc-d017-4946-bbee-9f6407875712"}
+{"timestamp":"2026-06-05T15:12:08.057Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"15071cfc-d017-4946-bbee-9f6407875712","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:08.057Z"}
+{"timestamp":"2026-06-05T15:12:08.117Z","level":"error","message":"Failed to create reservation","error":{},"userId":"15071cfc-d017-4946-bbee-9f6407875712","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:08.120Z","level":"info","message":"New user registered: user_1780672328057_12_0.16922304667706545@example.com","userId":"ca81af34-6759-48bd-a3a7-e93162ff3cf1"}
+{"timestamp":"2026-06-05T15:12:08.120Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"ca81af34-6759-48bd-a3a7-e93162ff3cf1","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:08.120Z"}
+{"timestamp":"2026-06-05T15:12:08.181Z","level":"error","message":"Failed to create reservation","error":{},"userId":"ca81af34-6759-48bd-a3a7-e93162ff3cf1","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:08.184Z","level":"info","message":"New user registered: user_1780672328121_13_0.34389802056252883@example.com","userId":"4dcd033d-a5e5-4816-82ce-a4ab2479627d"}
+{"timestamp":"2026-06-05T15:12:08.184Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"4dcd033d-a5e5-4816-82ce-a4ab2479627d","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:08.184Z"}
+{"timestamp":"2026-06-05T15:12:08.244Z","level":"error","message":"Failed to create reservation","error":{},"userId":"4dcd033d-a5e5-4816-82ce-a4ab2479627d","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:08.247Z","level":"info","message":"New user registered: user_1780672328185_14_0.9736183334111133@example.com","userId":"a55f890f-29d3-418c-bc3b-e33300a0f222"}
+{"timestamp":"2026-06-05T15:12:08.247Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a55f890f-29d3-418c-bc3b-e33300a0f222","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:08.247Z"}
+{"timestamp":"2026-06-05T15:12:08.307Z","level":"error","message":"Failed to create reservation","error":{},"userId":"a55f890f-29d3-418c-bc3b-e33300a0f222","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:08.311Z","level":"info","message":"New user registered: user_1780672328248_15_0.2647564275866696@example.com","userId":"c93ba750-999e-4474-857c-5d4e38b16331"}
+{"timestamp":"2026-06-05T15:12:08.312Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"c93ba750-999e-4474-857c-5d4e38b16331","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:08.312Z"}
+{"timestamp":"2026-06-05T15:12:08.372Z","level":"error","message":"Failed to create reservation","error":{},"userId":"c93ba750-999e-4474-857c-5d4e38b16331","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:08.375Z","level":"info","message":"New user registered: user_1780672328312_16_0.2776226987662387@example.com","userId":"2d50501c-7869-4958-b9ce-e5abe495e7a7"}
+{"timestamp":"2026-06-05T15:12:08.375Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"2d50501c-7869-4958-b9ce-e5abe495e7a7","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:08.375Z"}
+{"timestamp":"2026-06-05T15:12:08.433Z","level":"error","message":"Failed to create reservation","error":{},"userId":"2d50501c-7869-4958-b9ce-e5abe495e7a7","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:08.436Z","level":"info","message":"New user registered: user_1780672328375_17_0.26731434498629447@example.com","userId":"d9b41197-8450-4181-84be-9e35ad2729bf"}
+{"timestamp":"2026-06-05T15:12:08.436Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"d9b41197-8450-4181-84be-9e35ad2729bf","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:08.436Z"}
+{"timestamp":"2026-06-05T15:12:08.497Z","level":"error","message":"Failed to create reservation","error":{},"userId":"d9b41197-8450-4181-84be-9e35ad2729bf","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:08.497Z","level":"info","message":"New user registered: user_1780672328437_18_0.9708704929617449@example.com","userId":"e545c933-9522-4530-8dc6-e29adc59e56f"}
+{"timestamp":"2026-06-05T15:12:08.498Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"e545c933-9522-4530-8dc6-e29adc59e56f","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:08.498Z"}
+{"timestamp":"2026-06-05T15:12:08.559Z","level":"error","message":"Failed to create reservation","error":{},"userId":"e545c933-9522-4530-8dc6-e29adc59e56f","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:08.562Z","level":"info","message":"New user registered: user_1780672328498_19_0.9809213019793197@example.com","userId":"74cfc9b2-ec6d-4f31-a4c0-66b5530a0c71"}
+{"timestamp":"2026-06-05T15:12:08.563Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"74cfc9b2-ec6d-4f31-a4c0-66b5530a0c71","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1,"expiresAt":"2026-06-05T15:17:08.563Z"}
+{"timestamp":"2026-06-05T15:12:08.564Z","level":"error","message":"Failed to create reservation","error":{},"userId":"74cfc9b2-ec6d-4f31-a4c0-66b5530a0c71","productId":"9f0007e1-5310-4fb3-b661-c91c9f378b3f","quantity":1}
+{"timestamp":"2026-06-05T15:12:08.980Z","level":"info","message":"New user registered: test_1780672328884_0.03987913682180966@example.com","userId":"cf02a742-bc80-474d-8c1a-13e02f7f01b0"}
+{"timestamp":"2026-06-05T15:12:09.001Z","level":"info","message":"Found 1 expired reservations"}
+{"timestamp":"2026-06-05T15:12:09.087Z","level":"info","message":"New user registered: test_1780672329024_0.896182626423065@example.com","userId":"7ae8beb0-009d-4770-8d0e-7390c2fe948a"}
+{"timestamp":"2026-06-05T15:12:09.090Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:12:09.169Z","level":"info","message":"New user registered: test_1780672329095_0.8271413847434406@example.com","userId":"a9302f87-7edd-4c73-aecf-e492903a3f56"}
+{"timestamp":"2026-06-05T15:12:09.177Z","level":"info","message":"Found 2 expired reservations"}
+{"timestamp":"2026-06-05T15:12:09.465Z","level":"info","message":"New user registered: test_1780672329379_0.8972459416075873@example.com","userId":"885aae08-2bfe-4142-bb67-81384e2018a0"}
+{"timestamp":"2026-06-05T15:12:09.469Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"885aae08-2bfe-4142-bb67-81384e2018a0","productId":"7121d3e8-e489-4cc9-a686-af911c0f8249","quantity":1,"expiresAt":"2026-06-05T15:17:09.469Z"}
+{"timestamp":"2026-06-05T15:12:09.495Z","level":"info","message":"Reservation created successfully: 4ceb2389-e78f-4869-9909-d32dbf101192","userId":"885aae08-2bfe-4142-bb67-81384e2018a0","productId":"7121d3e8-e489-4cc9-a686-af911c0f8249","quantity":1,"expiresAt":"2026-06-05T15:17:09.469Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:12:09.590Z","level":"info","message":"New user registered: test_1780672329508_0.5478539776568467@example.com","userId":"d9bcfb4c-441c-4a71-b2a9-8ad35749baed"}
+{"timestamp":"2026-06-05T15:12:09.592Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"d9bcfb4c-441c-4a71-b2a9-8ad35749baed","productId":"non-existent-id","quantity":1,"expiresAt":"2026-06-05T15:17:09.592Z"}
+{"timestamp":"2026-06-05T15:12:09.597Z","level":"error","message":"Failed to create reservation","error":{},"userId":"d9bcfb4c-441c-4a71-b2a9-8ad35749baed","productId":"non-existent-id","quantity":1}
+{"timestamp":"2026-06-05T15:12:09.734Z","level":"info","message":"New user registered: test_1780672329673_0.39966457033928404@example.com","userId":"ee099255-da8c-48e0-a9f2-da8dc46ff469"}
+{"timestamp":"2026-06-05T15:12:09.735Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"ee099255-da8c-48e0-a9f2-da8dc46ff469","productId":"fbb08932-41bd-4905-add7-08b5a32eb7fc","quantity":20,"expiresAt":"2026-06-05T15:17:09.735Z"}
+{"timestamp":"2026-06-05T15:12:09.737Z","level":"error","message":"Failed to create reservation","error":{},"userId":"ee099255-da8c-48e0-a9f2-da8dc46ff469","productId":"fbb08932-41bd-4905-add7-08b5a32eb7fc","quantity":20}
+{"timestamp":"2026-06-05T15:12:09.804Z","level":"info","message":"New user registered: test_1780672329740_0.5164561966814138@example.com","userId":"a5ce607c-157f-46bc-a3a2-b172f73a113d"}
+{"timestamp":"2026-06-05T15:12:09.806Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a5ce607c-157f-46bc-a3a2-b172f73a113d","productId":"be4dc529-87db-4f8b-a58c-1bfee72a4f77","quantity":1,"expiresAt":"2026-06-05T15:17:09.806Z"}
+{"timestamp":"2026-06-05T15:12:09.815Z","level":"info","message":"Reservation created successfully: 5246e10f-ad53-45a3-af5f-a8553ed1a38b","userId":"a5ce607c-157f-46bc-a3a2-b172f73a113d","productId":"be4dc529-87db-4f8b-a58c-1bfee72a4f77","quantity":1,"expiresAt":"2026-06-05T15:17:09.806Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:12:09.815Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a5ce607c-157f-46bc-a3a2-b172f73a113d","productId":"be4dc529-87db-4f8b-a58c-1bfee72a4f77","quantity":1,"expiresAt":"2026-06-05T15:17:09.815Z"}
+{"timestamp":"2026-06-05T15:12:09.820Z","level":"error","message":"Failed to create reservation","error":{},"userId":"a5ce607c-157f-46bc-a3a2-b172f73a113d","productId":"be4dc529-87db-4f8b-a58c-1bfee72a4f77","quantity":1}
+{"timestamp":"2026-06-05T15:12:09.893Z","level":"info","message":"New user registered: test_1780672329827_0.8964434895227731@example.com","userId":"8a7bfd0a-4ecd-488f-b15b-f2fe084067f5"}
+{"timestamp":"2026-06-05T15:12:09.895Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8a7bfd0a-4ecd-488f-b15b-f2fe084067f5","productId":"bfa4cb7a-b3db-4037-b589-87bd56bf5ff1","quantity":1,"expiresAt":"2026-06-05T15:17:09.895Z"}
+{"timestamp":"2026-06-05T15:12:09.899Z","level":"info","message":"Reservation created successfully: 6cb262f2-2d9c-40e5-a0cf-2495e0164c09","userId":"8a7bfd0a-4ecd-488f-b15b-f2fe084067f5","productId":"bfa4cb7a-b3db-4037-b589-87bd56bf5ff1","quantity":1,"expiresAt":"2026-06-05T15:17:09.895Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:12:09.906Z","level":"info","message":"Checkout completed successfully: 94d3c0fa-8728-4eec-ab68-4e34a3ee1ec2","reservationId":"6cb262f2-2d9c-40e5-a0cf-2495e0164c09"}
+{"timestamp":"2026-06-05T15:12:09.972Z","level":"info","message":"New user registered: test_1780672329912_0.36928513634918936@example.com","userId":"c1e32a39-bb5f-4bb6-b7d6-45a096d4c0e6"}
+{"timestamp":"2026-06-05T15:12:09.975Z","level":"error","message":"Checkout failed","error":{},"reservationId":"non-existent-id"}
+{"timestamp":"2026-06-05T15:12:10.040Z","level":"info","message":"New user registered: test_1780672329979_0.9012325244318271@example.com","userId":"74b7b95d-58c9-40f5-9472-415831b027a3"}
+{"timestamp":"2026-06-05T15:12:10.045Z","level":"error","message":"Checkout failed","error":{},"reservationId":"4835e2dd-c3c5-4456-a106-c53813de9839"}
+{"timestamp":"2026-06-05T15:12:59.463Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T15:12:59.483Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T15:12:59.484Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T15:12:59.488Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T15:12:59.488Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T15:12:59.489Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T15:12:59.490Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T15:12:59.490Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T15:12:59.490Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T15:13:00.049Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:13:00.216Z","level":"info","message":"Found 1 expired reservations"}
+{"timestamp":"2026-06-05T15:13:00.270Z","level":"info","message":"Expired 1 reservations and restored stock - took 221ms"}
+{"timestamp":"2026-06-05T15:13:15.445Z","level":"info","message":"New user registered: user_1780672395347_0_0.24437015708289667@example.com","userId":"86e3e97a-7bc3-467b-96d7-b1e3ffc561ce"}
+{"timestamp":"2026-06-05T15:13:15.449Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"86e3e97a-7bc3-467b-96d7-b1e3ffc561ce","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:15.448Z"}
+{"timestamp":"2026-06-05T15:13:15.479Z","level":"info","message":"Reservation created successfully: 994e89f8-ed75-4a37-9fad-43792b1e6b5f","userId":"86e3e97a-7bc3-467b-96d7-b1e3ffc561ce","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:15.448Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:15.550Z","level":"info","message":"New user registered: user_1780672395450_1_0.5414607868603107@example.com","userId":"936e42fe-5245-4992-9042-3318abd9c57b"}
+{"timestamp":"2026-06-05T15:13:15.551Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"936e42fe-5245-4992-9042-3318abd9c57b","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:15.551Z"}
+{"timestamp":"2026-06-05T15:13:15.638Z","level":"info","message":"New user registered: user_1780672395551_2_0.48089346989884363@example.com","userId":"eae82750-8dd0-44c1-8d34-917e70d6efac"}
+{"timestamp":"2026-06-05T15:13:15.669Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"eae82750-8dd0-44c1-8d34-917e70d6efac","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:15.668Z"}
+{"timestamp":"2026-06-05T15:13:15.676Z","level":"info","message":"Reservation created successfully: 5966e057-c40e-4716-aa6b-be0b1a411f78","userId":"936e42fe-5245-4992-9042-3318abd9c57b","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:15.551Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:15.681Z","level":"info","message":"Reservation created successfully: 0ba4555c-6cc7-4b75-9d10-ec594f75e40f","userId":"eae82750-8dd0-44c1-8d34-917e70d6efac","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:15.668Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:15.834Z","level":"info","message":"New user registered: user_1780672395669_3_0.4923089218818062@example.com","userId":"b9e1fc23-6f66-4e0a-9972-44605adea638"}
+{"timestamp":"2026-06-05T15:13:15.835Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"b9e1fc23-6f66-4e0a-9972-44605adea638","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:15.835Z"}
+{"timestamp":"2026-06-05T15:13:15.921Z","level":"info","message":"New user registered: user_1780672395836_4_0.798561428416459@example.com","userId":"a262aa6f-40ad-41c9-9316-54c6efe5fa9b"}
+{"timestamp":"2026-06-05T15:13:15.922Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a262aa6f-40ad-41c9-9316-54c6efe5fa9b","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:15.922Z"}
+{"timestamp":"2026-06-05T15:13:15.983Z","level":"info","message":"Reservation created successfully: 77f0e0ac-a19e-4ced-8636-f558d4edb4c2","userId":"b9e1fc23-6f66-4e0a-9972-44605adea638","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:15.835Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:15.988Z","level":"info","message":"New user registered: user_1780672395922_5_0.7724958023379811@example.com","userId":"dc23a8ed-6935-4693-a6e8-469bad98956a"}
+{"timestamp":"2026-06-05T15:13:15.988Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"dc23a8ed-6935-4693-a6e8-469bad98956a","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:15.988Z"}
+{"timestamp":"2026-06-05T15:13:16.053Z","level":"info","message":"Reservation created successfully: 603e5c42-7565-48c0-9229-cd4982da641a","userId":"a262aa6f-40ad-41c9-9316-54c6efe5fa9b","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:15.922Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:16.056Z","level":"error","message":"Failed to create reservation","error":{},"userId":"dc23a8ed-6935-4693-a6e8-469bad98956a","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1}
+{"timestamp":"2026-06-05T15:13:16.058Z","level":"info","message":"New user registered: user_1780672395988_6_0.4272022717376083@example.com","userId":"7c799f00-abd1-46c2-b680-d7596c7d921e"}
+{"timestamp":"2026-06-05T15:13:16.058Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"7c799f00-abd1-46c2-b680-d7596c7d921e","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:16.058Z"}
+{"timestamp":"2026-06-05T15:13:16.154Z","level":"error","message":"Failed to create reservation","error":{},"userId":"7c799f00-abd1-46c2-b680-d7596c7d921e","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1}
+{"timestamp":"2026-06-05T15:13:16.158Z","level":"info","message":"New user registered: user_1780672396058_7_0.7873237585030259@example.com","userId":"a57fd2b7-e367-4515-9ccd-3f54383c8d64"}
+{"timestamp":"2026-06-05T15:13:16.158Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a57fd2b7-e367-4515-9ccd-3f54383c8d64","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:16.158Z"}
+{"timestamp":"2026-06-05T15:13:16.235Z","level":"error","message":"Failed to create reservation","error":{},"userId":"a57fd2b7-e367-4515-9ccd-3f54383c8d64","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1}
+{"timestamp":"2026-06-05T15:13:16.236Z","level":"info","message":"New user registered: user_1780672396159_8_0.6985160214872825@example.com","userId":"cf6be7cd-9656-4865-a7cf-bcf09dfe404d"}
+{"timestamp":"2026-06-05T15:13:16.237Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"cf6be7cd-9656-4865-a7cf-bcf09dfe404d","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:16.237Z"}
+{"timestamp":"2026-06-05T15:13:16.298Z","level":"error","message":"Failed to create reservation","error":{},"userId":"cf6be7cd-9656-4865-a7cf-bcf09dfe404d","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1}
+{"timestamp":"2026-06-05T15:13:16.301Z","level":"info","message":"New user registered: user_1780672396237_9_0.15361945147078737@example.com","userId":"fa29d880-f0bf-4a7f-9cce-8c8fbf00c796"}
+{"timestamp":"2026-06-05T15:13:16.302Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"fa29d880-f0bf-4a7f-9cce-8c8fbf00c796","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1,"expiresAt":"2026-06-05T15:18:16.302Z"}
+{"timestamp":"2026-06-05T15:13:16.304Z","level":"error","message":"Failed to create reservation","error":{},"userId":"fa29d880-f0bf-4a7f-9cce-8c8fbf00c796","productId":"bd4085ed-ce7b-4132-8f07-25dccbe6657a","quantity":1}
+{"timestamp":"2026-06-05T15:13:16.398Z","level":"info","message":"New user registered: user_1780672396319_0_0.3744327772163969@example.com","userId":"6eba3620-2a03-4465-99da-b4411964e31f"}
+{"timestamp":"2026-06-05T15:13:16.399Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"6eba3620-2a03-4465-99da-b4411964e31f","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:16.399Z"}
+{"timestamp":"2026-06-05T15:13:16.470Z","level":"info","message":"New user registered: user_1780672396399_1_0.047277028008789745@example.com","userId":"0692ee4d-0c81-4fe3-a2f8-434e213e6740"}
+{"timestamp":"2026-06-05T15:13:16.471Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"0692ee4d-0c81-4fe3-a2f8-434e213e6740","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:16.471Z"}
+{"timestamp":"2026-06-05T15:13:16.472Z","level":"info","message":"Reservation created successfully: 0c3b44da-5049-4f87-b679-9ca6c2eb8bec","userId":"6eba3620-2a03-4465-99da-b4411964e31f","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:16.399Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:16.559Z","level":"info","message":"New user registered: user_1780672396471_2_0.39617266816492913@example.com","userId":"0a9e72af-4623-441e-8a78-7d2ef4092d5c"}
+{"timestamp":"2026-06-05T15:13:16.559Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"0a9e72af-4623-441e-8a78-7d2ef4092d5c","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:16.559Z"}
+{"timestamp":"2026-06-05T15:13:16.561Z","level":"info","message":"Reservation created successfully: 92d5a0a9-25ee-4d84-8c4d-4e6abe086f51","userId":"0692ee4d-0c81-4fe3-a2f8-434e213e6740","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:16.471Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:16.638Z","level":"info","message":"New user registered: user_1780672396560_3_0.33345559061244745@example.com","userId":"9df614d0-369e-4ec9-bbc8-9803029d2ef4"}
+{"timestamp":"2026-06-05T15:13:16.638Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"9df614d0-369e-4ec9-bbc8-9803029d2ef4","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:16.638Z"}
+{"timestamp":"2026-06-05T15:13:16.639Z","level":"info","message":"Reservation created successfully: ca543d34-fd75-423e-8cd3-ed50a8196a54","userId":"0a9e72af-4623-441e-8a78-7d2ef4092d5c","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:16.559Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:16.699Z","level":"error","message":"Failed to create reservation","error":{},"userId":"9df614d0-369e-4ec9-bbc8-9803029d2ef4","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:16.702Z","level":"info","message":"New user registered: user_1780672396638_4_0.5430971063883263@example.com","userId":"fb85454a-f5e8-46be-9868-a73794ce59d5"}
+{"timestamp":"2026-06-05T15:13:16.702Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"fb85454a-f5e8-46be-9868-a73794ce59d5","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:16.702Z"}
+{"timestamp":"2026-06-05T15:13:16.765Z","level":"error","message":"Failed to create reservation","error":{},"userId":"fb85454a-f5e8-46be-9868-a73794ce59d5","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:16.769Z","level":"info","message":"New user registered: user_1780672396703_5_0.1067208969167377@example.com","userId":"03e167ea-ab41-40df-9ba9-f50fe2147384"}
+{"timestamp":"2026-06-05T15:13:16.769Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"03e167ea-ab41-40df-9ba9-f50fe2147384","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:16.769Z"}
+{"timestamp":"2026-06-05T15:13:16.830Z","level":"error","message":"Failed to create reservation","error":{},"userId":"03e167ea-ab41-40df-9ba9-f50fe2147384","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:16.831Z","level":"info","message":"New user registered: user_1780672396769_6_0.5219831569022444@example.com","userId":"03c2b417-9681-4db2-b894-579a1c39aa25"}
+{"timestamp":"2026-06-05T15:13:16.831Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"03c2b417-9681-4db2-b894-579a1c39aa25","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:16.831Z"}
+{"timestamp":"2026-06-05T15:13:16.890Z","level":"error","message":"Failed to create reservation","error":{},"userId":"03c2b417-9681-4db2-b894-579a1c39aa25","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:16.893Z","level":"info","message":"New user registered: user_1780672396831_7_0.39747380986619185@example.com","userId":"8665a391-2554-46d4-858f-9b9caf18cdd1"}
+{"timestamp":"2026-06-05T15:13:16.894Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8665a391-2554-46d4-858f-9b9caf18cdd1","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:16.894Z"}
+{"timestamp":"2026-06-05T15:13:16.952Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8665a391-2554-46d4-858f-9b9caf18cdd1","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:16.955Z","level":"info","message":"New user registered: user_1780672396894_8_0.0068632222862432535@example.com","userId":"e06fe7ab-144d-498e-bbdb-764333ade2d0"}
+{"timestamp":"2026-06-05T15:13:16.955Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"e06fe7ab-144d-498e-bbdb-764333ade2d0","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:16.955Z"}
+{"timestamp":"2026-06-05T15:13:17.013Z","level":"error","message":"Failed to create reservation","error":{},"userId":"e06fe7ab-144d-498e-bbdb-764333ade2d0","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.017Z","level":"info","message":"New user registered: user_1780672396955_9_0.7771893306431639@example.com","userId":"b283a9bc-1159-4c61-a5a3-5e762b1b7b03"}
+{"timestamp":"2026-06-05T15:13:17.017Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"b283a9bc-1159-4c61-a5a3-5e762b1b7b03","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:17.017Z"}
+{"timestamp":"2026-06-05T15:13:17.076Z","level":"error","message":"Failed to create reservation","error":{},"userId":"b283a9bc-1159-4c61-a5a3-5e762b1b7b03","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.078Z","level":"info","message":"New user registered: user_1780672397018_10_0.2516202364902549@example.com","userId":"9fb37481-d2f5-4647-a9df-decefe591b53"}
+{"timestamp":"2026-06-05T15:13:17.079Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"9fb37481-d2f5-4647-a9df-decefe591b53","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:17.079Z"}
+{"timestamp":"2026-06-05T15:13:17.137Z","level":"error","message":"Failed to create reservation","error":{},"userId":"9fb37481-d2f5-4647-a9df-decefe591b53","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.140Z","level":"info","message":"New user registered: user_1780672397079_11_0.768701822653679@example.com","userId":"d227747c-e4de-4da6-8f52-3485ad336548"}
+{"timestamp":"2026-06-05T15:13:17.141Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"d227747c-e4de-4da6-8f52-3485ad336548","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:17.141Z"}
+{"timestamp":"2026-06-05T15:13:17.201Z","level":"error","message":"Failed to create reservation","error":{},"userId":"d227747c-e4de-4da6-8f52-3485ad336548","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.204Z","level":"info","message":"New user registered: user_1780672397141_12_0.7211805862544023@example.com","userId":"90514a12-a330-453e-90ec-91f8bd28fdae"}
+{"timestamp":"2026-06-05T15:13:17.204Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"90514a12-a330-453e-90ec-91f8bd28fdae","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:17.204Z"}
+{"timestamp":"2026-06-05T15:13:17.266Z","level":"error","message":"Failed to create reservation","error":{},"userId":"90514a12-a330-453e-90ec-91f8bd28fdae","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.269Z","level":"info","message":"New user registered: user_1780672397204_13_0.5822514190090058@example.com","userId":"1c68d5af-583b-4555-b4d8-67c61b925ede"}
+{"timestamp":"2026-06-05T15:13:17.270Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"1c68d5af-583b-4555-b4d8-67c61b925ede","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:17.270Z"}
+{"timestamp":"2026-06-05T15:13:17.329Z","level":"error","message":"Failed to create reservation","error":{},"userId":"1c68d5af-583b-4555-b4d8-67c61b925ede","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.332Z","level":"info","message":"New user registered: user_1780672397270_14_0.9279987514026029@example.com","userId":"7143fb60-2570-4700-9641-9876a4e69cb1"}
+{"timestamp":"2026-06-05T15:13:17.333Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"7143fb60-2570-4700-9641-9876a4e69cb1","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:17.333Z"}
+{"timestamp":"2026-06-05T15:13:17.396Z","level":"error","message":"Failed to create reservation","error":{},"userId":"7143fb60-2570-4700-9641-9876a4e69cb1","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.399Z","level":"info","message":"New user registered: user_1780672397333_15_0.4344252458131168@example.com","userId":"a905c6c5-4ef6-4e00-adb0-500d366d2f73"}
+{"timestamp":"2026-06-05T15:13:17.399Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a905c6c5-4ef6-4e00-adb0-500d366d2f73","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:17.399Z"}
+{"timestamp":"2026-06-05T15:13:17.459Z","level":"error","message":"Failed to create reservation","error":{},"userId":"a905c6c5-4ef6-4e00-adb0-500d366d2f73","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.462Z","level":"info","message":"New user registered: user_1780672397399_16_0.5701639742204119@example.com","userId":"bf410960-7f1e-4dfc-a844-adfa58ae0c9e"}
+{"timestamp":"2026-06-05T15:13:17.462Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"bf410960-7f1e-4dfc-a844-adfa58ae0c9e","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:17.462Z"}
+{"timestamp":"2026-06-05T15:13:17.521Z","level":"error","message":"Failed to create reservation","error":{},"userId":"bf410960-7f1e-4dfc-a844-adfa58ae0c9e","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.524Z","level":"info","message":"New user registered: user_1780672397462_17_0.7960287579495509@example.com","userId":"c6a80013-a265-44b5-b2a2-ff5229c6426d"}
+{"timestamp":"2026-06-05T15:13:17.524Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"c6a80013-a265-44b5-b2a2-ff5229c6426d","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:17.524Z"}
+{"timestamp":"2026-06-05T15:13:17.588Z","level":"error","message":"Failed to create reservation","error":{},"userId":"c6a80013-a265-44b5-b2a2-ff5229c6426d","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.592Z","level":"info","message":"New user registered: user_1780672397524_18_0.598000378887142@example.com","userId":"fbd0ff1c-79a2-418f-b067-0ca1251fff9c"}
+{"timestamp":"2026-06-05T15:13:17.592Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"fbd0ff1c-79a2-418f-b067-0ca1251fff9c","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:17.592Z"}
+{"timestamp":"2026-06-05T15:13:17.651Z","level":"error","message":"Failed to create reservation","error":{},"userId":"fbd0ff1c-79a2-418f-b067-0ca1251fff9c","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.654Z","level":"info","message":"New user registered: user_1780672397592_19_0.6022333842517553@example.com","userId":"ba1bd5d4-b9fe-49ca-8010-14b9079c3a16"}
+{"timestamp":"2026-06-05T15:13:17.654Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"ba1bd5d4-b9fe-49ca-8010-14b9079c3a16","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1,"expiresAt":"2026-06-05T15:18:17.654Z"}
+{"timestamp":"2026-06-05T15:13:17.655Z","level":"error","message":"Failed to create reservation","error":{},"userId":"ba1bd5d4-b9fe-49ca-8010-14b9079c3a16","productId":"4ea2f011-0dc8-4e47-9e81-e5eeeb90bb2c","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.729Z","level":"info","message":"New user registered: user_1780672397668_0_0.5892311415796327@example.com","userId":"e0a1f932-67e5-422a-8600-45e2a7523521"}
+{"timestamp":"2026-06-05T15:13:17.729Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"e0a1f932-67e5-422a-8600-45e2a7523521","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:17.729Z"}
+{"timestamp":"2026-06-05T15:13:17.793Z","level":"info","message":"New user registered: user_1780672397729_1_0.8932842524332743@example.com","userId":"7554b4d9-8e55-4a47-85f7-8450b0967c78"}
+{"timestamp":"2026-06-05T15:13:17.793Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"7554b4d9-8e55-4a47-85f7-8450b0967c78","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:17.793Z"}
+{"timestamp":"2026-06-05T15:13:17.794Z","level":"info","message":"Reservation created successfully: e1893df6-02c8-4798-b9a8-8b8e3ca01648","userId":"e0a1f932-67e5-422a-8600-45e2a7523521","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:17.729Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:17.854Z","level":"error","message":"Failed to create reservation","error":{},"userId":"7554b4d9-8e55-4a47-85f7-8450b0967c78","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.857Z","level":"info","message":"New user registered: user_1780672397794_2_0.700368851981654@example.com","userId":"111cedd2-4f4f-49fa-a279-501a8658ac4e"}
+{"timestamp":"2026-06-05T15:13:17.857Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"111cedd2-4f4f-49fa-a279-501a8658ac4e","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:17.857Z"}
+{"timestamp":"2026-06-05T15:13:17.916Z","level":"error","message":"Failed to create reservation","error":{},"userId":"111cedd2-4f4f-49fa-a279-501a8658ac4e","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.919Z","level":"info","message":"New user registered: user_1780672397858_3_0.97872611014641@example.com","userId":"df6c0089-062a-4a48-8a57-c124b04bd371"}
+{"timestamp":"2026-06-05T15:13:17.920Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"df6c0089-062a-4a48-8a57-c124b04bd371","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:17.920Z"}
+{"timestamp":"2026-06-05T15:13:17.984Z","level":"error","message":"Failed to create reservation","error":{},"userId":"df6c0089-062a-4a48-8a57-c124b04bd371","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:17.988Z","level":"info","message":"New user registered: user_1780672397920_4_0.5272834073889185@example.com","userId":"f5523f4c-9a6d-4acd-8297-ce22db4ab435"}
+{"timestamp":"2026-06-05T15:13:17.989Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"f5523f4c-9a6d-4acd-8297-ce22db4ab435","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:17.989Z"}
+{"timestamp":"2026-06-05T15:13:18.053Z","level":"error","message":"Failed to create reservation","error":{},"userId":"f5523f4c-9a6d-4acd-8297-ce22db4ab435","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.055Z","level":"info","message":"New user registered: user_1780672397990_5_0.20322862661706353@example.com","userId":"507b9ce8-13d7-4651-a0cb-d60b2751914c"}
+{"timestamp":"2026-06-05T15:13:18.056Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"507b9ce8-13d7-4651-a0cb-d60b2751914c","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.056Z"}
+{"timestamp":"2026-06-05T15:13:18.119Z","level":"error","message":"Failed to create reservation","error":{},"userId":"507b9ce8-13d7-4651-a0cb-d60b2751914c","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.122Z","level":"info","message":"New user registered: user_1780672398056_6_0.08332927882936181@example.com","userId":"0619a783-8db8-4b85-a8ab-9b30156ab0a2"}
+{"timestamp":"2026-06-05T15:13:18.122Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"0619a783-8db8-4b85-a8ab-9b30156ab0a2","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.122Z"}
+{"timestamp":"2026-06-05T15:13:18.184Z","level":"error","message":"Failed to create reservation","error":{},"userId":"0619a783-8db8-4b85-a8ab-9b30156ab0a2","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.185Z","level":"info","message":"New user registered: user_1780672398123_7_0.321648174438931@example.com","userId":"55af047f-ce53-49c9-9a28-dd018281b44a"}
+{"timestamp":"2026-06-05T15:13:18.186Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"55af047f-ce53-49c9-9a28-dd018281b44a","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.186Z"}
+{"timestamp":"2026-06-05T15:13:18.245Z","level":"error","message":"Failed to create reservation","error":{},"userId":"55af047f-ce53-49c9-9a28-dd018281b44a","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.248Z","level":"info","message":"New user registered: user_1780672398186_8_0.08790294151268507@example.com","userId":"2934fc71-8bd6-4d6d-93d6-0fb9ed25adaa"}
+{"timestamp":"2026-06-05T15:13:18.248Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"2934fc71-8bd6-4d6d-93d6-0fb9ed25adaa","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.248Z"}
+{"timestamp":"2026-06-05T15:13:18.307Z","level":"error","message":"Failed to create reservation","error":{},"userId":"2934fc71-8bd6-4d6d-93d6-0fb9ed25adaa","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.310Z","level":"info","message":"New user registered: user_1780672398248_9_0.3668251155161506@example.com","userId":"a3c8db2e-7737-4d68-9bf2-6135dad24ee0"}
+{"timestamp":"2026-06-05T15:13:18.310Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a3c8db2e-7737-4d68-9bf2-6135dad24ee0","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.310Z"}
+{"timestamp":"2026-06-05T15:13:18.375Z","level":"error","message":"Failed to create reservation","error":{},"userId":"a3c8db2e-7737-4d68-9bf2-6135dad24ee0","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.375Z","level":"info","message":"New user registered: user_1780672398311_10_0.8466376754614946@example.com","userId":"0e6e3ce9-9f61-4f9e-9c5f-c51b93bb0906"}
+{"timestamp":"2026-06-05T15:13:18.376Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"0e6e3ce9-9f61-4f9e-9c5f-c51b93bb0906","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.376Z"}
+{"timestamp":"2026-06-05T15:13:18.435Z","level":"error","message":"Failed to create reservation","error":{},"userId":"0e6e3ce9-9f61-4f9e-9c5f-c51b93bb0906","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.439Z","level":"info","message":"New user registered: user_1780672398376_11_0.5988698136547277@example.com","userId":"f39ee710-c37c-4196-91af-4b87ed651e26"}
+{"timestamp":"2026-06-05T15:13:18.439Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"f39ee710-c37c-4196-91af-4b87ed651e26","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.439Z"}
+{"timestamp":"2026-06-05T15:13:18.504Z","level":"error","message":"Failed to create reservation","error":{},"userId":"f39ee710-c37c-4196-91af-4b87ed651e26","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.507Z","level":"info","message":"New user registered: user_1780672398439_12_0.877643064304042@example.com","userId":"8162c4a3-efe9-4939-b380-14ac894caf8a"}
+{"timestamp":"2026-06-05T15:13:18.507Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8162c4a3-efe9-4939-b380-14ac894caf8a","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.507Z"}
+{"timestamp":"2026-06-05T15:13:18.568Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8162c4a3-efe9-4939-b380-14ac894caf8a","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.571Z","level":"info","message":"New user registered: user_1780672398508_13_0.19376543558632253@example.com","userId":"eb672724-f1fe-44f4-a8bb-52115477686b"}
+{"timestamp":"2026-06-05T15:13:18.571Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"eb672724-f1fe-44f4-a8bb-52115477686b","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.571Z"}
+{"timestamp":"2026-06-05T15:13:18.633Z","level":"error","message":"Failed to create reservation","error":{},"userId":"eb672724-f1fe-44f4-a8bb-52115477686b","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.636Z","level":"info","message":"New user registered: user_1780672398571_14_0.8253096353450733@example.com","userId":"9b9cbcc0-3672-48b9-ba63-6fe50dd30db0"}
+{"timestamp":"2026-06-05T15:13:18.636Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"9b9cbcc0-3672-48b9-ba63-6fe50dd30db0","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.636Z"}
+{"timestamp":"2026-06-05T15:13:18.694Z","level":"error","message":"Failed to create reservation","error":{},"userId":"9b9cbcc0-3672-48b9-ba63-6fe50dd30db0","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.697Z","level":"info","message":"New user registered: user_1780672398636_15_0.08454024394812709@example.com","userId":"17d6ce51-c860-4a38-9f15-4fa7262cbf0b"}
+{"timestamp":"2026-06-05T15:13:18.697Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"17d6ce51-c860-4a38-9f15-4fa7262cbf0b","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.697Z"}
+{"timestamp":"2026-06-05T15:13:18.761Z","level":"error","message":"Failed to create reservation","error":{},"userId":"17d6ce51-c860-4a38-9f15-4fa7262cbf0b","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.764Z","level":"info","message":"New user registered: user_1780672398697_16_0.2499710289365098@example.com","userId":"ce06f894-6046-4d0a-b929-42d0840b5779"}
+{"timestamp":"2026-06-05T15:13:18.764Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"ce06f894-6046-4d0a-b929-42d0840b5779","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.764Z"}
+{"timestamp":"2026-06-05T15:13:18.822Z","level":"error","message":"Failed to create reservation","error":{},"userId":"ce06f894-6046-4d0a-b929-42d0840b5779","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.825Z","level":"info","message":"New user registered: user_1780672398764_17_0.2997738602127522@example.com","userId":"e82ba5b9-ff7d-45e8-b659-699a138bfeb6"}
+{"timestamp":"2026-06-05T15:13:18.826Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"e82ba5b9-ff7d-45e8-b659-699a138bfeb6","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.826Z"}
+{"timestamp":"2026-06-05T15:13:18.897Z","level":"error","message":"Failed to create reservation","error":{},"userId":"e82ba5b9-ff7d-45e8-b659-699a138bfeb6","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.901Z","level":"info","message":"New user registered: user_1780672398826_18_0.43907857087593904@example.com","userId":"2f114d82-b95e-4aeb-bc59-292e9c8dade3"}
+{"timestamp":"2026-06-05T15:13:18.901Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"2f114d82-b95e-4aeb-bc59-292e9c8dade3","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.901Z"}
+{"timestamp":"2026-06-05T15:13:18.963Z","level":"error","message":"Failed to create reservation","error":{},"userId":"2f114d82-b95e-4aeb-bc59-292e9c8dade3","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:18.966Z","level":"info","message":"New user registered: user_1780672398901_19_0.7791045883968002@example.com","userId":"57506792-2c20-4015-9b84-d4995c7dd86e"}
+{"timestamp":"2026-06-05T15:13:18.967Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"57506792-2c20-4015-9b84-d4995c7dd86e","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1,"expiresAt":"2026-06-05T15:18:18.967Z"}
+{"timestamp":"2026-06-05T15:13:18.968Z","level":"error","message":"Failed to create reservation","error":{},"userId":"57506792-2c20-4015-9b84-d4995c7dd86e","productId":"6a3bc44a-0936-4843-a6f5-91400865f0f0","quantity":1}
+{"timestamp":"2026-06-05T15:13:19.989Z","level":"info","message":"New user registered: test_1780672399888_0.48409132731134297@example.com","userId":"8c69b66f-feb1-46f2-b9f9-489b24ec8502"}
+{"timestamp":"2026-06-05T15:13:20.004Z","level":"info","message":"Found 1 expired reservations"}
+{"timestamp":"2026-06-05T15:13:20.091Z","level":"info","message":"New user registered: test_1780672400025_0.14335059698349428@example.com","userId":"216ef06b-bfd8-45f4-9b2c-a06fda5aed14"}
+{"timestamp":"2026-06-05T15:13:20.093Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"216ef06b-bfd8-45f4-9b2c-a06fda5aed14","productId":"f6782058-66cd-4396-a3d2-325d8748ba44","quantity":1,"expiresAt":"2026-06-05T15:18:20.093Z"}
+{"timestamp":"2026-06-05T15:13:20.098Z","level":"info","message":"Reservation created successfully: 06bd62b8-6ef8-4929-a90a-8e30db498c08","userId":"216ef06b-bfd8-45f4-9b2c-a06fda5aed14","productId":"f6782058-66cd-4396-a3d2-325d8748ba44","quantity":1,"expiresAt":"2026-06-05T15:18:20.093Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:20.100Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:13:20.173Z","level":"info","message":"New user registered: test_1780672400107_0.664443691797513@example.com","userId":"2d8abfc4-966a-4051-b0bd-31ad7c7371bb"}
+{"timestamp":"2026-06-05T15:13:20.177Z","level":"info","message":"Found 2 expired reservations"}
+{"timestamp":"2026-06-05T15:13:20.429Z","level":"info","message":"New user registered: test_1780672400347_0.5052302520995577@example.com","userId":"a30bce6f-36aa-48f5-8dcf-3344806f9bf1"}
+{"timestamp":"2026-06-05T15:13:20.432Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a30bce6f-36aa-48f5-8dcf-3344806f9bf1","productId":"a6af9b07-ee9f-44e5-a66b-3a8788cc634d","quantity":1,"expiresAt":"2026-06-05T15:18:20.432Z"}
+{"timestamp":"2026-06-05T15:13:20.443Z","level":"info","message":"Reservation created successfully: 0b29aecd-1029-40e9-9545-4404322fbe21","userId":"a30bce6f-36aa-48f5-8dcf-3344806f9bf1","productId":"a6af9b07-ee9f-44e5-a66b-3a8788cc634d","quantity":1,"expiresAt":"2026-06-05T15:18:20.432Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:20.532Z","level":"info","message":"New user registered: test_1780672400453_0.2649762818171604@example.com","userId":"4b7950f4-02c8-45f5-9e7d-e5cf290e9351"}
+{"timestamp":"2026-06-05T15:13:20.534Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"4b7950f4-02c8-45f5-9e7d-e5cf290e9351","productId":"non-existent-id","quantity":1,"expiresAt":"2026-06-05T15:18:20.534Z"}
+{"timestamp":"2026-06-05T15:13:20.537Z","level":"error","message":"Failed to create reservation","error":{},"userId":"4b7950f4-02c8-45f5-9e7d-e5cf290e9351","productId":"non-existent-id","quantity":1}
+{"timestamp":"2026-06-05T15:13:20.670Z","level":"info","message":"New user registered: test_1780672400607_0.5046649199504993@example.com","userId":"f9c5431e-84fd-4924-b7dd-851fa7956fee"}
+{"timestamp":"2026-06-05T15:13:20.672Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"f9c5431e-84fd-4924-b7dd-851fa7956fee","productId":"b271df3c-a768-45a3-b3b1-a98b8c1e1ddd","quantity":20,"expiresAt":"2026-06-05T15:18:20.672Z"}
+{"timestamp":"2026-06-05T15:13:20.675Z","level":"error","message":"Failed to create reservation","error":{},"userId":"f9c5431e-84fd-4924-b7dd-851fa7956fee","productId":"b271df3c-a768-45a3-b3b1-a98b8c1e1ddd","quantity":20}
+{"timestamp":"2026-06-05T15:13:20.765Z","level":"info","message":"New user registered: test_1780672400687_0.55374510963683@example.com","userId":"2bb102b3-81db-4ba1-b05d-bd4faa7eadb4"}
+{"timestamp":"2026-06-05T15:13:20.768Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"2bb102b3-81db-4ba1-b05d-bd4faa7eadb4","productId":"0529a5a2-3052-4815-b464-10b950a1ed1d","quantity":1,"expiresAt":"2026-06-05T15:18:20.767Z"}
+{"timestamp":"2026-06-05T15:13:20.774Z","level":"info","message":"Reservation created successfully: 188f6198-c696-46d6-9d64-5156a3ae30c0","userId":"2bb102b3-81db-4ba1-b05d-bd4faa7eadb4","productId":"0529a5a2-3052-4815-b464-10b950a1ed1d","quantity":1,"expiresAt":"2026-06-05T15:18:20.767Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:20.774Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"2bb102b3-81db-4ba1-b05d-bd4faa7eadb4","productId":"0529a5a2-3052-4815-b464-10b950a1ed1d","quantity":1,"expiresAt":"2026-06-05T15:18:20.774Z"}
+{"timestamp":"2026-06-05T15:13:20.779Z","level":"error","message":"Failed to create reservation","error":{},"userId":"2bb102b3-81db-4ba1-b05d-bd4faa7eadb4","productId":"0529a5a2-3052-4815-b464-10b950a1ed1d","quantity":1}
+{"timestamp":"2026-06-05T15:13:20.855Z","level":"info","message":"New user registered: test_1780672400787_0.5909184942537165@example.com","userId":"444e1329-035e-40a3-99a9-481978b743c5"}
+{"timestamp":"2026-06-05T15:13:20.857Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"444e1329-035e-40a3-99a9-481978b743c5","productId":"dc5c2aa9-e94c-44ca-8962-3bde27c73b26","quantity":1,"expiresAt":"2026-06-05T15:18:20.857Z"}
+{"timestamp":"2026-06-05T15:13:20.865Z","level":"info","message":"Reservation created successfully: aba4f60d-72ad-4f7b-8749-2c32fffb95e7","userId":"444e1329-035e-40a3-99a9-481978b743c5","productId":"dc5c2aa9-e94c-44ca-8962-3bde27c73b26","quantity":1,"expiresAt":"2026-06-05T15:18:20.857Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:13:20.873Z","level":"info","message":"Checkout completed successfully: e2a4a196-d29f-4494-a970-7bf3cf2f2f83","reservationId":"aba4f60d-72ad-4f7b-8749-2c32fffb95e7"}
+{"timestamp":"2026-06-05T15:13:20.952Z","level":"info","message":"New user registered: test_1780672400881_0.8372056245994244@example.com","userId":"be05f3a7-1856-4bda-a169-085147c901d8"}
+{"timestamp":"2026-06-05T15:13:20.956Z","level":"error","message":"Checkout failed","error":{},"reservationId":"non-existent-id"}
+{"timestamp":"2026-06-05T15:13:21.042Z","level":"info","message":"New user registered: test_1780672400959_0.6958215177074858@example.com","userId":"1f3d58d6-5b0c-448b-addb-2cdd09620efa"}
+{"timestamp":"2026-06-05T15:13:21.046Z","level":"error","message":"Checkout failed","error":{},"reservationId":"3c504096-6341-4fef-8566-cfe89f379bfb"}
+{"timestamp":"2026-06-05T15:14:00.025Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:14:00.088Z","level":"info","message":"Found 1 expired reservations"}
+{"timestamp":"2026-06-05T15:14:00.146Z","level":"info","message":"Expired 1 reservations and restored stock - took 121ms"}
+{"timestamp":"2026-06-05T15:14:55.375Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T15:14:55.395Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T15:14:55.396Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T15:14:55.398Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T15:14:55.399Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T15:14:55.399Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T15:14:55.400Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T15:14:55.400Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T15:14:55.400Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T15:15:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:15:00.189Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:15:00.190Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 168ms"}
+{"timestamp":"2026-06-05T15:15:22.919Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T15:15:22.940Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T15:15:22.940Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T15:15:22.943Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T15:15:22.945Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T15:15:22.945Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T15:15:22.946Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T15:15:22.946Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T15:15:22.947Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T15:15:37.205Z","level":"info","message":"New user registered: user_1780672537124_0_0.23023705945651862@example.com","userId":"44dfcb13-ea78-4452-b28b-aea5dee4ac03"}
+{"timestamp":"2026-06-05T15:15:37.206Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"44dfcb13-ea78-4452-b28b-aea5dee4ac03","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.206Z"}
+{"timestamp":"2026-06-05T15:15:37.234Z","level":"info","message":"Reservation created successfully: f6cce096-cb91-4b5c-9e8b-16a783156a49","userId":"44dfcb13-ea78-4452-b28b-aea5dee4ac03","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.206Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:15:37.320Z","level":"info","message":"New user registered: user_1780672537207_1_0.5310259744226378@example.com","userId":"a985a823-12ad-4114-a08d-3ce50248bfb6"}
+{"timestamp":"2026-06-05T15:15:37.321Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a985a823-12ad-4114-a08d-3ce50248bfb6","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.321Z"}
+{"timestamp":"2026-06-05T15:15:37.393Z","level":"info","message":"New user registered: user_1780672537321_2_0.09123106783082169@example.com","userId":"b783a813-5aff-42c1-8192-ad773020dc3b"}
+{"timestamp":"2026-06-05T15:15:37.393Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"b783a813-5aff-42c1-8192-ad773020dc3b","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.393Z"}
+{"timestamp":"2026-06-05T15:15:37.396Z","level":"info","message":"Reservation created successfully: 457ee84c-a43a-457e-a0ae-cd93a4edcd4b","userId":"a985a823-12ad-4114-a08d-3ce50248bfb6","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.321Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:15:37.402Z","level":"info","message":"Reservation created successfully: 16917319-1003-436b-bf7b-263a4f8e7730","userId":"b783a813-5aff-42c1-8192-ad773020dc3b","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.393Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:15:37.483Z","level":"info","message":"New user registered: user_1780672537393_3_0.7922043029213113@example.com","userId":"1dd7daf1-c816-4191-9043-e981276a7b4a"}
+{"timestamp":"2026-06-05T15:15:37.484Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"1dd7daf1-c816-4191-9043-e981276a7b4a","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.484Z"}
+{"timestamp":"2026-06-05T15:15:37.551Z","level":"info","message":"New user registered: user_1780672537484_4_0.28054769070622965@example.com","userId":"d6d4d4b1-57ce-4b20-aacb-f009f6ecf267"}
+{"timestamp":"2026-06-05T15:15:37.552Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"d6d4d4b1-57ce-4b20-aacb-f009f6ecf267","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.552Z"}
+{"timestamp":"2026-06-05T15:15:37.610Z","level":"info","message":"Reservation created successfully: daa55204-cf17-4337-9e3d-c4c8b565f597","userId":"1dd7daf1-c816-4191-9043-e981276a7b4a","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.484Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:15:37.614Z","level":"info","message":"New user registered: user_1780672537552_5_0.06557746130776909@example.com","userId":"308d8ff0-62c3-4b49-b5e0-3bd9f5f5b187"}
+{"timestamp":"2026-06-05T15:15:37.615Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"308d8ff0-62c3-4b49-b5e0-3bd9f5f5b187","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.615Z"}
+{"timestamp":"2026-06-05T15:15:37.674Z","level":"info","message":"Reservation created successfully: 5b435496-90dc-4306-a68f-034f396e7086","userId":"d6d4d4b1-57ce-4b20-aacb-f009f6ecf267","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.552Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:15:37.676Z","level":"error","message":"Failed to create reservation","error":{},"userId":"308d8ff0-62c3-4b49-b5e0-3bd9f5f5b187","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1}
+{"timestamp":"2026-06-05T15:15:37.678Z","level":"info","message":"New user registered: user_1780672537615_6_0.5257876894947353@example.com","userId":"3b76749d-f375-4f08-8674-ed27a6af0b96"}
+{"timestamp":"2026-06-05T15:15:37.678Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"3b76749d-f375-4f08-8674-ed27a6af0b96","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.678Z"}
+{"timestamp":"2026-06-05T15:15:37.740Z","level":"error","message":"Failed to create reservation","error":{},"userId":"3b76749d-f375-4f08-8674-ed27a6af0b96","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1}
+{"timestamp":"2026-06-05T15:15:37.743Z","level":"info","message":"New user registered: user_1780672537678_7_0.10638112454065074@example.com","userId":"f77a4f2b-15ee-4929-9530-eac0e93579e5"}
+{"timestamp":"2026-06-05T15:15:37.744Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"f77a4f2b-15ee-4929-9530-eac0e93579e5","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.744Z"}
+{"timestamp":"2026-06-05T15:15:37.804Z","level":"error","message":"Failed to create reservation","error":{},"userId":"f77a4f2b-15ee-4929-9530-eac0e93579e5","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1}
+{"timestamp":"2026-06-05T15:15:37.808Z","level":"info","message":"New user registered: user_1780672537744_8_0.7175054746038556@example.com","userId":"3557467f-062e-417e-9786-4044c79e6b67"}
+{"timestamp":"2026-06-05T15:15:37.808Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"3557467f-062e-417e-9786-4044c79e6b67","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.808Z"}
+{"timestamp":"2026-06-05T15:15:37.869Z","level":"error","message":"Failed to create reservation","error":{},"userId":"3557467f-062e-417e-9786-4044c79e6b67","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1}
+{"timestamp":"2026-06-05T15:15:37.872Z","level":"info","message":"New user registered: user_1780672537808_9_0.3734848438932572@example.com","userId":"aa8f671d-ce57-4bc4-af85-db410c3ebf8c"}
+{"timestamp":"2026-06-05T15:15:37.873Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"aa8f671d-ce57-4bc4-af85-db410c3ebf8c","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1,"expiresAt":"2026-06-05T15:20:37.873Z"}
+{"timestamp":"2026-06-05T15:15:37.874Z","level":"error","message":"Failed to create reservation","error":{},"userId":"aa8f671d-ce57-4bc4-af85-db410c3ebf8c","productId":"1a7cad1c-40c0-46d7-aa8b-755e04ab05cd","quantity":1}
+{"timestamp":"2026-06-05T15:15:37.947Z","level":"info","message":"New user registered: user_1780672537886_0_0.8915462550045818@example.com","userId":"02382f14-bd47-4990-83ec-0e1a82276ca7"}
+{"timestamp":"2026-06-05T15:15:37.947Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"02382f14-bd47-4990-83ec-0e1a82276ca7","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:37.947Z"}
+{"timestamp":"2026-06-05T15:15:38.017Z","level":"info","message":"New user registered: user_1780672537948_1_0.9251221825620684@example.com","userId":"ca15a404-8daa-4a07-b2a5-6159993bb321"}
+{"timestamp":"2026-06-05T15:15:38.018Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"ca15a404-8daa-4a07-b2a5-6159993bb321","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.018Z"}
+{"timestamp":"2026-06-05T15:15:38.078Z","level":"info","message":"Reservation created successfully: b1817f77-7a2a-4743-b400-3b9d7afc0ba3","userId":"02382f14-bd47-4990-83ec-0e1a82276ca7","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:37.947Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:15:38.080Z","level":"error","message":"Failed to create reservation","error":{},"userId":"ca15a404-8daa-4a07-b2a5-6159993bb321","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.082Z","level":"info","message":"New user registered: user_1780672538018_2_0.13625111153294722@example.com","userId":"4d83f91e-f369-4334-98df-70746a49444d"}
+{"timestamp":"2026-06-05T15:15:38.082Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"4d83f91e-f369-4334-98df-70746a49444d","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.082Z"}
+{"timestamp":"2026-06-05T15:15:38.140Z","level":"error","message":"Failed to create reservation","error":{},"userId":"4d83f91e-f369-4334-98df-70746a49444d","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.144Z","level":"info","message":"New user registered: user_1780672538082_3_0.5093585608131082@example.com","userId":"214d6d57-dcf2-4f9a-b7cd-bc5590eced74"}
+{"timestamp":"2026-06-05T15:15:38.145Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"214d6d57-dcf2-4f9a-b7cd-bc5590eced74","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.145Z"}
+{"timestamp":"2026-06-05T15:15:38.217Z","level":"error","message":"Failed to create reservation","error":{},"userId":"214d6d57-dcf2-4f9a-b7cd-bc5590eced74","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.220Z","level":"info","message":"New user registered: user_1780672538145_4_0.9383397478146664@example.com","userId":"504c9f75-f42e-488c-94ed-64b59ba5cc83"}
+{"timestamp":"2026-06-05T15:15:38.221Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"504c9f75-f42e-488c-94ed-64b59ba5cc83","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.221Z"}
+{"timestamp":"2026-06-05T15:15:38.280Z","level":"error","message":"Failed to create reservation","error":{},"userId":"504c9f75-f42e-488c-94ed-64b59ba5cc83","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.281Z","level":"info","message":"New user registered: user_1780672538221_5_0.30838730774140766@example.com","userId":"d0ece778-ab8d-46be-8bdb-698fe738ccff"}
+{"timestamp":"2026-06-05T15:15:38.281Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"d0ece778-ab8d-46be-8bdb-698fe738ccff","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.281Z"}
+{"timestamp":"2026-06-05T15:15:38.339Z","level":"error","message":"Failed to create reservation","error":{},"userId":"d0ece778-ab8d-46be-8bdb-698fe738ccff","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.343Z","level":"info","message":"New user registered: user_1780672538281_6_0.3789216129883788@example.com","userId":"6b725ea8-f540-4901-9fde-c60dfd46b805"}
+{"timestamp":"2026-06-05T15:15:38.343Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"6b725ea8-f540-4901-9fde-c60dfd46b805","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.343Z"}
+{"timestamp":"2026-06-05T15:15:38.405Z","level":"error","message":"Failed to create reservation","error":{},"userId":"6b725ea8-f540-4901-9fde-c60dfd46b805","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.409Z","level":"info","message":"New user registered: user_1780672538343_7_0.38251415552642754@example.com","userId":"1f988f2d-29d4-48ec-a303-ad1b2de1c9d8"}
+{"timestamp":"2026-06-05T15:15:38.409Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"1f988f2d-29d4-48ec-a303-ad1b2de1c9d8","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.409Z"}
+{"timestamp":"2026-06-05T15:15:38.469Z","level":"error","message":"Failed to create reservation","error":{},"userId":"1f988f2d-29d4-48ec-a303-ad1b2de1c9d8","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.472Z","level":"info","message":"New user registered: user_1780672538410_8_0.4679773408573711@example.com","userId":"0360d591-e14b-4220-8272-982fb1b628a3"}
+{"timestamp":"2026-06-05T15:15:38.473Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"0360d591-e14b-4220-8272-982fb1b628a3","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.473Z"}
+{"timestamp":"2026-06-05T15:15:38.537Z","level":"error","message":"Failed to create reservation","error":{},"userId":"0360d591-e14b-4220-8272-982fb1b628a3","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.540Z","level":"info","message":"New user registered: user_1780672538473_9_0.03372014989286676@example.com","userId":"b490df9b-d725-40ac-8f95-64658be2dbba"}
+{"timestamp":"2026-06-05T15:15:38.540Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"b490df9b-d725-40ac-8f95-64658be2dbba","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.540Z"}
+{"timestamp":"2026-06-05T15:15:38.600Z","level":"error","message":"Failed to create reservation","error":{},"userId":"b490df9b-d725-40ac-8f95-64658be2dbba","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.610Z","level":"info","message":"New user registered: user_1780672538541_10_0.47897410669711893@example.com","userId":"c0230697-7c7d-4980-a70f-6fa717a7480d"}
+{"timestamp":"2026-06-05T15:15:38.610Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"c0230697-7c7d-4980-a70f-6fa717a7480d","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.610Z"}
+{"timestamp":"2026-06-05T15:15:38.677Z","level":"error","message":"Failed to create reservation","error":{},"userId":"c0230697-7c7d-4980-a70f-6fa717a7480d","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.680Z","level":"info","message":"New user registered: user_1780672538613_11_0.7936602500604284@example.com","userId":"32aafff1-55f5-48d6-8207-80545ff63991"}
+{"timestamp":"2026-06-05T15:15:38.680Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"32aafff1-55f5-48d6-8207-80545ff63991","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.680Z"}
+{"timestamp":"2026-06-05T15:15:38.740Z","level":"error","message":"Failed to create reservation","error":{},"userId":"32aafff1-55f5-48d6-8207-80545ff63991","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.743Z","level":"info","message":"New user registered: user_1780672538680_12_0.6651001106784351@example.com","userId":"6a2007a6-eaff-40bd-969c-9cfce9b1b745"}
+{"timestamp":"2026-06-05T15:15:38.743Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"6a2007a6-eaff-40bd-969c-9cfce9b1b745","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.743Z"}
+{"timestamp":"2026-06-05T15:15:38.802Z","level":"error","message":"Failed to create reservation","error":{},"userId":"6a2007a6-eaff-40bd-969c-9cfce9b1b745","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.805Z","level":"info","message":"New user registered: user_1780672538743_13_0.01090364327675597@example.com","userId":"4c32760e-4b3c-4f22-9443-a85cd39a7a28"}
+{"timestamp":"2026-06-05T15:15:38.805Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"4c32760e-4b3c-4f22-9443-a85cd39a7a28","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.805Z"}
+{"timestamp":"2026-06-05T15:15:38.865Z","level":"error","message":"Failed to create reservation","error":{},"userId":"4c32760e-4b3c-4f22-9443-a85cd39a7a28","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.868Z","level":"info","message":"New user registered: user_1780672538806_14_0.0498284866613401@example.com","userId":"8c2e461c-0174-464a-ae1f-f33cf5b18674"}
+{"timestamp":"2026-06-05T15:15:38.868Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"8c2e461c-0174-464a-ae1f-f33cf5b18674","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.868Z"}
+{"timestamp":"2026-06-05T15:15:38.955Z","level":"error","message":"Failed to create reservation","error":{},"userId":"8c2e461c-0174-464a-ae1f-f33cf5b18674","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:38.961Z","level":"info","message":"New user registered: user_1780672538868_15_0.8886636409232076@example.com","userId":"32339038-60d7-4d71-a6cc-03ba80bcfddb"}
+{"timestamp":"2026-06-05T15:15:38.961Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"32339038-60d7-4d71-a6cc-03ba80bcfddb","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:38.961Z"}
+{"timestamp":"2026-06-05T15:15:39.030Z","level":"error","message":"Failed to create reservation","error":{},"userId":"32339038-60d7-4d71-a6cc-03ba80bcfddb","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:39.033Z","level":"info","message":"New user registered: user_1780672538962_16_0.8875708638394528@example.com","userId":"f4e89a09-6c01-441e-9709-538481bb82dd"}
+{"timestamp":"2026-06-05T15:15:39.034Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"f4e89a09-6c01-441e-9709-538481bb82dd","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:39.034Z"}
+{"timestamp":"2026-06-05T15:15:39.101Z","level":"error","message":"Failed to create reservation","error":{},"userId":"f4e89a09-6c01-441e-9709-538481bb82dd","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:39.104Z","level":"info","message":"New user registered: user_1780672539034_17_0.6171282072113007@example.com","userId":"aa3fbc17-f1b4-418d-85d1-768ebb879438"}
+{"timestamp":"2026-06-05T15:15:39.104Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"aa3fbc17-f1b4-418d-85d1-768ebb879438","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:39.104Z"}
+{"timestamp":"2026-06-05T15:15:39.168Z","level":"error","message":"Failed to create reservation","error":{},"userId":"aa3fbc17-f1b4-418d-85d1-768ebb879438","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:39.173Z","level":"info","message":"New user registered: user_1780672539104_18_0.27448680650421453@example.com","userId":"ebcd59e5-f342-4a11-bf13-5c5975682765"}
+{"timestamp":"2026-06-05T15:15:39.174Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"ebcd59e5-f342-4a11-bf13-5c5975682765","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:39.174Z"}
+{"timestamp":"2026-06-05T15:15:39.249Z","level":"error","message":"Failed to create reservation","error":{},"userId":"ebcd59e5-f342-4a11-bf13-5c5975682765","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:39.252Z","level":"info","message":"New user registered: user_1780672539174_19_0.32051486229096016@example.com","userId":"d8704555-292a-4083-8980-8b5e16d4a068"}
+{"timestamp":"2026-06-05T15:15:39.253Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"d8704555-292a-4083-8980-8b5e16d4a068","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1,"expiresAt":"2026-06-05T15:20:39.253Z"}
+{"timestamp":"2026-06-05T15:15:39.255Z","level":"error","message":"Failed to create reservation","error":{},"userId":"d8704555-292a-4083-8980-8b5e16d4a068","productId":"7f8f10b0-c36e-4cc9-a941-953cb2284c5f","quantity":1}
+{"timestamp":"2026-06-05T15:15:39.817Z","level":"info","message":"New user registered: test_1780672539748_0.6136985408493523@example.com","userId":"ba410b18-bd02-4592-86a6-1e634dde82a0"}
+{"timestamp":"2026-06-05T15:15:39.835Z","level":"info","message":"Found 1 expired reservations"}
+{"timestamp":"2026-06-05T15:15:39.958Z","level":"info","message":"New user registered: test_1780672539872_0.6743422982234866@example.com","userId":"2eb4d79b-fc06-4657-9a93-03723a0bdb79"}
+{"timestamp":"2026-06-05T15:15:39.960Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"2eb4d79b-fc06-4657-9a93-03723a0bdb79","productId":"1e26492d-34d6-4384-bd5a-4e19745b8617","quantity":1,"expiresAt":"2026-06-05T15:20:39.960Z"}
+{"timestamp":"2026-06-05T15:15:39.965Z","level":"info","message":"Reservation created successfully: d46b5467-1d63-4d80-9ea3-4cbd41ebf8ba","userId":"2eb4d79b-fc06-4657-9a93-03723a0bdb79","productId":"1e26492d-34d6-4384-bd5a-4e19745b8617","quantity":1,"expiresAt":"2026-06-05T15:20:39.960Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:15:39.967Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:15:40.035Z","level":"info","message":"New user registered: test_1780672539974_0.34293227197595844@example.com","userId":"92e7546e-ce26-46ce-ba5a-360f971ff03f"}
+{"timestamp":"2026-06-05T15:15:40.040Z","level":"info","message":"Found 2 expired reservations"}
+{"timestamp":"2026-06-05T15:15:40.313Z","level":"info","message":"New user registered: test_1780672540236_0.18703431217379296@example.com","userId":"72bd6322-75de-4b14-82a5-4921b0fe3259"}
+{"timestamp":"2026-06-05T15:15:40.316Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"72bd6322-75de-4b14-82a5-4921b0fe3259","productId":"4982b8dd-367d-42a4-b3ad-4bc4f6a3d2b6","quantity":1,"expiresAt":"2026-06-05T15:20:40.316Z"}
+{"timestamp":"2026-06-05T15:15:40.327Z","level":"info","message":"Reservation created successfully: 3f8535cc-c877-4111-b7bc-b1ecdbcc149e","userId":"72bd6322-75de-4b14-82a5-4921b0fe3259","productId":"4982b8dd-367d-42a4-b3ad-4bc4f6a3d2b6","quantity":1,"expiresAt":"2026-06-05T15:20:40.316Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:15:40.402Z","level":"info","message":"New user registered: test_1780672540333_0.4463148383805102@example.com","userId":"cb7b7bf1-e9b5-4a55-8455-1b43121c9587"}
+{"timestamp":"2026-06-05T15:15:40.404Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"cb7b7bf1-e9b5-4a55-8455-1b43121c9587","productId":"non-existent-id","quantity":1,"expiresAt":"2026-06-05T15:20:40.404Z"}
+{"timestamp":"2026-06-05T15:15:40.406Z","level":"error","message":"Failed to create reservation","error":{},"userId":"cb7b7bf1-e9b5-4a55-8455-1b43121c9587","productId":"non-existent-id","quantity":1}
+{"timestamp":"2026-06-05T15:15:40.554Z","level":"info","message":"New user registered: test_1780672540489_0.06667746585857248@example.com","userId":"ab8cc2e5-fbe4-45a3-b515-8ca9bfeb18c7"}
+{"timestamp":"2026-06-05T15:15:40.556Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"ab8cc2e5-fbe4-45a3-b515-8ca9bfeb18c7","productId":"9e6e6cd3-73dd-4398-90b0-2ee2f3ee83e2","quantity":20,"expiresAt":"2026-06-05T15:20:40.556Z"}
+{"timestamp":"2026-06-05T15:15:40.558Z","level":"error","message":"Failed to create reservation","error":{},"userId":"ab8cc2e5-fbe4-45a3-b515-8ca9bfeb18c7","productId":"9e6e6cd3-73dd-4398-90b0-2ee2f3ee83e2","quantity":20}
+{"timestamp":"2026-06-05T15:15:40.621Z","level":"info","message":"New user registered: test_1780672540561_0.325476657964636@example.com","userId":"d612aeb6-aee9-47a9-92b0-b53f19dd3f4c"}
+{"timestamp":"2026-06-05T15:15:40.623Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"d612aeb6-aee9-47a9-92b0-b53f19dd3f4c","productId":"2bb3e9e3-e117-4c56-8156-e0372eecaf47","quantity":1,"expiresAt":"2026-06-05T15:20:40.623Z"}
+{"timestamp":"2026-06-05T15:15:40.626Z","level":"info","message":"Reservation created successfully: 36ca331a-db28-448a-88f6-3d9cc0ee65db","userId":"d612aeb6-aee9-47a9-92b0-b53f19dd3f4c","productId":"2bb3e9e3-e117-4c56-8156-e0372eecaf47","quantity":1,"expiresAt":"2026-06-05T15:20:40.623Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:15:40.627Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"d612aeb6-aee9-47a9-92b0-b53f19dd3f4c","productId":"2bb3e9e3-e117-4c56-8156-e0372eecaf47","quantity":1,"expiresAt":"2026-06-05T15:20:40.627Z"}
+{"timestamp":"2026-06-05T15:15:40.630Z","level":"error","message":"Failed to create reservation","error":{},"userId":"d612aeb6-aee9-47a9-92b0-b53f19dd3f4c","productId":"2bb3e9e3-e117-4c56-8156-e0372eecaf47","quantity":1}
+{"timestamp":"2026-06-05T15:15:40.696Z","level":"info","message":"New user registered: test_1780672540635_0.9876272373780086@example.com","userId":"a91408ec-585b-4052-be5a-245127800054"}
+{"timestamp":"2026-06-05T15:15:40.698Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a91408ec-585b-4052-be5a-245127800054","productId":"3eda9f90-79d5-4984-8c82-2e2adf123746","quantity":1,"expiresAt":"2026-06-05T15:20:40.698Z"}
+{"timestamp":"2026-06-05T15:15:40.702Z","level":"info","message":"Reservation created successfully: a92dc643-9b2a-4b3e-a7a9-59ff48e4bfe8","userId":"a91408ec-585b-4052-be5a-245127800054","productId":"3eda9f90-79d5-4984-8c82-2e2adf123746","quantity":1,"expiresAt":"2026-06-05T15:20:40.698Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T15:15:40.711Z","level":"info","message":"Checkout completed successfully: ba6acb22-bdcb-4af7-bc4b-a061767afdf9","reservationId":"a92dc643-9b2a-4b3e-a7a9-59ff48e4bfe8"}
+{"timestamp":"2026-06-05T15:15:40.785Z","level":"info","message":"New user registered: test_1780672540718_0.40548119335034816@example.com","userId":"790006ba-cb0e-4494-97c0-f77da9263e30"}
+{"timestamp":"2026-06-05T15:15:40.788Z","level":"error","message":"Checkout failed","error":{},"reservationId":"non-existent-id"}
+{"timestamp":"2026-06-05T15:15:40.864Z","level":"info","message":"New user registered: test_1780672540793_0.29433367413276446@example.com","userId":"8997af67-ff29-4187-9eeb-3d4d4f679eab"}
+{"timestamp":"2026-06-05T15:15:40.869Z","level":"error","message":"Checkout failed","error":{},"reservationId":"d8905dc3-83bf-402e-96f2-c8cbcc3a3766"}
+{"timestamp":"2026-06-05T15:16:00.043Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:16:00.158Z","level":"info","message":"Found 1 expired reservations"}
+{"timestamp":"2026-06-05T15:16:00.177Z","level":"info","message":"Expired 1 reservations and restored stock - took 134ms"}
+{"timestamp":"2026-06-05T15:17:00.089Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:17:00.143Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:17:00.146Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 57ms"}
+{"timestamp":"2026-06-05T15:18:00.080Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:18:00.139Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:18:00.139Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 59ms"}
+{"timestamp":"2026-06-05T15:19:00.074Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:19:00.123Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:19:00.124Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 51ms"}
+{"timestamp":"2026-06-05T15:20:00.069Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:20:00.121Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:20:00.121Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 52ms"}
+{"timestamp":"2026-06-05T15:21:00.078Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:21:00.293Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:21:00.293Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 215ms"}
+{"timestamp":"2026-06-05T15:22:00.032Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:22:00.198Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:22:00.198Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 166ms"}
+{"timestamp":"2026-06-05T15:23:00.028Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:23:00.247Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:23:00.247Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 219ms"}
+{"timestamp":"2026-06-05T15:24:00.033Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:24:00.082Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:24:00.082Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 49ms"}
+{"timestamp":"2026-06-05T15:25:00.067Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T15:25:00.120Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T15:25:00.121Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 54ms"}
+{"timestamp":"2026-06-05T16:47:00.035Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T16:47:00.105Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T16:47:00.106Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 71ms"}
+{"timestamp":"2026-06-05T16:48:00.030Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T16:48:00.085Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T16:48:00.086Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 56ms"}
+{"timestamp":"2026-06-05T16:49:00.026Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T16:49:00.082Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T16:49:00.082Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 56ms"}
+{"timestamp":"2026-06-05T16:50:00.027Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T16:50:00.082Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T16:50:00.083Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 56ms"}
+{"timestamp":"2026-06-05T16:52:00.032Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T16:52:00.086Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T16:52:00.087Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 56ms"}
+{"timestamp":"2026-06-05T16:53:00.019Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T16:53:00.076Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T16:53:00.077Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 58ms"}
+{"timestamp":"2026-06-05T16:54:00.019Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T16:54:00.075Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T16:54:00.076Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 57ms"}
+{"timestamp":"2026-06-05T16:55:00.025Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T16:55:00.139Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T16:55:00.140Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 115ms"}
+{"timestamp":"2026-06-05T16:55:20.038Z","level":"info","message":"New user registered: user_1780678519932_0_0.264088684100916@example.com","userId":"f869b6dd-325e-49a8-8633-cc25d0a67418"}
+{"timestamp":"2026-06-05T16:55:20.040Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"f869b6dd-325e-49a8-8633-cc25d0a67418","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.040Z"}
+{"timestamp":"2026-06-05T16:55:20.070Z","level":"info","message":"Reservation created successfully: ac265532-c830-4b60-b038-58ac9bcd6e01","userId":"f869b6dd-325e-49a8-8633-cc25d0a67418","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.040Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T16:55:20.146Z","level":"info","message":"New user registered: user_1780678520040_1_0.08045069893160361@example.com","userId":"cedf8497-7354-4bb2-b37d-0322149d7c5c"}
+{"timestamp":"2026-06-05T16:55:20.147Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"cedf8497-7354-4bb2-b37d-0322149d7c5c","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.147Z"}
+{"timestamp":"2026-06-05T16:55:20.226Z","level":"info","message":"New user registered: user_1780678520147_2_0.039298458513081114@example.com","userId":"2dc54d66-c806-4955-9e25-0edadb405b9e"}
+{"timestamp":"2026-06-05T16:55:20.226Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"2dc54d66-c806-4955-9e25-0edadb405b9e","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.226Z"}
+{"timestamp":"2026-06-05T16:55:20.229Z","level":"info","message":"Reservation created successfully: 4bd128ba-659e-45fa-a792-377abeddd382","userId":"cedf8497-7354-4bb2-b37d-0322149d7c5c","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.147Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T16:55:20.233Z","level":"info","message":"Reservation created successfully: 47c80823-ea13-4fe8-af8d-cb4205a1c018","userId":"2dc54d66-c806-4955-9e25-0edadb405b9e","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.226Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T16:55:20.439Z","level":"info","message":"New user registered: user_1780678520226_3_0.31843701706752126@example.com","userId":"59cd13d6-21ec-44bb-a5ef-c2b900466996"}
+{"timestamp":"2026-06-05T16:55:20.439Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"59cd13d6-21ec-44bb-a5ef-c2b900466996","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.439Z"}
+{"timestamp":"2026-06-05T16:55:20.504Z","level":"info","message":"New user registered: user_1780678520440_4_0.23730759662155676@example.com","userId":"59659a42-87df-4af3-8ce2-289017c30792"}
+{"timestamp":"2026-06-05T16:55:20.505Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"59659a42-87df-4af3-8ce2-289017c30792","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.505Z"}
+{"timestamp":"2026-06-05T16:55:20.565Z","level":"info","message":"Reservation created successfully: c0a64f8f-00ed-493a-a293-05bc434f98fb","userId":"59cd13d6-21ec-44bb-a5ef-c2b900466996","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.439Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T16:55:20.569Z","level":"info","message":"New user registered: user_1780678520505_5_0.957913469750123@example.com","userId":"14067c63-77b9-4ac6-9c33-92df5bce2cf7"}
+{"timestamp":"2026-06-05T16:55:20.569Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"14067c63-77b9-4ac6-9c33-92df5bce2cf7","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.569Z"}
+{"timestamp":"2026-06-05T16:55:20.570Z","level":"info","message":"Reservation created successfully: 7bfbbdda-2de6-4479-a19d-0369afa8cc74","userId":"59659a42-87df-4af3-8ce2-289017c30792","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.505Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T16:55:20.631Z","level":"error","message":"Failed to create reservation","error":{},"userId":"14067c63-77b9-4ac6-9c33-92df5bce2cf7","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1}
+{"timestamp":"2026-06-05T16:55:20.634Z","level":"info","message":"New user registered: user_1780678520569_6_0.7587249333778996@example.com","userId":"888d652e-175a-4959-9d43-ea49ad704f5d"}
+{"timestamp":"2026-06-05T16:55:20.634Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"888d652e-175a-4959-9d43-ea49ad704f5d","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.634Z"}
+{"timestamp":"2026-06-05T16:55:20.719Z","level":"error","message":"Failed to create reservation","error":{},"userId":"888d652e-175a-4959-9d43-ea49ad704f5d","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1}
+{"timestamp":"2026-06-05T16:55:20.722Z","level":"info","message":"New user registered: user_1780678520634_7_0.06977953336733012@example.com","userId":"9c8007b8-f70d-4722-af22-135966b514be"}
+{"timestamp":"2026-06-05T16:55:20.723Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"9c8007b8-f70d-4722-af22-135966b514be","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.723Z"}
+{"timestamp":"2026-06-05T16:55:20.782Z","level":"error","message":"Failed to create reservation","error":{},"userId":"9c8007b8-f70d-4722-af22-135966b514be","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1}
+{"timestamp":"2026-06-05T16:55:20.785Z","level":"info","message":"New user registered: user_1780678520723_8_0.48008175613373516@example.com","userId":"0b9a941f-2798-4f5c-8ebf-90fb73318d69"}
+{"timestamp":"2026-06-05T16:55:20.785Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"0b9a941f-2798-4f5c-8ebf-90fb73318d69","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.785Z"}
+{"timestamp":"2026-06-05T16:55:20.860Z","level":"error","message":"Failed to create reservation","error":{},"userId":"0b9a941f-2798-4f5c-8ebf-90fb73318d69","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1}
+{"timestamp":"2026-06-05T16:55:20.864Z","level":"info","message":"New user registered: user_1780678520786_9_0.6051325732013557@example.com","userId":"739f8d67-d969-4a2e-b588-2e39345f9a0f"}
+{"timestamp":"2026-06-05T16:55:20.864Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"739f8d67-d969-4a2e-b588-2e39345f9a0f","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1,"expiresAt":"2026-06-05T17:00:20.864Z"}
+{"timestamp":"2026-06-05T16:55:20.868Z","level":"error","message":"Failed to create reservation","error":{},"userId":"739f8d67-d969-4a2e-b588-2e39345f9a0f","productId":"867f3e21-a98b-4644-b78a-d4e58f5f7a12","quantity":1}
+{"timestamp":"2026-06-05T16:55:20.948Z","level":"info","message":"New user registered: user_1780678520879_0_0.03063737221416818@example.com","userId":"a27964b8-c442-4ebd-b434-40d34a3ebaec"}
+{"timestamp":"2026-06-05T16:55:20.948Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a27964b8-c442-4ebd-b434-40d34a3ebaec","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:20.948Z"}
+{"timestamp":"2026-06-05T16:55:21.012Z","level":"info","message":"New user registered: user_1780678520949_1_0.07259327902847912@example.com","userId":"d1e00792-a46f-4815-a1bc-092066fdd77f"}
+{"timestamp":"2026-06-05T16:55:21.012Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"d1e00792-a46f-4815-a1bc-092066fdd77f","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.012Z"}
+{"timestamp":"2026-06-05T16:55:21.072Z","level":"info","message":"Reservation created successfully: f5f475d7-5265-4626-8127-c69bca3b94ba","userId":"a27964b8-c442-4ebd-b434-40d34a3ebaec","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:20.948Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T16:55:21.074Z","level":"error","message":"Failed to create reservation","error":{},"userId":"d1e00792-a46f-4815-a1bc-092066fdd77f","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.076Z","level":"info","message":"New user registered: user_1780678521013_2_0.3967969943020546@example.com","userId":"fd6d59ed-6497-4230-a39c-579d24dd7238"}
+{"timestamp":"2026-06-05T16:55:21.076Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"fd6d59ed-6497-4230-a39c-579d24dd7238","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.076Z"}
+{"timestamp":"2026-06-05T16:55:21.145Z","level":"error","message":"Failed to create reservation","error":{},"userId":"fd6d59ed-6497-4230-a39c-579d24dd7238","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.148Z","level":"info","message":"New user registered: user_1780678521076_3_0.9617180233801248@example.com","userId":"cd35f0a0-dce7-4613-becd-2b9701657b0d"}
+{"timestamp":"2026-06-05T16:55:21.148Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"cd35f0a0-dce7-4613-becd-2b9701657b0d","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.148Z"}
+{"timestamp":"2026-06-05T16:55:21.211Z","level":"error","message":"Failed to create reservation","error":{},"userId":"cd35f0a0-dce7-4613-becd-2b9701657b0d","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.214Z","level":"info","message":"New user registered: user_1780678521148_4_0.6406666299547537@example.com","userId":"a031e227-9c0a-44fc-acf2-9131496336cf"}
+{"timestamp":"2026-06-05T16:55:21.214Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a031e227-9c0a-44fc-acf2-9131496336cf","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.214Z"}
+{"timestamp":"2026-06-05T16:55:21.289Z","level":"error","message":"Failed to create reservation","error":{},"userId":"a031e227-9c0a-44fc-acf2-9131496336cf","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.293Z","level":"info","message":"New user registered: user_1780678521214_5_0.7810481292025417@example.com","userId":"b3e85af5-ee20-4def-a375-1e730ed7d8c8"}
+{"timestamp":"2026-06-05T16:55:21.294Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"b3e85af5-ee20-4def-a375-1e730ed7d8c8","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.294Z"}
+{"timestamp":"2026-06-05T16:55:21.356Z","level":"error","message":"Failed to create reservation","error":{},"userId":"b3e85af5-ee20-4def-a375-1e730ed7d8c8","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.359Z","level":"info","message":"New user registered: user_1780678521294_6_0.3747813981060726@example.com","userId":"449d584e-f8de-4c7d-a34f-b228499750a7"}
+{"timestamp":"2026-06-05T16:55:21.360Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"449d584e-f8de-4c7d-a34f-b228499750a7","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.360Z"}
+{"timestamp":"2026-06-05T16:55:21.426Z","level":"error","message":"Failed to create reservation","error":{},"userId":"449d584e-f8de-4c7d-a34f-b228499750a7","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.427Z","level":"info","message":"New user registered: user_1780678521360_7_0.5047656415180728@example.com","userId":"4074e5ae-b271-40b0-b6be-2f82a6de65f5"}
+{"timestamp":"2026-06-05T16:55:21.428Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"4074e5ae-b271-40b0-b6be-2f82a6de65f5","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.427Z"}
+{"timestamp":"2026-06-05T16:55:21.489Z","level":"error","message":"Failed to create reservation","error":{},"userId":"4074e5ae-b271-40b0-b6be-2f82a6de65f5","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.492Z","level":"info","message":"New user registered: user_1780678521428_8_0.39703830863775@example.com","userId":"77c397e7-9b40-48aa-a908-e046f6e7389e"}
+{"timestamp":"2026-06-05T16:55:21.492Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"77c397e7-9b40-48aa-a908-e046f6e7389e","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.492Z"}
+{"timestamp":"2026-06-05T16:55:21.552Z","level":"error","message":"Failed to create reservation","error":{},"userId":"77c397e7-9b40-48aa-a908-e046f6e7389e","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.556Z","level":"info","message":"New user registered: user_1780678521493_9_0.26384802492957493@example.com","userId":"5cf0663b-f3a3-4e21-84a2-04af2d4d7683"}
+{"timestamp":"2026-06-05T16:55:21.556Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"5cf0663b-f3a3-4e21-84a2-04af2d4d7683","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.556Z"}
+{"timestamp":"2026-06-05T16:55:21.631Z","level":"error","message":"Failed to create reservation","error":{},"userId":"5cf0663b-f3a3-4e21-84a2-04af2d4d7683","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.636Z","level":"info","message":"New user registered: user_1780678521556_10_0.8761073082701265@example.com","userId":"40d4ebe3-28ab-44db-887f-22c514297777"}
+{"timestamp":"2026-06-05T16:55:21.636Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"40d4ebe3-28ab-44db-887f-22c514297777","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.636Z"}
+{"timestamp":"2026-06-05T16:55:21.700Z","level":"error","message":"Failed to create reservation","error":{},"userId":"40d4ebe3-28ab-44db-887f-22c514297777","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.703Z","level":"info","message":"New user registered: user_1780678521637_11_0.16819364242466883@example.com","userId":"be9f2abb-519e-4528-bbb1-21698496759f"}
+{"timestamp":"2026-06-05T16:55:21.703Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"be9f2abb-519e-4528-bbb1-21698496759f","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.703Z"}
+{"timestamp":"2026-06-05T16:55:21.762Z","level":"error","message":"Failed to create reservation","error":{},"userId":"be9f2abb-519e-4528-bbb1-21698496759f","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.766Z","level":"info","message":"New user registered: user_1780678521704_12_0.2917957911075191@example.com","userId":"02817cab-79d8-4ca9-b4a0-a1a8c33aa316"}
+{"timestamp":"2026-06-05T16:55:21.767Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"02817cab-79d8-4ca9-b4a0-a1a8c33aa316","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.767Z"}
+{"timestamp":"2026-06-05T16:55:21.829Z","level":"error","message":"Failed to create reservation","error":{},"userId":"02817cab-79d8-4ca9-b4a0-a1a8c33aa316","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.832Z","level":"info","message":"New user registered: user_1780678521767_13_0.7548733505005714@example.com","userId":"eabd0c9f-c88a-459a-bfc1-a3e90cc691af"}
+{"timestamp":"2026-06-05T16:55:21.832Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"eabd0c9f-c88a-459a-bfc1-a3e90cc691af","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.832Z"}
+{"timestamp":"2026-06-05T16:55:21.893Z","level":"error","message":"Failed to create reservation","error":{},"userId":"eabd0c9f-c88a-459a-bfc1-a3e90cc691af","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.895Z","level":"info","message":"New user registered: user_1780678521832_14_0.022203511622398198@example.com","userId":"6b996d08-2c75-4acf-ac30-2d7f41d71304"}
+{"timestamp":"2026-06-05T16:55:21.896Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"6b996d08-2c75-4acf-ac30-2d7f41d71304","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.896Z"}
+{"timestamp":"2026-06-05T16:55:21.958Z","level":"error","message":"Failed to create reservation","error":{},"userId":"6b996d08-2c75-4acf-ac30-2d7f41d71304","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:21.961Z","level":"info","message":"New user registered: user_1780678521896_15_0.7641588482361505@example.com","userId":"2e5e077f-c3b6-445a-8c86-0e16713f7cc4"}
+{"timestamp":"2026-06-05T16:55:21.962Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"2e5e077f-c3b6-445a-8c86-0e16713f7cc4","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:21.962Z"}
+{"timestamp":"2026-06-05T16:55:22.034Z","level":"error","message":"Failed to create reservation","error":{},"userId":"2e5e077f-c3b6-445a-8c86-0e16713f7cc4","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:22.038Z","level":"info","message":"New user registered: user_1780678521962_16_0.498092141792535@example.com","userId":"a0bee42e-33b2-4823-aafa-26836ab2fd27"}
+{"timestamp":"2026-06-05T16:55:22.039Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"a0bee42e-33b2-4823-aafa-26836ab2fd27","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:22.038Z"}
+{"timestamp":"2026-06-05T16:55:22.137Z","level":"error","message":"Failed to create reservation","error":{},"userId":"a0bee42e-33b2-4823-aafa-26836ab2fd27","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:22.140Z","level":"info","message":"New user registered: user_1780678522039_17_0.32676040368791837@example.com","userId":"1c7bbb7b-fc9c-483e-af99-409ac0af0074"}
+{"timestamp":"2026-06-05T16:55:22.141Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"1c7bbb7b-fc9c-483e-af99-409ac0af0074","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:22.141Z"}
+{"timestamp":"2026-06-05T16:55:22.203Z","level":"error","message":"Failed to create reservation","error":{},"userId":"1c7bbb7b-fc9c-483e-af99-409ac0af0074","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:22.207Z","level":"info","message":"New user registered: user_1780678522141_18_0.7560809765326826@example.com","userId":"60852280-3085-4d21-b373-9fc57a1bfc91"}
+{"timestamp":"2026-06-05T16:55:22.207Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"60852280-3085-4d21-b373-9fc57a1bfc91","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:22.207Z"}
+{"timestamp":"2026-06-05T16:55:22.267Z","level":"error","message":"Failed to create reservation","error":{},"userId":"60852280-3085-4d21-b373-9fc57a1bfc91","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:22.272Z","level":"info","message":"New user registered: user_1780678522207_19_0.6998311434881499@example.com","userId":"03851410-e7e7-49a2-8354-144935859fdd"}
+{"timestamp":"2026-06-05T16:55:22.272Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"03851410-e7e7-49a2-8354-144935859fdd","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1,"expiresAt":"2026-06-05T17:00:22.272Z"}
+{"timestamp":"2026-06-05T16:55:22.275Z","level":"error","message":"Failed to create reservation","error":{},"userId":"03851410-e7e7-49a2-8354-144935859fdd","productId":"03c2d2f7-3d68-4aa9-9d51-c3124b015fd3","quantity":1}
+{"timestamp":"2026-06-05T16:55:22.570Z","level":"info","message":"New user registered: test_1780678522478_0.00424781761553783@example.com","userId":"79b5c8cd-c1b9-4872-a93f-4a7eadc875e8"}
+{"timestamp":"2026-06-05T16:55:22.572Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"79b5c8cd-c1b9-4872-a93f-4a7eadc875e8","productId":"4690463b-4eb3-48eb-a554-d8d050a09ff7","quantity":1,"expiresAt":"2026-06-05T17:00:22.572Z"}
+{"timestamp":"2026-06-05T16:55:22.585Z","level":"info","message":"Reservation created successfully: 0de0b356-385d-4c81-aaf3-f2102496d391","userId":"79b5c8cd-c1b9-4872-a93f-4a7eadc875e8","productId":"4690463b-4eb3-48eb-a554-d8d050a09ff7","quantity":1,"expiresAt":"2026-06-05T17:00:22.572Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T16:55:22.666Z","level":"info","message":"New user registered: test_1780678522599_0.2722982824513651@example.com","userId":"e1f2cb8b-a618-4a3b-b88e-c8a64d1a71f0"}
+{"timestamp":"2026-06-05T16:55:22.668Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"e1f2cb8b-a618-4a3b-b88e-c8a64d1a71f0","productId":"non-existent-id","quantity":1,"expiresAt":"2026-06-05T17:00:22.668Z"}
+{"timestamp":"2026-06-05T16:55:22.669Z","level":"error","message":"Failed to create reservation","error":{},"userId":"e1f2cb8b-a618-4a3b-b88e-c8a64d1a71f0","productId":"non-existent-id","quantity":1}
+{"timestamp":"2026-06-05T16:55:22.803Z","level":"info","message":"New user registered: test_1780678522743_0.2772306447572608@example.com","userId":"840a1a08-5576-4b0e-90e9-bbc038f21532"}
+{"timestamp":"2026-06-05T16:55:22.805Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"840a1a08-5576-4b0e-90e9-bbc038f21532","productId":"a2d22049-82f5-4573-9484-1751a0c960b6","quantity":20,"expiresAt":"2026-06-05T17:00:22.805Z"}
+{"timestamp":"2026-06-05T16:55:22.807Z","level":"error","message":"Failed to create reservation","error":{},"userId":"840a1a08-5576-4b0e-90e9-bbc038f21532","productId":"a2d22049-82f5-4573-9484-1751a0c960b6","quantity":20}
+{"timestamp":"2026-06-05T16:55:22.878Z","level":"info","message":"New user registered: test_1780678522812_0.7036060686223227@example.com","userId":"058e34c6-a031-40c3-b4d8-748b6ec36be1"}
+{"timestamp":"2026-06-05T16:55:22.880Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"058e34c6-a031-40c3-b4d8-748b6ec36be1","productId":"a2ff7c38-c599-4611-b66d-0bd30c859449","quantity":1,"expiresAt":"2026-06-05T17:00:22.880Z"}
+{"timestamp":"2026-06-05T16:55:22.884Z","level":"info","message":"Reservation created successfully: 0833bdcf-4ca8-41bf-87ac-97a5bbcad493","userId":"058e34c6-a031-40c3-b4d8-748b6ec36be1","productId":"a2ff7c38-c599-4611-b66d-0bd30c859449","quantity":1,"expiresAt":"2026-06-05T17:00:22.880Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T16:55:22.885Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"058e34c6-a031-40c3-b4d8-748b6ec36be1","productId":"a2ff7c38-c599-4611-b66d-0bd30c859449","quantity":1,"expiresAt":"2026-06-05T17:00:22.885Z"}
+{"timestamp":"2026-06-05T16:55:22.887Z","level":"error","message":"Failed to create reservation","error":{},"userId":"058e34c6-a031-40c3-b4d8-748b6ec36be1","productId":"a2ff7c38-c599-4611-b66d-0bd30c859449","quantity":1}
+{"timestamp":"2026-06-05T16:55:22.952Z","level":"info","message":"New user registered: test_1780678522891_0.8178912566622467@example.com","userId":"347d67c3-d7c5-4c83-94eb-967c6dc11855"}
+{"timestamp":"2026-06-05T16:55:22.954Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"347d67c3-d7c5-4c83-94eb-967c6dc11855","productId":"a5673b94-1a2c-4386-911e-af4843882bba","quantity":1,"expiresAt":"2026-06-05T17:00:22.954Z"}
+{"timestamp":"2026-06-05T16:55:22.958Z","level":"info","message":"Reservation created successfully: aa2661dc-eaa3-4b16-a651-bda1ad1feda4","userId":"347d67c3-d7c5-4c83-94eb-967c6dc11855","productId":"a5673b94-1a2c-4386-911e-af4843882bba","quantity":1,"expiresAt":"2026-06-05T17:00:22.954Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T16:55:22.970Z","level":"info","message":"Checkout completed successfully: 4b41d504-ca63-47c9-802b-b6dde5f50c77","reservationId":"aa2661dc-eaa3-4b16-a651-bda1ad1feda4"}
+{"timestamp":"2026-06-05T16:55:23.042Z","level":"info","message":"New user registered: test_1780678522974_0.9776875522063408@example.com","userId":"278e761e-05e9-44ca-b471-536195f1365d"}
+{"timestamp":"2026-06-05T16:55:23.044Z","level":"error","message":"Checkout failed","error":{},"reservationId":"non-existent-id"}
+{"timestamp":"2026-06-05T16:55:23.107Z","level":"info","message":"New user registered: test_1780678523048_0.755803694171199@example.com","userId":"9af383cc-8621-480f-8639-59583db3607f"}
+{"timestamp":"2026-06-05T16:55:23.110Z","level":"error","message":"Checkout failed","error":{},"reservationId":"8d580b9a-d5fe-40e6-863e-61ab3d345180"}
+{"timestamp":"2026-06-05T16:55:23.351Z","level":"info","message":"New user registered: test_1780678523277_0.42894800451420223@example.com","userId":"6ba4b9e9-e430-4e4b-8231-37efef59fc6a"}
+{"timestamp":"2026-06-05T16:55:23.362Z","level":"info","message":"Found 1 expired reservations"}
+{"timestamp":"2026-06-05T16:55:23.446Z","level":"info","message":"New user registered: test_1780678523378_0.5487625880607985@example.com","userId":"f71cea44-33b5-4a1b-a8de-4e519d4c8210"}
+{"timestamp":"2026-06-05T16:55:23.448Z","level":"info","message":"Creating reservation with 5 minute expiration","userId":"f71cea44-33b5-4a1b-a8de-4e519d4c8210","productId":"0957aa1a-3c1c-40a9-9452-982e0b6391d4","quantity":1,"expiresAt":"2026-06-05T17:00:23.447Z"}
+{"timestamp":"2026-06-05T16:55:23.454Z","level":"info","message":"Reservation created successfully: 5b0e61ae-59ca-4274-aece-ae7a79e8642a","userId":"f71cea44-33b5-4a1b-a8de-4e519d4c8210","productId":"0957aa1a-3c1c-40a9-9452-982e0b6391d4","quantity":1,"expiresAt":"2026-06-05T17:00:23.447Z","expirationMinutes":5}
+{"timestamp":"2026-06-05T16:55:23.456Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T16:55:23.532Z","level":"info","message":"New user registered: test_1780678523463_0.4271621168267272@example.com","userId":"5285e610-b25f-4e7d-a636-99004dd87740"}
+{"timestamp":"2026-06-05T16:55:23.538Z","level":"info","message":"Found 2 expired reservations"}

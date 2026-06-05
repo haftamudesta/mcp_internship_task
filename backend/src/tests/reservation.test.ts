@@ -8,6 +8,7 @@ describe('Reservation Logic Tests', () => {
   let authService: AuthService;
   let testUser: TestUser;
   let testProduct: TestProduct;
+  let uniqueEmail: string;
 
   beforeAll(async () => {
     reservationService = new ReservationService();
@@ -15,7 +16,10 @@ describe('Reservation Logic Tests', () => {
   });
 
   beforeEach(async () => {
-    const registerResult = await authService.register('test@example.com', 'password123', 'Test User');
+    // Generate unique email for each test
+    uniqueEmail = `test_${Date.now()}_${Math.random()}@example.com`;
+    
+    const registerResult = await authService.register(uniqueEmail, 'password123', 'Test User');
     testUser = {
       user: registerResult.user,
       token: registerResult.token,
