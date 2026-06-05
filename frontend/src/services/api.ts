@@ -19,7 +19,7 @@ class ApiClient {
   constructor() {
     this.client = axios.create({
       baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3001',
-      timeout: 10000,
+      timeout: 30000, // 30 second timeout
       headers: {
         'Content-Type': 'application/json',
       },
@@ -81,7 +81,6 @@ class ApiClient {
     const response = await this.client.post<ApiResponse<AuthResponse>>('/api/auth/register', {
       email,
       password,
-      // No confirmPassword - backend schema doesn't have it
       name: name || undefined
     });
     
@@ -131,8 +130,20 @@ class ApiClient {
     return data.data;
   }
 
-  async createReservation(data: CreateReservationRequest): Promise<CreateReservationResponse> {
-    const response = await this.client.post<ApiResponse<CreateReservationResponse>>('/api/reservations', data);
+  async getProduct(id: string): Promise<Product> {
+    const response = await this.client.get<ApiResponse<Product>>(`/api/products/${id}`);
+    
+    const data = response.data;
+    if (!this.isSuccessResponse(data)) {
+      throw new Error(data.error || 'Failed to fetch product');
+    }
+    return data.data;
+  }
+
+  async createReservation(data: CreateReservationRequest, signal?: AbortSignal): Promise<CreateReservationResponse> {
+    const response = await this.client.post<ApiResponse<CreateReservationResponse>>('/api/reservations', data, {
+      signal
+    });
     
     const responseData = response.data;
     if (!this.isSuccessResponse(responseData)) {
@@ -141,8 +152,10 @@ class ApiClient {
     return responseData.data;
   }
 
-  async checkout(data: CheckoutRequest): Promise<CheckoutResponse> {
-    const response = await this.client.post<ApiResponse<CheckoutResponse>>('/api/checkout', data);
+  async checkout(data: CheckoutRequest, signal?: AbortSignal): Promise<CheckoutResponse> {
+    const response = await this.client.post<ApiResponse<CheckoutResponse>>('/api/reservations/checkout', data, {
+      signal
+    });
     
     const responseData = response.data;
     if (!this.isSuccessResponse(responseData)) {

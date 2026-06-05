@@ -44,13 +44,11 @@ class Server {
     this.app.use(express.json({ limit: '10mb' }));
     this.app.use(express.urlencoded({ extended: true, limit: '10mb' }));
     
-    // Logging middleware
     this.app.use(requestLogger);
     
-    // Global rate limiting
     const globalLimiter = rateLimit({
-      windowMs: 15 * 60 * 1000, // 15 minutes
-      max: 100, // 100 requests per windowMs
+      windowMs: 45 * 60 * 1000, // 15 minutes
+      max: 200, // 100 requests per windowMs
       message: {
         success: false,
         error: 'Too many requests',
@@ -63,7 +61,6 @@ class Server {
   }
 
   private initializeRoutes(): void {
-    // Root endpoint
     this.app.get('/', (_req, res) => {
       res.json({
         name: 'Limited Stock Product Drop System',
@@ -81,7 +78,6 @@ class Server {
       });
     });
 
-    // Register all routes
     this.app.use(routes);
   }
 
@@ -98,7 +94,6 @@ class Server {
   }
 
   private async initializeJobs(): Promise<void> {
-    // Start reservation expiration cron job
     this.expirationJob.start();
     logger.info('Background jobs initialized');
   }
@@ -126,7 +121,6 @@ class Server {
       await prisma.$connect();
       logger.info('Database connected successfully');
       
-      // Initialize background jobs
       await this.initializeJobs();
       
       // Start server and store the instance
