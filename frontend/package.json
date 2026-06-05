@@ -9,7 +9,13 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "docker:build": "docker build -t dropzone-frontend .",
-    "docker:run": "docker run -p 3000:80 dropzone-frontend"
+    "docker:run": "docker run -p 3000:80 dropzone-frontend",
+    "test:e2e": "cypress run --e2e",
+    "test:e2e:open": "cypress open --e2e",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",
@@ -42,17 +48,28 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@cypress/react": "^9.0.2",
+    "@cypress/vite-dev-server": "^7.3.3",
+    "@cypress/webpack-dev-server": "^5.6.2",
     "@eslint/js": "^10.0.1",
+    "@testing-library/cypress": "^10.1.3",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^24.12.3",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
+    "@vitejs/plugin-react": "^6.0.2",
+    "@vitest/ui": "^4.1.8",
+    "cypress": "^15.16.0",
     "eslint": "^10.3.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
+    "jsdom": "^29.1.1",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
-    "vite": "^8.0.12"
+    "vite": "^8.0.12",
+    "vitest": "^4.1.8"
   }
 }
