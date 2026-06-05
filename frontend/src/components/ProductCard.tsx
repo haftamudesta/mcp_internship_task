@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { type Product } from "../types";
-import { useReservation } from "../hooks/useReservation";
+import { useReservationGlobal } from "../context/ReservationContext";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -43,7 +43,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     error,
     isRetrying,
     retry,
-  } = useReservation();
+  } = useReservationGlobal();
 
   const hasActiveReservation =
     reservation.status === "active" && reservation.productId === product.id;
@@ -54,7 +54,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const stockPercentage = (product.availableStock / product.totalStock) * 100;
   const isLowStock = product.availableStock < 10 && product.availableStock > 0;
 
-  // Get error icon and message based on error type
   const getErrorDisplay = () => {
     if (!error) return null;
 
@@ -159,7 +158,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     onRefresh();
   };
 
-  // Stock becomes zero while user is on page - refresh automatically
   useEffect(() => {
     if (isSoldOut && product.availableStock === 0) {
       onRefresh();
@@ -215,8 +213,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           <Alert className="bg-yellow-50 border-yellow-200">
             <Clock className="h-4 w-4 text-yellow-600" />
             <AlertDescription className="text-yellow-800">
-              ⏰ Reservation has expired! The stock has been released. You can
-              try reserving again.
+              Reservation has expired! The stock has been released. You can try
+              reserving again.
             </AlertDescription>
           </Alert>
         )}
