@@ -11,27 +11,30 @@ import { DashboardPage } from "./pages/DashboardPage";
 import TermOfServices from "./pages/TermOfServices";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { RefundPolicy } from "./pages/RefundPolicy";
+import { ReservationProvider } from "./context/ReservationContext";
 
 function App() {
   return (
     <Router>
       <AuthProvider>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<HomePage />} />
-            <Route path="signin" element={<SignInPage />} />
-            <Route path="signup" element={<SignUpPage />} />
-            <Route path="health" element={<HealthPage />} />
-            <Route path="term-of-service" element={<TermOfServices />} />
-            <Route path="privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="refund-policy" element={<RefundPolicy />} />
+        <ReservationProvider>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<HomePage />} />
+              <Route path="signin" element={<SignInPage />} />
+              <Route path="signup" element={<SignUpPage />} />
+              <Route path="health" element={<HealthPage />} />
+              <Route path="term-of-service" element={<TermOfServices />} />
+              <Route path="privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="refund-policy" element={<RefundPolicy />} />
 
-            <Route element={<ProtectedRoute />}>
-              <Route path="products" element={<ProductsPage />} />
-              <Route path="dashboard" element={<DashboardPage />} />
+              <Route element={<ProtectedRoute />}>
+                <Route path="products" element={<ProductsPage />} />
+                <Route path="dashboard" element={<DashboardPage />} />
+              </Route>
             </Route>
-          </Route>
-        </Routes>
+          </Routes>
+        </ReservationProvider>
       </AuthProvider>
     </Router>
   );
