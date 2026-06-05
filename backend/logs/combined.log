@@ -5150,3 +5150,36 @@
 {"timestamp":"2026-06-05T14:52:00.047Z","level":"info","message":"Running reservation expiration job"}
 {"timestamp":"2026-06-05T14:52:00.092Z","level":"info","message":"Found 0 expired reservations"}
 {"timestamp":"2026-06-05T14:52:00.093Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 46ms"}
+{"timestamp":"2026-06-05T14:52:34.002Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T14:52:34.024Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T14:52:34.024Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T14:52:34.027Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T14:52:34.027Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T14:52:34.028Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T14:52:34.028Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T14:52:34.028Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T14:52:34.029Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T14:53:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T14:53:00.106Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T14:53:00.107Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 86ms"}
+{"timestamp":"2026-06-05T14:53:41.282Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T14:53:41.299Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T14:53:41.299Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T14:53:41.302Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T14:53:41.302Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T14:53:41.303Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T14:53:41.303Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T14:53:41.303Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T14:53:41.304Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T14:54:00.028Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T14:54:00.169Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T14:54:00.169Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 141ms"}
+{"timestamp":"2026-06-05T14:54:35.131Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T14:54:35.156Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T14:54:35.157Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T14:54:35.160Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T14:54:35.161Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T14:54:35.161Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T14:54:35.161Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T14:54:35.162Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T14:54:35.162Z","level":"info","message":"💾 Prisma Client Singleton initialized"}

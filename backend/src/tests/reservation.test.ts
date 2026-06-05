@@ -1,7 +1,7 @@
 import { prisma } from '../lib/prisma';
 import { ReservationService } from '../services/ReservationService';
 import { AuthService } from '../services/AuthService';
-import { TestUser, TestProduct } from './est.types';
+import { TestUser, TestProduct } from './test.types';
 
 describe('Reservation Logic Tests', () => {
   let reservationService: ReservationService;
