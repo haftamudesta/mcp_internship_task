@@ -15,7 +15,11 @@
     "build:clean": "npm run clean && npm run build",
     "populate:products": "ts-node src/populateProducts.ts",
     "docker:build": "docker build -t dropzone-backend .",
-    "docker:run": "docker run -p 3001:3001 dropzone-backend"
+    "docker:run": "docker run -p 3001:3001 dropzone-backend",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:concurrency": "jest --testNamePattern='Concurrency'"
   },
   "keywords": [],
   "author": "",
