@@ -12,4 +12,9 @@ module.exports = {
   coverageDirectory: "coverage",
   coverageReporters: ["text", "lcov", "html"],
   setupFilesAfterEnv: ["<rootDir>/src/__tests__/setup.ts"],
+  moduleFileExtensions: ["ts", "js", "json"],
+  transform: {
+    "^.+\\.ts$": "ts-jest",
+  },
+  testTimeout: 30000,
 };
