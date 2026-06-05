@@ -4802,3 +4802,24 @@
 {"timestamp":"2026-06-05T12:22:00.028Z","level":"info","message":"Running reservation expiration job"}
 {"timestamp":"2026-06-05T12:22:00.031Z","level":"info","message":"Found 0 expired reservations"}
 {"timestamp":"2026-06-05T12:22:00.031Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 3ms"}
+{"timestamp":"2026-06-05T12:22:08.879Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T12:22:08.897Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T12:22:08.897Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T12:22:08.900Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T12:22:08.900Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T12:22:08.900Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T12:22:08.900Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T12:22:08.901Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T12:22:08.901Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T12:22:53.077Z","level":"debug","message":"GET /api/products?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - Request received","body":{},"query":{"page":"1","limit":"9","search":"","sortBy":"createdAt","sortOrder":"desc"},"params":{},"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-05T12:22:53.264Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 188ms","statusCode":304,"duration":"188ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-05T12:23:00.017Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T12:23:00.034Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T12:23:00.034Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 17ms"}
+{"timestamp":"2026-06-05T12:23:53.069Z","level":"debug","message":"GET /api/products?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - Request received","body":{},"query":{"page":"1","limit":"9","search":"","sortBy":"createdAt","sortOrder":"desc"},"params":{},"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-05T12:23:53.105Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 36ms","statusCode":304,"duration":"36ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-05T12:24:00.030Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T12:24:00.036Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T12:24:00.036Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 6ms"}
+{"timestamp":"2026-06-05T12:24:53.070Z","level":"debug","message":"GET /api/products?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - Request received","body":{},"query":{"page":"1","limit":"9","search":"","sortBy":"createdAt","sortOrder":"desc"},"params":{},"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-05T12:24:53.121Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 51ms","statusCode":304,"duration":"51ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
