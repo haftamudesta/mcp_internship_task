@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { type Product } from "../types";
-import { useReservationGlobal } from "../context/ReservationContext";
+import { useReservation } from "../context/ReservationContext";
+import { CountdownTimer } from "./CountdownTimer";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -36,14 +37,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const [isCheckingOut, setIsCheckingOut] = useState<boolean>(false);
   const {
     reservation,
-    timeLeft,
     createReservation,
     checkout,
     cancel,
     error,
     isRetrying,
     retry,
-  } = useReservationGlobal();
+  } = useReservation();
 
   const hasActiveReservation =
     reservation.status === "active" && reservation.productId === product.id;
@@ -53,6 +53,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const isFailed = reservation.status === "failed";
   const stockPercentage = (product.availableStock / product.totalStock) * 100;
   const isLowStock = product.availableStock < 10 && product.availableStock > 0;
+
+  const handleExpiration = () => {
+    onRefresh();
+  };
 
   const getErrorDisplay = () => {
     if (!error) return null;
@@ -118,18 +122,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         </div>
       </Alert>
     );
-  };
-
-  const formatTimeLeft = (seconds: number): string => {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = seconds % 60;
-    return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
-  };
-
-  const getTimerColor = (seconds: number): string => {
-    if (seconds <= 30) return "text-red-600 animate-pulse";
-    if (seconds <= 60) return "text-orange-500";
-    return "text-blue-700";
   };
 
   const handleReserve = async (): Promise<void> => {
@@ -229,39 +221,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             </div>
           </div>
         )}
-
         {hasActiveReservation && reservation.expiresAt && (
-          <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-4 space-y-3">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-green-600" />
-                <span className="font-semibold text-blue-800">
-                  ✅ Reservation Confirmed!
-                </span>
-              </div>
-              <Badge variant="outline" className="bg-blue-100">
-                {reservation.quantity} unit(s)
-              </Badge>
-            </div>
-            <div className="text-center py-3 bg-white rounded-lg">
-              <div className="flex items-center justify-center gap-2 mb-1">
-                <Clock className="h-4 w-4 text-blue-600" />
-                <span className="text-sm font-medium text-blue-700">
-                  Time Remaining
-                </span>
-              </div>
-              <div
-                className={`font-mono text-4xl font-bold ${getTimerColor(timeLeft)}`}
-              >
-                {formatTimeLeft(timeLeft)}
-              </div>
-              <p className="text-xs text-blue-600 mt-2">
-                {timeLeft <= 60
-                  ? "⚠️ Hurry! Your reservation is about to expire!"
-                  : "Complete checkout before time expires"}
-              </p>
-            </div>
-          </div>
+          <CountdownTimer
+            expiresAt={reservation.expiresAt}
+            onExpire={handleExpiration}
+          />
         )}
       </CardContent>
 

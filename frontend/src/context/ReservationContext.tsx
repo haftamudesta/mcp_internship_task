@@ -40,12 +40,10 @@ const ReservationContext = createContext<ReservationContextType | undefined>(
   undefined,
 );
 
-export const useReservationGlobal = (): ReservationContextType => {
+export const useReservation = (): ReservationContextType => {
   const context = useContext(ReservationContext);
   if (!context) {
-    throw new Error(
-      "useReservationGlobal must be used within ReservationProvider",
-    );
+    throw new Error("useReservation must be used within ReservationProvider");
   }
   return context;
 };
@@ -95,6 +93,7 @@ export const ReservationProvider: React.FC<ReservationProviderProps> = ({
     }
   }, [reservation]);
 
+  // Cleanup on unmount
   useEffect(() => {
     return () => {
       if (intervalRef.current) {
