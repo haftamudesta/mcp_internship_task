@@ -5120,3 +5120,33 @@
 {"timestamp":"2026-06-05T14:43:00.021Z","level":"info","message":"Running reservation expiration job"}
 {"timestamp":"2026-06-05T14:43:00.205Z","level":"info","message":"Found 0 expired reservations"}
 {"timestamp":"2026-06-05T14:43:00.205Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 184ms"}
+{"timestamp":"2026-06-05T14:48:28.467Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T14:48:28.488Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T14:48:28.489Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T14:48:28.493Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T14:48:28.494Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T14:48:28.494Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T14:48:28.495Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T14:48:28.495Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T14:48:28.496Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T14:48:51.297Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-05T14:48:51.315Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-05T14:48:51.315Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-05T14:48:51.318Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-05T14:48:51.318Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-05T14:48:51.319Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-05T14:48:51.319Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-05T14:48:51.319Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-05T14:48:51.320Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-05T14:49:00.037Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T14:49:00.206Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T14:49:00.207Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 170ms"}
+{"timestamp":"2026-06-05T14:50:00.045Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T14:50:00.206Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T14:50:00.207Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 162ms"}
+{"timestamp":"2026-06-05T14:51:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T14:51:00.069Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T14:51:00.069Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 48ms"}
+{"timestamp":"2026-06-05T14:52:00.047Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-05T14:52:00.092Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-05T14:52:00.093Z","level":"debug","message":"Expiration job completed - no expired reservations found - took 46ms"}
