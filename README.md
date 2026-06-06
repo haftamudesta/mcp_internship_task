@@ -437,22 +437,3 @@ This project is [MIT](./LICENSE) licensed.
 | Node-cron vs External Scheduler | Node-cron | Simpler deployment on Render |
 
 | JWT vs Session | JWT | Stateless, scales horizontally |
-
-"scripts": {
-"dev": "nodemon src/server.ts",
-"build": "tsc",
-"start": "node dist/index.js",
-"prisma:generate": "prisma generate",
-"prisma:migrate": "prisma migrate dev",
-"prisma:studio": "prisma studio",
-"prisma:reset": "prisma migrate reset",
-"clean": "rm -rf dist",
-"build:clean": "npm run clean && npm run build",
-"populate:products": "ts-node src/populateProducts.ts",
-"docker:build": "docker build -t dropzone-backend .",
-"docker:run": "docker run -p 3001:3001 dropzone-backend",
-"test": "jest",
-"test:watch": "jest --watch",
-"test:coverage": "jest --coverage",
-"test:concurrency": "jest --testNamePattern='Concurrency'"
-},
