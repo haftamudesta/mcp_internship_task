@@ -322,3 +322,5 @@
 {"timestamp":"2026-06-05T17:07:11.526Z","level":"error","message":"Failed to create reservation","error":{},"userId":"7252c0aa-d2f4-4528-896d-5a6b8e36f440","productId":"af79b545-c348-40a1-a90c-e835b8254289","quantity":1}
 {"timestamp":"2026-06-05T17:07:11.686Z","level":"error","message":"Checkout failed","error":{},"reservationId":"non-existent-id"}
 {"timestamp":"2026-06-05T17:07:11.774Z","level":"error","message":"Checkout failed","error":{},"reservationId":"9b19ac29-26d9-430c-b470-f463b80cc841"}
+{"timestamp":"2026-06-06T12:10:02.496Z","level":"error","message":"GET /me - 401 - 11ms","statusCode":401,"duration":"11ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-06T12:10:02.502Z","level":"error","message":"GET /me - 401 - 3ms","statusCode":401,"duration":"3ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
