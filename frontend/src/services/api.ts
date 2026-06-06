@@ -17,8 +17,9 @@ class ApiClient {
   private token: string | null = null;
 
   constructor() {
+    const apiUrl = 'https://dropzone-backend-kt9c.onrender.com';
     this.client = axios.create({
-      baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3001',
+      baseURL: apiUrl,
       timeout: 30000, // 30 second timeout
       headers: {
         'Content-Type': 'application/json',

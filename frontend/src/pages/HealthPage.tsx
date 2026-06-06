@@ -7,7 +7,6 @@ import {
   Server,
   Clock,
 } from "lucide-react";
-import apiClient from "../services/api";
 
 interface HealthStatus {
   status: string;
