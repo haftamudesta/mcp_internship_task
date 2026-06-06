@@ -28,11 +28,10 @@ services:
       - key: RATE_LIMIT_MAX
         value: 100
 
-  # Frontend Static Site
+  # Frontend Static Site (no region property)
   - type: web
     name: dropzone-frontend
     runtime: static
-    region: oregon
     plan: starter
     buildCommand: cd frontend && npm install && npm run build
     envVars:
