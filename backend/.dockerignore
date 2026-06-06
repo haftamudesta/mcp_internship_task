@@ -11,5 +11,12 @@ README.md
 coverage
 .DS_Store
 *.log
-src
+dist
+tmp
+temp
 tests
+*.md
+.github
+.vscode
+.nyc_output
+coverage

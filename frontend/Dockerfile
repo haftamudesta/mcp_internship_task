@@ -7,14 +7,15 @@ COPY package*.json ./
 RUN npm ci
 
 COPY . .
-
 RUN npm run build
 
-# Production stage with nginx
+# Production stage
 FROM nginx:alpine
 
+# Copy custom nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
+# Copy built assets
 COPY --from=builder /app/dist /usr/share/nginx/html
 
 # Create health check page
@@ -22,8 +23,7 @@ RUN echo '{"status":"healthy"}' > /usr/share/nginx/html/health.json
 
 EXPOSE 80
 
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
     CMD curl -f http://localhost/ || exit 1
 
-# Start nginx
 CMD ["nginx", "-g", "daemon off;"]

@@ -17,16 +17,16 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
 
   backend:
     build: ./backend
     container_name: dropzone-backend
     environment:
-      NODE_ENV: development
+      NODE_ENV: production
       DATABASE_URL: postgresql://postgres:password@postgres:5432/limited_drop
-      JWT_SECRET: dev-secret-key-do-not-use-in-production
+      JWT_SECRET: ${JWT_SECRET:-dev-secret-key}
       JWT_EXPIRES_IN: 7d
-      FRONTEND_URL: http://localhost:3000
       PORT: 3001
       RESERVATION_EXPIRATION_MINUTES: 5
     ports:
@@ -34,13 +34,14 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-    volumes:
-      - ./backend:/app
-      - /app/node_modules
-      - /app/dist
     networks:
       - dropzone-network
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3001/health', (r) => {r.statusCode === 200 ? process.exit(0) : process.exit(1)})"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
 
   frontend:
     build: ./frontend
@@ -52,6 +53,11 @@ services:
     networks:
       - dropzone-network
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
 
 networks:
   dropzone-network:
