@@ -17,10 +17,9 @@ class ApiClient {
   private token: string | null = null;
 
   constructor() {
-    // const apiUrl = 'https://dropzone-backend-kt9c.onrender.com';
     this.client = axios.create({
-      baseURL: 'https://dropzone-backend-kt9c.onrender.com',
-      timeout: 30000, // 30 second timeout
+      baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3001',
+      timeout: 30000, 
       headers: {
         'Content-Type': 'application/json',
       },
@@ -76,6 +75,12 @@ class ApiClient {
 
   private isSuccessResponse<T>(response: ApiResponse<T>): response is ApiSuccessResponse<T> {
     return response.success === true;
+  }
+
+  // Public GET method
+  async get<T = unknown>(url: string): Promise<T> {
+    const response = await this.client.get<T>(url);
+    return response.data;
   }
 
   async register(email: string, password: string, name?: string): Promise<AuthResponse> {

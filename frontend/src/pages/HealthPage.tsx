@@ -7,6 +7,7 @@ import {
   Server,
   Clock,
 } from "lucide-react";
+import apiClient from "../services/api";
 
 interface HealthStatus {
   status: string;
@@ -18,16 +19,17 @@ interface HealthStatus {
 
 export const HealthPage: React.FC = () => {
   const [health, setHealth] = useState<HealthStatus | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  const fetchHealth = async () => {
+  const fetchHealth = async (): Promise<void> => {
     try {
-      const response = await fetch("http://localhost:3001/health");
-      const data = await response.json();
+      // Use the public get method
+      const data = await apiClient.get<HealthStatus>("/health");
       setHealth(data);
       setError(null);
     } catch (err) {
+      console.error("Health check error:", err);
       setError("Failed to connect to backend server");
     } finally {
       setLoading(false);
@@ -119,7 +121,7 @@ export const HealthPage: React.FC = () => {
         })}
       </div>
 
-      <div className="bg-linear-to-r from-green-400 via-green-100 to-pink-600 rounded-xl shadow-sm p-6">
+      <div className="bg-gradient-to-r from-green-400 via-green-100 to-pink-600 rounded-xl shadow-sm p-6">
         <h2 className="text-lg font-semibold text-gray-900 mb-4">
           System Information
         </h2>
