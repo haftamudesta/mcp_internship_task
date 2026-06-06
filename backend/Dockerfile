@@ -6,20 +6,25 @@ WORKDIR /app
 COPY package*.json ./
 COPY prisma ./prisma/
 
-# Install dependencies (including dev for build)
+# Install dependencies
 RUN npm ci
 
 # Generate Prisma client
 RUN npx prisma generate
 
-# Copy source code and config
+# Copy source code
 COPY tsconfig.json ./
 COPY src ./src
 
-# Build TypeScript
+# Remove test files before building
+RUN find src -name "*.test.ts" -type f -delete
+RUN find src -name "*.spec.ts" -type f -delete
+RUN rm -rf src/__tests__ src/tests || true
+
+# Build TypeScript (use regular tsconfig.json, not tsconfig.prod.json)
 RUN npm run build
 
-# Prune dev dependencies for production
+# Remove dev dependencies
 RUN npm prune --production
 
 # Create non-root user
