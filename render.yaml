@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: dropzone-backend
+    runtime: image
+    repo: https://github.com/haftamudesta/mpc_internship_task
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+
+  - type: web
+    name: dropzone-frontend
+    runtime: image
+    repo: https://github.com/haftamudesta/mpc_internship_task
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    envVars:
+      - key: VITE_API_URL
+        value: https://dropzone-backend.onrender.com
