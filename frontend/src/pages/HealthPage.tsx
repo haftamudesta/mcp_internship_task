@@ -24,7 +24,6 @@ export const HealthPage: React.FC = () => {
 
   const fetchHealth = async (): Promise<void> => {
     try {
-      // Use the public get method
       const data = await apiClient.get<HealthStatus>("/health");
       setHealth(data);
       setError(null);
@@ -121,7 +120,7 @@ export const HealthPage: React.FC = () => {
         })}
       </div>
 
-      <div className="bg-gradient-to-r from-green-400 via-green-100 to-pink-600 rounded-xl shadow-sm p-6">
+      <div className="bg-linear-to-r from-green-400 via-green-100 to-pink-600 rounded-xl shadow-sm p-6">
         <h2 className="text-lg font-semibold text-gray-900 mb-4">
           System Information
         </h2>
