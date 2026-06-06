@@ -30,7 +30,7 @@ services:
       PORT: 3001
       RESERVATION_EXPIRATION_MINUTES: 5
     ports:
-      - "3001:3001"
+      - "3002:3001"
     depends_on:
       postgres:
         condition: service_healthy
