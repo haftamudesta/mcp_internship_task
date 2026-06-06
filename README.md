@@ -285,7 +285,7 @@ cd backend
 npm install
 ```
 
-- [ ] Install backend dependencies:
+- [ ] Install frontend dependencies:
 
 ```
 cd frontend
