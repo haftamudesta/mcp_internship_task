@@ -427,13 +427,3 @@ If you like this project then don't forget to give a star ⭐ on this repository
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-| Real-time vs Efficiency | Real-time | Frontend polls every 5 seconds for simplicity |
-
-| 5-minute vs Flexible Expiration | Configurable 5 minutes | Default balances UX with inventory turnover |
-
-| PostgreSQL vs Redis | PostgreSQL | Simpler architecture, one less dependency |
-
-| Node-cron vs External Scheduler | Node-cron | Simpler deployment on Render |
-
-| JWT vs Session | JWT | Stateless, scales horizontally |
