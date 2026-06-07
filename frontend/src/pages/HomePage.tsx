@@ -7,6 +7,7 @@ import {
   Clock,
   TrendingUp,
   Users,
+  FileText,
 } from "lucide-react";
 import { AdvancedMarquee } from "../components/AdvancedMarquee";
 
@@ -37,6 +38,10 @@ export const HomePage: React.FC = () => {
     { value: "5min", label: "Reservation Window", icon: Clock },
     { value: "Real-time", label: "Stock Updates", icon: TrendingUp },
   ];
+
+  const openArchitectureDiagram = () => {
+    window.open("/images/Architechural_Diagram.jpg", "_blank");
+  };
 
   return (
     <div className="space-y-20">
@@ -111,6 +116,26 @@ export const HomePage: React.FC = () => {
             </div>
           );
         })}
+      </section>
+
+      <section className="text-center py-8">
+        <div className="bg-linear-to-r from-gray-50 to-gray-100 rounded-2xl p-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            System Architecture
+          </h2>
+          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+            View the complete architecture diagram of the limited-stock product
+            drop system, including frontend, backend, database, and all
+            components.
+          </p>
+          <button
+            onClick={openArchitectureDiagram}
+            className="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            <FileText className="h-5 w-5" />
+            View Full Architecture Diagram
+          </button>
+        </div>
       </section>
 
       <section className="bg-linear-to-r from-indigo-400 via-purple-300 to-pink-400 rounded-2xl p-10">
