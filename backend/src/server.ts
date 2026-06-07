@@ -19,6 +19,8 @@ class Server {
   private port: number;
   private expirationJob: ExpirationJob;
   private serverInstance: any;
+  private isShuttingDown: boolean = false;
+  private activeConnections: Set<any> = new Set();
 
   constructor() {
     this.app = express();
@@ -40,15 +42,35 @@ class Server {
       optionsSuccessStatus: 200
     }));
     
-    // Parsing middleware
     this.app.use(express.json({ limit: '10mb' }));
     this.app.use(express.urlencoded({ extended: true, limit: '10mb' }));
     
+    // Track active connections for graceful shutdown
+    this.app.use((req, res, next) => {
+      if (this.isShuttingDown) {
+        res.status(503).json({ 
+          success: false, 
+          error: 'Server is shutting down, please try again later' 
+        });
+        return;
+      }
+      
+      // Track connection
+      const connection = { req, res };
+      this.activeConnections.add(connection);
+      
+      res.on('finish', () => this.activeConnections.delete(connection));
+      res.on('close', () => this.activeConnections.delete(connection));
+      
+      next();
+    });
+    
     this.app.use(requestLogger);
     
+    // UPDATED: Skip rate limiting for health and ready endpoints
     const globalLimiter = rateLimit({
-      windowMs: 45 * 60 * 1000, // 15 minutes
-      max: 200, // 100 requests per windowMs
+      windowMs: 45 * 60 * 1000,
+      max: 200,
       message: {
         success: false,
         error: 'Too many requests',
@@ -56,11 +78,47 @@ class Server {
       },
       standardHeaders: true,
       legacyHeaders: false,
+      // Skip rate limiting for health check and readiness check
+      skip: (req) => {
+        return req.path === '/health';
+      }
     });
     this.app.use(globalLimiter);
   }
 
   private initializeRoutes(): void {
+    this.app.get('/health', async (_req, res) => {
+      try {
+        await prisma.$queryRaw`SELECT 1`;
+        
+        res.status(200).json({
+          status: 'healthy',
+          timestamp: new Date().toISOString(),
+          uptime: process.uptime(),
+          environment: process.env.NODE_ENV,
+          database: 'connected',
+          service: 'limited-drop-system',
+          acceptingTraffic: !this.isShuttingDown
+        });
+      } catch (error) {
+        res.status(503).json({
+          status: 'unhealthy',
+          timestamp: new Date().toISOString(),
+          database: 'disconnected',
+          error: 'Database connection failed'
+        });
+      }
+    });
+
+    // Readiness check for Render (separate from health check)
+    this.app.get('/ready', (_req, res) => {
+      if (this.isShuttingDown) {
+        res.status(503).json({ status: 'not ready', reason: 'shutting down' });
+      } else {
+        res.status(200).json({ status: 'ready' });
+      }
+    });
+
     this.app.get('/', (_req, res) => {
       res.json({
         name: 'Limited Stock Product Drop System',
@@ -68,6 +126,7 @@ class Server {
         status: 'running',
         endpoints: {
           health: '/health',
+          ready: '/ready',
           metrics: '/metrics',
           auth: '/api/auth',
           products: '/api/products',
@@ -99,9 +158,31 @@ class Server {
   }
 
   private async gracefulShutdown(): Promise<void> {
+    this.isShuttingDown = true;
+    
     logger.info('Received shutdown signal, closing gracefully...');
     
+    // Stop accepting new cron jobs
     this.expirationJob.stop();
+    logger.info(' Cron job stopped');
+    
+    // Give ongoing requests time to complete
+    const activeCount = this.activeConnections.size;
+    if (activeCount > 0) {
+      logger.info(`Waiting for ${activeCount} active connections to complete...`);
+      
+      const maxWaitTime = 25000;
+      const startTime = Date.now();
+      
+      while (this.activeConnections.size > 0 && (Date.now() - startTime) < maxWaitTime) {
+        await new Promise(resolve => setTimeout(resolve, 100));
+        logger.debug(`Still waiting for ${this.activeConnections.size} connections...`);
+      }
+      
+      if (this.activeConnections.size > 0) {
+        logger.warn(` Force closing with ${this.activeConnections.size} active connections`);
+      }
+    }
     
     if (this.serverInstance) {
       await new Promise((resolve) => {
@@ -111,8 +192,9 @@ class Server {
     }
     
     await prisma.$disconnect();
-    logger.info('Database connection closed');
+    logger.info(' Database connection closed');
     
+    logger.info(' Graceful shutdown completed');
     process.exit(0);
   }
 
@@ -121,19 +203,21 @@ class Server {
       await prisma.$connect();
       logger.info('Database connected successfully');
       
+      // Initialize background jobs
       await this.initializeJobs();
       
-      // Start server and store the instance
+      // Start server
       this.serverInstance = this.app.listen(this.port, () => {
-        logger.info(`🚀 Server running on port ${this.port}`);
-        logger.info(`📊 Metrics available at http://localhost:${this.port}/metrics`);
-        logger.info(`❤️  Health check at http://localhost:${this.port}/health`);
-        logger.info(`🔐 Auth endpoints available at http://localhost:${this.port}/api/auth`);
-        logger.info(`📦 Product endpoints available at http://localhost:${this.port}/api/products`);
-        logger.info(`💾 Prisma Client Singleton initialized`);
+        logger.info(`Server running on port ${this.port}`);
+        logger.info(`Metrics available at http://localhost:${this.port}/metrics`);
+        logger.info(`Health check at http://localhost:${this.port}/health`);
+        logger.info(`Readiness check at http://localhost:${this.port}/ready`);
+        logger.info(`Auth endpoints available at http://localhost:${this.port}/api/auth`);
+        logger.info(`Product endpoints available at http://localhost:${this.port}/api/products`);
+        logger.info(`Prisma Client Singleton initialized`);
       });
       
-      // Handle graceful shutdown
+      // Handle graceful shutdown signals
       process.on('SIGTERM', () => this.gracefulShutdown());
       process.on('SIGINT', () => this.gracefulShutdown());
       
