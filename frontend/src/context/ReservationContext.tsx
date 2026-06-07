@@ -5,35 +5,34 @@ import React, {
   useCallback,
   useEffect,
   useRef,
-  type ReactNode,
+  ReactNode,
 } from "react";
 import apiClient from "../services/api";
 
 interface ReservationState {
-  id: string | null;
-  productId: string | null;
-  expiresAt: string | null;
+  id: string;
+  productId: string;
+  expiresAt: string;
   quantity: number;
-  status: "idle" | "loading" | "active" | "expired" | "cancelled" | "failed";
-  errorType?:
-    | "network"
-    | "timeout"
-    | "race_condition"
-    | "stock"
-    | "duplicate"
-    | "unknown";
+  status: "active" | "expired" | "cancelled";
+  timeLeft: number;
 }
 
 interface ReservationContextType {
-  reservation: ReservationState;
-  timeLeft: number;
+  reservations: ReservationState[];
+  productErrors: Map<string, string>;
+  loadingProducts: Set<string>;
+  expiredProducts: Set<string>;
   createReservation: (productId: string, quantity?: number) => Promise<string>;
-  checkout: () => Promise<void>;
-  cancel: () => Promise<void>;
-  reset: () => void;
+  checkout: (reservationId: string) => Promise<void>;
+  cancel: (reservationId: string) => Promise<void>;
+  getReservationByProduct: (productId: string) => ReservationState | undefined;
+  getProductError: (productId: string) => string | null;
+  isProductLoading: (productId: string) => boolean;
+  isProductExpired: (productId: string) => boolean;
+  clearProductError: (productId: string) => void;
+  clearExpiredNotification: (productId: string) => void;
   error: string | null;
-  isRetrying: boolean;
-  retry: () => void;
 }
 
 const ReservationContext = createContext<ReservationContextType | undefined>(
@@ -55,327 +54,236 @@ interface ReservationProviderProps {
 export const ReservationProvider: React.FC<ReservationProviderProps> = ({
   children,
 }) => {
-  const [reservation, setReservation] = useState<ReservationState>(() => {
-    const saved = localStorage.getItem("reservation");
-    if (saved) {
-      const parsed = JSON.parse(saved);
-      if (parsed.expiresAt && new Date(parsed.expiresAt) > new Date()) {
-        return { ...parsed, status: "active" };
-      }
-    }
-    return {
-      id: null,
-      productId: null,
-      expiresAt: null,
-      quantity: 1,
-      status: "idle",
-    };
-  });
-
+  const [reservations, setReservations] = useState<ReservationState[]>([]);
+  const [productErrors, setProductErrors] = useState<Map<string, string>>(
+    new Map(),
+  );
+  const [loadingProducts, setLoadingProducts] = useState<Set<string>>(
+    new Set(),
+  );
+  const [expiredProducts, setExpiredProducts] = useState<Set<string>>(
+    new Set(),
+  );
   const [error, setError] = useState<string | null>(null);
-  const [isRetrying, setIsRetrying] = useState<boolean>(false);
-  const [timeLeft, setTimeLeft] = useState<number>(0);
-  const intervalRef = useRef<number | null>(null);
-  const abortControllerRef = useRef<AbortController | null>(null);
-  const lastAttemptRef = useRef<{
-    productId: string;
-    timestamp: number;
-  } | null>(null);
+  const intervalRefs = useRef<Map<string, number>>(new Map());
 
-  useEffect(() => {
-    if (reservation.id && reservation.status === "active") {
-      localStorage.setItem("reservation", JSON.stringify(reservation));
-    } else if (
-      reservation.status === "expired" ||
-      reservation.status === "cancelled"
-    ) {
-      localStorage.removeItem("reservation");
-    }
-  }, [reservation]);
-
-  // Cleanup on unmount
+  // Cleanup intervals on unmount
   useEffect(() => {
     return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-        intervalRef.current = null;
-      }
-      if (abortControllerRef.current) {
-        abortControllerRef.current.abort();
-        abortControllerRef.current = null;
-      }
+      intervalRefs.current.forEach((interval) => clearInterval(interval));
+      intervalRefs.current.clear();
     };
   }, []);
 
-  useEffect(() => {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-      intervalRef.current = null;
-    }
+  // Start countdown timer for a reservation
+  const startCountdown = useCallback(
+    (reservationId: string, productId: string, expiresAt: string) => {
+      if (intervalRefs.current.has(reservationId)) {
+        clearInterval(intervalRefs.current.get(reservationId)!);
+      }
 
-    if (reservation.status === "active" && reservation.expiresAt) {
       const updateTimer = () => {
         const now = new Date().getTime();
-        const target = new Date(reservation.expiresAt!).getTime();
+        const target = new Date(expiresAt).getTime();
         const difference = target - now;
 
-        if (difference <= 0) {
-          setTimeLeft(0);
-          setReservation((prev) => ({ ...prev, status: "expired" }));
-          localStorage.removeItem("reservation");
-          if (intervalRef.current) {
-            clearInterval(intervalRef.current);
-            intervalRef.current = null;
-          }
-        } else {
-          setTimeLeft(Math.floor(difference / 1000));
-        }
+        setReservations((prev) =>
+          prev.map((res) => {
+            if (res.id === reservationId) {
+              const timeLeft = Math.max(0, Math.floor(difference / 1000));
+
+              if (timeLeft === 0 && res.status === "active") {
+                if (intervalRefs.current.has(reservationId)) {
+                  clearInterval(intervalRefs.current.get(reservationId)!);
+                  intervalRefs.current.delete(reservationId);
+                }
+                setExpiredProducts((prev) => new Set(prev).add(productId));
+                return { ...res, status: "expired", timeLeft: 0 };
+              }
+
+              return { ...res, timeLeft };
+            }
+            return res;
+          }),
+        );
       };
 
       updateTimer();
-      intervalRef.current = window.setInterval(updateTimer, 1000);
-    } else {
-      setTimeLeft(0);
-    }
-  }, [reservation.status, reservation.expiresAt]);
 
-  const isDuplicateAttempt = (productId: string): boolean => {
-    if (
-      lastAttemptRef.current &&
-      lastAttemptRef.current.productId === productId &&
-      Date.now() - lastAttemptRef.current.timestamp < 2000
-    ) {
-      return true;
-    }
-    return false;
-  };
-
-  const createReservation = useCallback(
-    async (productId: string, quantity: number = 1): Promise<string> => {
-      if (abortControllerRef.current) {
-        abortControllerRef.current.abort();
-      }
-
-      if (isDuplicateAttempt(productId)) {
-        const errorMsg = "Please wait a moment before trying again";
-        setError(errorMsg);
-        setReservation((prev) => ({
-          ...prev,
-          status: "failed",
-          errorType: "duplicate",
-        }));
-        throw new Error(errorMsg);
-      }
-
-      lastAttemptRef.current = { productId, timestamp: Date.now() };
-
-      setError(null);
-      setReservation((prev) => ({
-        ...prev,
-        status: "loading",
-        errorType: undefined,
-      }));
-
-      const abortController = new AbortController();
-      abortControllerRef.current = abortController;
-
-      const timeoutId = setTimeout(() => {
-        if (abortControllerRef.current === abortController) {
-          abortController.abort();
-        }
-      }, 30000);
-
-      try {
-        const response = await apiClient.createReservation(
-          { productId, quantity },
-          abortController.signal,
-        );
-
-        clearTimeout(timeoutId);
-
-        const newReservation = {
-          id: response.reservationId,
-          productId: productId,
-          expiresAt: response.expiresAt,
-          quantity: quantity,
-          status: "active" as const,
-        };
-
-        setReservation(newReservation);
-        localStorage.setItem("reservation", JSON.stringify(newReservation));
-
-        return response.reservationId;
-      } catch (err) {
-        clearTimeout(timeoutId);
-
-        let errorMessage = "";
-        let errorType: ReservationState["errorType"] = "unknown";
-
-        if (err instanceof Error && err.name === "AbortError") {
-          errorMessage =
-            "Request was cancelled or timed out. Please try again.";
-          errorType = "timeout";
-        } else if (err instanceof Error) {
-          const message = err.message.toLowerCase();
-
-          if (message.includes("network") || message.includes("fetch")) {
-            errorMessage =
-              "Network error. Please check your internet connection.";
-            errorType = "network";
-          } else if (message.includes("insufficient stock")) {
-            errorMessage = "Sorry, this item is no longer in stock.";
-            errorType = "stock";
-          } else if (message.includes("already exists")) {
-            errorMessage =
-              "You already have an active reservation for this item.";
-            errorType = "duplicate";
-          } else {
-            errorMessage = err.message;
-            errorType = "unknown";
-          }
-        } else {
-          errorMessage = "Failed to create reservation";
-        }
-
-        setError(errorMessage);
-        setReservation((prev) => ({
-          ...prev,
-          status: "failed",
-          errorType,
-        }));
-        throw err;
-      } finally {
-        if (abortControllerRef.current === abortController) {
-          abortControllerRef.current = null;
-        }
-      }
+      const interval = window.setInterval(updateTimer, 1000);
+      intervalRefs.current.set(reservationId, interval);
     },
     [],
   );
 
-  const retry = useCallback(async () => {
-    if (reservation.productId && reservation.status === "failed") {
-      setIsRetrying(true);
-      setError(null);
-      try {
-        await createReservation(reservation.productId, reservation.quantity);
-      } finally {
-        setIsRetrying(false);
-      }
-    }
-  }, [
-    reservation.productId,
-    reservation.quantity,
-    reservation.status,
-    createReservation,
-  ]);
+  const getProductError = useCallback(
+    (productId: string): string | null => {
+      return productErrors.get(productId) || null;
+    },
+    [productErrors],
+  );
 
-  const checkout = useCallback(async (): Promise<void> => {
-    if (!reservation.id) {
-      setError("No active reservation");
-      return;
-    }
+  const isProductLoading = useCallback(
+    (productId: string): boolean => {
+      return loadingProducts.has(productId);
+    },
+    [loadingProducts],
+  );
 
-    setError(null);
+  const isProductExpired = useCallback(
+    (productId: string): boolean => {
+      return expiredProducts.has(productId);
+    },
+    [expiredProducts],
+  );
 
-    const checkoutController = new AbortController();
-    const timeoutId = setTimeout(() => {
-      checkoutController.abort();
-    }, 30000);
-
-    try {
-      await apiClient.checkout(
-        { reservationId: reservation.id },
-        checkoutController.signal,
-      );
-      clearTimeout(timeoutId);
-      setReservation({
-        id: null,
-        productId: null,
-        expiresAt: null,
-        quantity: 1,
-        status: "cancelled",
-      });
-      localStorage.removeItem("reservation");
-    } catch (err) {
-      clearTimeout(timeoutId);
-
-      let errorMessage = "";
-      if (err instanceof Error && err.name === "AbortError") {
-        errorMessage = "Checkout timed out. Please try again.";
-      } else if (err instanceof Error) {
-        if (err.message.toLowerCase().includes("expired")) {
-          errorMessage = "Your reservation has expired. Please reserve again.";
-          setReservation((prev) => ({ ...prev, status: "expired" }));
-          localStorage.removeItem("reservation");
-        } else {
-          errorMessage = err.message;
-        }
-      } else {
-        errorMessage = "Checkout failed";
-      }
-      setError(errorMessage);
-      throw err;
-    }
-  }, [reservation.id]);
-
-  const cancel = useCallback(async (): Promise<void> => {
-    if (!reservation.id) {
-      return;
-    }
-
-    try {
-      await apiClient.cancelReservation(reservation.id);
-      setReservation({
-        id: null,
-        productId: null,
-        expiresAt: null,
-        quantity: 1,
-        status: "cancelled",
-      });
-      localStorage.removeItem("reservation");
-    } catch (err) {
-      const message =
-        err instanceof Error ? err.message : "Failed to cancel reservation";
-      setError(message);
-    }
-  }, [reservation.id]);
-
-  const reset = useCallback((): void => {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-      intervalRef.current = null;
-    }
-    if (abortControllerRef.current) {
-      abortControllerRef.current.abort();
-      abortControllerRef.current = null;
-    }
-    setReservation({
-      id: null,
-      productId: null,
-      expiresAt: null,
-      quantity: 1,
-      status: "idle",
+  const clearProductError = useCallback((productId: string): void => {
+    setProductErrors((prev) => {
+      const newMap = new Map(prev);
+      newMap.delete(productId);
+      return newMap;
     });
-    setTimeLeft(0);
-    setError(null);
-    setIsRetrying(false);
-    lastAttemptRef.current = null;
-    localStorage.removeItem("reservation");
   }, []);
+
+  const clearExpiredNotification = useCallback((productId: string): void => {
+    setExpiredProducts((prev) => {
+      const newSet = new Set(prev);
+      newSet.delete(productId);
+      return newSet;
+    });
+  }, []);
+
+  const createReservation = useCallback(
+    async (productId: string, quantity: number = 1): Promise<string> => {
+      setLoadingProducts((prev) => new Set(prev).add(productId));
+      clearProductError(productId);
+      clearExpiredNotification(productId);
+      setError(null);
+
+      try {
+        const response = await apiClient.createReservation({
+          productId,
+          quantity,
+        });
+
+        const newReservation: ReservationState = {
+          id: response.reservationId,
+          productId,
+          expiresAt: response.expiresAt,
+          quantity,
+          status: "active",
+          timeLeft: Math.floor(
+            (new Date(response.expiresAt).getTime() - Date.now()) / 1000,
+          ),
+        };
+
+        setReservations((prev) => [...prev, newReservation]);
+        startCountdown(response.reservationId, productId, response.expiresAt);
+
+        return response.reservationId;
+      } catch (err) {
+        const message =
+          err instanceof Error ? err.message : "Failed to create reservation";
+
+        setProductErrors((prev) => {
+          const newMap = new Map(prev);
+          newMap.set(productId, message);
+          return newMap;
+        });
+
+        throw err;
+      } finally {
+        setLoadingProducts((prev) => {
+          const newSet = new Set(prev);
+          newSet.delete(productId);
+          return newSet;
+        });
+      }
+    },
+    [startCountdown, clearProductError, clearExpiredNotification],
+  );
+
+  const checkout = useCallback(
+    async (reservationId: string): Promise<void> => {
+      try {
+        await apiClient.checkout({ reservationId });
+
+        if (intervalRefs.current.has(reservationId)) {
+          clearInterval(intervalRefs.current.get(reservationId)!);
+          intervalRefs.current.delete(reservationId);
+        }
+
+        const reservation = reservations.find((r) => r.id === reservationId);
+        if (reservation) {
+          clearExpiredNotification(reservation.productId);
+        }
+
+        setReservations((prev) =>
+          prev.filter((res) => res.id !== reservationId),
+        );
+      } catch (err) {
+        const message = err instanceof Error ? err.message : "Checkout failed";
+        setError(message);
+        throw err;
+      }
+    },
+    [reservations, clearExpiredNotification],
+  );
+
+  const cancel = useCallback(
+    async (reservationId: string): Promise<void> => {
+      try {
+        await apiClient.cancelReservation(reservationId);
+
+        if (intervalRefs.current.has(reservationId)) {
+          clearInterval(intervalRefs.current.get(reservationId)!);
+          intervalRefs.current.delete(reservationId);
+        }
+
+        const reservation = reservations.find((r) => r.id === reservationId);
+        if (reservation) {
+          clearExpiredNotification(reservation.productId);
+        }
+
+        setReservations((prev) =>
+          prev.filter((res) => res.id !== reservationId),
+        );
+      } catch (err) {
+        const message =
+          err instanceof Error ? err.message : "Failed to cancel reservation";
+        setError(message);
+        throw err;
+      }
+    },
+    [reservations, clearExpiredNotification],
+  );
+
+  const getReservationByProduct = useCallback(
+    (productId: string): ReservationState | undefined => {
+      return reservations.find(
+        (res) => res.productId === productId && res.status === "active",
+      );
+    },
+    [reservations],
+  );
 
   return (
     <ReservationContext.Provider
       value={{
-        reservation,
-        timeLeft,
+        reservations,
+        productErrors,
+        loadingProducts,
+        expiredProducts,
         createReservation,
         checkout,
         cancel,
-        reset,
+        getReservationByProduct,
+        getProductError,
+        isProductLoading,
+        isProductExpired,
+        clearProductError,
+        clearExpiredNotification,
         error,
-        isRetrying,
-        retry,
       }}
     >
       {children}

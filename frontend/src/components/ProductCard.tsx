@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { type Product } from "../types";
 import { useReservation } from "../context/ReservationContext";
-import { CountdownTimer } from "./CountdownTimer";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -21,8 +20,6 @@ import {
   ShoppingBag,
   XCircle,
   Loader2,
-  WifiOff,
-  RefreshCw,
 } from "lucide-react";
 
 interface ProductCardProps {
@@ -35,93 +32,65 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   onRefresh,
 }) => {
   const [isCheckingOut, setIsCheckingOut] = useState<boolean>(false);
+  const [hasShownExpiredMessage, setHasShownExpiredMessage] =
+    useState<boolean>(false);
   const {
-    reservation,
     createReservation,
     checkout,
     cancel,
-    error,
-    isRetrying,
-    retry,
+    getReservationByProduct,
+    getProductError,
+    isProductLoading,
+    isProductExpired,
+    clearProductError,
+    clearExpiredNotification,
   } = useReservation();
 
+  const productError = getProductError(product.id);
+  const isReserving = isProductLoading(product.id);
+  const hasExpired = isProductExpired(product.id);
+
+  const productReservation = getReservationByProduct(product.id);
   const hasActiveReservation =
-    reservation.status === "active" && reservation.productId === product.id;
-  const isSoldOut = product.availableStock === 0;
-  const isReserving = reservation.status === "loading";
-  const isExpired = reservation.status === "expired";
-  const isFailed = reservation.status === "failed";
+    !!productReservation && productReservation.status === "active";
   const stockPercentage = (product.availableStock / product.totalStock) * 100;
   const isLowStock = product.availableStock < 10 && product.availableStock > 0;
+  const isSoldOut = product.availableStock === 0;
 
-  const handleExpiration = () => {
-    onRefresh();
+  useEffect(() => {
+    if (hasExpired && !hasShownExpiredMessage) {
+      setHasShownExpiredMessage(true);
+      onRefresh();
+      const timer = setTimeout(() => {
+        clearExpiredNotification(product.id);
+        setHasShownExpiredMessage(false);
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [
+    hasExpired,
+    hasShownExpiredMessage,
+    product.id,
+    clearExpiredNotification,
+    onRefresh,
+  ]);
+
+  useEffect(() => {
+    if (hasActiveReservation) {
+      setHasShownExpiredMessage(false);
+    }
+  }, [hasActiveReservation]);
+
+  const formatTimeLeft = (seconds: number): string => {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
   };
 
-  const getErrorDisplay = () => {
-    if (!error) return null;
-
-    const errorConfig: Record<
-      string,
-      { icon: React.ReactNode; title: string; action?: React.ReactNode }
-    > = {
-      network: {
-        icon: <WifiOff className="h-5 w-5" />,
-        title: "Network Error",
-      },
-      timeout: {
-        icon: <Clock className="h-5 w-5" />,
-        title: "Request Timeout",
-      },
-      stock: {
-        icon: <XCircle className="h-5 w-5" />,
-        title: "Out of Stock",
-      },
-      duplicate: {
-        icon: <AlertCircle className="h-5 w-5" />,
-        title: "Duplicate Request",
-      },
-      race_condition: {
-        icon: <RefreshCw className="h-5 w-5" />,
-        title: "Concurrent Request",
-      },
-    };
-
-    const config = errorConfig[reservation.errorType || ""] || {
-      icon: <AlertCircle className="h-5 w-5" />,
-      title: "Error",
-    };
-
-    return (
-      <Alert variant="destructive" className="bg-red-50 border-red-200">
-        <div className="flex items-start gap-3">
-          {config.icon}
-          <div className="flex-1">
-            <AlertDescription className="text-red-800 font-medium">
-              {config.title}
-            </AlertDescription>
-            <p className="text-sm text-red-700 mt-1">{error}</p>
-          </div>
-          {(reservation.errorType === "network" ||
-            reservation.errorType === "timeout") && (
-            <Button
-              size="sm"
-              variant="outline"
-              onClick={retry}
-              disabled={isRetrying}
-              className="border-red-300 hover:bg-red-50"
-            >
-              {isRetrying ? (
-                <Loader2 className="h-3 w-3 animate-spin mr-1" />
-              ) : (
-                <RefreshCw className="h-3 w-3 mr-1" />
-              )}
-              Retry
-            </Button>
-          )}
-        </div>
-      </Alert>
-    );
+  const getTimerColor = (seconds: number): string => {
+    if (seconds <= 30) return "text-red-600 animate-pulse";
+    if (seconds <= 60) return "text-orange-500";
+    return "text-blue-700";
   };
 
   const handleReserve = async (): Promise<void> => {
@@ -134,9 +103,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   };
 
   const handleCheckout = async (): Promise<void> => {
+    if (!productReservation) return;
+
     setIsCheckingOut(true);
     try {
-      await checkout();
+      await checkout(productReservation.id);
       onRefresh();
     } catch (err) {
       console.error("Checkout failed:", err);
@@ -146,18 +117,17 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   };
 
   const handleCancel = async (): Promise<void> => {
-    await cancel();
+    if (!productReservation) return;
+    await cancel(productReservation.id);
     onRefresh();
   };
 
-  useEffect(() => {
-    if (isSoldOut && product.availableStock === 0) {
-      onRefresh();
-    }
-  }, [product.availableStock, isSoldOut, onRefresh]);
+  const handleClearError = () => {
+    clearProductError(product.id);
+  };
 
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-linear-to-r from-emerald-300 via-white to-teal-400">
       <CardHeader className="pb-3">
         <div className="flex justify-between items-start">
           <div>
@@ -168,7 +138,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </div>
           {isLowStock && !isSoldOut && (
             <Badge variant="destructive" className="animate-pulse">
-              ⚡ Only {product.availableStock} left!
+              Only {product.availableStock} left!
             </Badge>
           )}
           {isSoldOut && <Badge variant="secondary">Sold Out</Badge>}
@@ -199,19 +169,34 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           />
         </div>
 
-        {getErrorDisplay()}
+        {productError && (
+          <Alert variant="destructive" className="bg-red-50 border-red-200">
+            <AlertCircle className="h-4 w-4" />
+            <div className="flex-1">
+              <AlertDescription className="text-red-800">
+                {productError}
+              </AlertDescription>
+            </div>
+            <button
+              onClick={handleClearError}
+              className="text-red-600 hover:text-red-800 text-sm font-medium"
+            >
+              Dismiss
+            </button>
+          </Alert>
+        )}
 
-        {isExpired && (
-          <Alert className="bg-yellow-50 border-yellow-200">
+        {hasExpired && hasShownExpiredMessage && (
+          <Alert className="bg-yellow-50 border-yellow-200 animate-pulse">
             <Clock className="h-4 w-4 text-yellow-600" />
-            <AlertDescription className="text-yellow-800">
+            <AlertDescription className="text-yellow-800 font-medium">
               Reservation has expired! The stock has been released. You can try
               reserving again.
             </AlertDescription>
           </Alert>
         )}
 
-        {isReserving && (
+        {isReserving && !hasActiveReservation && !hasExpired && (
           <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
             <div className="flex items-center justify-center gap-2">
               <Loader2 className="h-5 w-5 text-indigo-600 animate-spin" />
@@ -221,26 +206,54 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             </div>
           </div>
         )}
-        {hasActiveReservation && reservation.expiresAt && (
-          <CountdownTimer
-            expiresAt={reservation.expiresAt}
-            onExpire={handleExpiration}
-          />
+
+        {hasActiveReservation && productReservation && (
+          <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="h-5 w-5 text-green-600" />
+                <span className="font-semibold text-blue-800">
+                  ✅ Reservation Confirmed!
+                </span>
+              </div>
+              <Badge variant="outline" className="bg-blue-100">
+                {productReservation.quantity} unit(s)
+              </Badge>
+            </div>
+            <div className="text-center py-3 bg-white rounded-lg">
+              <div className="flex items-center justify-center gap-2 mb-1">
+                <Clock className="h-4 w-4 text-blue-600" />
+                <span className="text-sm font-medium text-blue-700">
+                  Time Remaining
+                </span>
+              </div>
+              <div
+                className={`font-mono text-4xl font-bold ${getTimerColor(productReservation.timeLeft)}`}
+              >
+                {formatTimeLeft(productReservation.timeLeft)}
+              </div>
+              <p className="text-xs text-blue-600 mt-2">
+                {productReservation.timeLeft <= 60
+                  ? "Hurry! Your reservation is about to expire!"
+                  : "Complete checkout before time expires"}
+              </p>
+            </div>
+          </div>
         )}
       </CardContent>
 
       <CardFooter className="flex gap-2">
-        {!hasActiveReservation ? (
+        {!hasActiveReservation && !hasExpired ? (
           <Button
             onClick={handleReserve}
-            disabled={isSoldOut || isReserving || isRetrying}
+            disabled={isSoldOut || isReserving}
             className="w-full"
             size="lg"
           >
-            {isReserving || isRetrying ? (
+            {isReserving ? (
               <>
                 <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-                {isRetrying ? "Retrying..." : "Reserving..."}
+                Reserving...
               </>
             ) : isSoldOut ? (
               <>
@@ -254,7 +267,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               </>
             )}
           </Button>
-        ) : (
+        ) : hasActiveReservation ? (
           <div className="flex gap-2 w-full">
             <Button
               onClick={handleCheckout}
@@ -268,10 +281,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                   Processing...
                 </>
               ) : (
-                <>
-                  <CheckCircle className="h-4 w-4 mr-2" />
-                  Complete Checkout
-                </>
+                "Complete Checkout"
               )}
             </Button>
             <Button
@@ -282,10 +292,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               Cancel
             </Button>
           </div>
-        )}
+        ) : null}
       </CardFooter>
 
-      {!hasActiveReservation && !isSoldOut && !isReserving && !isFailed && (
+      {!hasActiveReservation && !isSoldOut && !isReserving && !hasExpired && (
         <div className="px-6 pb-4">
           <p className="text-xs text-muted-foreground text-center flex items-center justify-center gap-1">
             <Clock className="h-3 w-3" />

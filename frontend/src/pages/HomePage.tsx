@@ -59,8 +59,10 @@ export const HomePage: React.FC = () => {
         />
 
         <div className="flex flex-col items-center gap-2 bg-sky-500 text-green-600 px-4 py-2 rounded-full text-sm font-medium">
-          <h1 className="text-6xl font-bold">Well Come To Drops Zone</h1>
-          <span className="text-4xl font-bold">
+          <h1 className="text-2xl sm:text-6xl font-bold">
+            Well Come To Drops Zone
+          </h1>
+          <span className="text-2xl sm:text-4xl font-bold">
             Notice that Only Limited Edition Drops are Available Now
           </span>
         </div>

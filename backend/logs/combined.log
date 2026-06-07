@@ -10196,3 +10196,109 @@
 {"timestamp":"2026-06-07T18:34:47.838Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 3375ms","statusCode":304,"duration":"3375ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
 {"timestamp":"2026-06-07T18:35:00.022Z","level":"info","message":"Running reservation expiration job"}
 {"timestamp":"2026-06-07T18:35:03.300Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:35:47.746Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 3276ms","statusCode":304,"duration":"3276ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:36:00.017Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:36:03.721Z","level":"info","message":"Found 1 expired reservations"}
+{"timestamp":"2026-06-07T18:36:05.557Z","level":"info","message":"Expired 1 reservations and restored stock - took 5540ms"}
+{"timestamp":"2026-06-07T18:36:32.700Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 200 - 2890ms","statusCode":200,"duration":"2890ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:36:33.720Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 261ms","statusCode":304,"duration":"261ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:36:38.736Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 281ms","statusCode":304,"duration":"281ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:36:45.085Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 1618ms","statusCode":304,"duration":"1618ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:36:50.099Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 1636ms","statusCode":304,"duration":"1636ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:36:53.790Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 343ms","statusCode":304,"duration":"343ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:36:58.809Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 343ms","statusCode":304,"duration":"343ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:37:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:37:02.901Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:37:04.337Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 888ms","statusCode":304,"duration":"888ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:37:09.662Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 1207ms","statusCode":304,"duration":"1207ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:37:14.271Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 823ms","statusCode":304,"duration":"823ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:37:18.673Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 220ms","statusCode":304,"duration":"220ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:37:22.361Z","level":"info","message":"GET / - 200 - 208ms","statusCode":200,"duration":"208ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:37:22.668Z","level":"info","message":"GET / - 200 - 305ms","statusCode":200,"duration":"305ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:38:00.039Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:38:02.709Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:38:10.487Z","level":"info","message":"GET / - 200 - 268ms","statusCode":200,"duration":"268ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:38:10.795Z","level":"info","message":"GET / - 200 - 306ms","statusCode":200,"duration":"306ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:38:14.071Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 2143ms","statusCode":304,"duration":"2143ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:38:14.891Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 818ms","statusCode":304,"duration":"818ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:38:16.426Z","level":"info","message":"GET / - 200 - 251ms","statusCode":200,"duration":"251ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:38:16.735Z","level":"info","message":"GET / - 200 - 307ms","statusCode":200,"duration":"307ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:39:00.013Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:39:03.018Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:40:00.017Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:40:06.201Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:41:00.031Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:41:02.742Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:42:00.048Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:42:03.244Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:43:00.022Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:43:03.354Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:44:00.027Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:44:03.156Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:45:00.032Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:45:04.903Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:46:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:46:04.296Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:47:00.028Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:47:02.868Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:47:16.694Z","level":"info","message":"GET / - 200 - 1978ms","statusCode":200,"duration":"1978ms","ip":"::1","userAgent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"}
+{"timestamp":"2026-06-07T18:47:17.001Z","level":"info","message":"GET / - 200 - 303ms","statusCode":200,"duration":"303ms","ip":"::1","userAgent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"}
+{"timestamp":"2026-06-07T18:47:48.131Z","level":"info","message":"GET / - 200 - 2678ms","statusCode":200,"duration":"2678ms","ip":"::1","userAgent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"}
+{"timestamp":"2026-06-07T18:48:00.029Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:48:02.671Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:49:00.022Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:49:05.752Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:50:00.018Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:50:08.419Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:51:00.020Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:51:06.788Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:52:00.043Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:52:04.850Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:53:00.032Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:53:04.317Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:53:56.197Z","level":"info","message":"GET / - 200 - 2290ms","statusCode":200,"duration":"2290ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:53:56.405Z","level":"info","message":"GET / - 200 - 205ms","statusCode":200,"duration":"205ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:54:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:54:00.463Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:54:25.564Z","level":"info","message":"GET / - 200 - 1666ms","statusCode":200,"duration":"1666ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:54:55.420Z","level":"info","message":"GET / - 200 - 1525ms","statusCode":200,"duration":"1525ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:55:00.022Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:55:00.446Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:55:26.000Z","level":"info","message":"GET / - 200 - 1537ms","statusCode":200,"duration":"1537ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:55:55.953Z","level":"info","message":"GET / - 200 - 1484ms","statusCode":200,"duration":"1484ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:56:00.012Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:56:00.464Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:56:26.281Z","level":"info","message":"GET / - 200 - 1818ms","statusCode":200,"duration":"1818ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:56:56.797Z","level":"info","message":"GET / - 200 - 2340ms","statusCode":200,"duration":"2340ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:57:00.017Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:57:00.461Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:57:47.140Z","level":"info","message":"GET / - 200 - 2678ms","statusCode":200,"duration":"2678ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:58:00.031Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:58:01.708Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:58:46.252Z","level":"info","message":"GET / - 200 - 1785ms","statusCode":200,"duration":"1785ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:59:00.027Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T18:59:03.198Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T18:59:41.967Z","level":"info","message":"GET / - 200 - 1834ms","statusCode":200,"duration":"1834ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:59:42.865Z","level":"error","message":"GET /api/products?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 429 - 1ms","statusCode":429,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:59:42.867Z","level":"error","message":"GET /api/products?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 429 - 1ms","statusCode":429,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:59:48.465Z","level":"error","message":"GET /api/products?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 429 - 1ms","statusCode":429,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T18:59:53.000Z","level":"info","message":"Received shutdown signal, closing gracefully..."}
+{"timestamp":"2026-06-07T18:59:58.094Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-07T18:59:58.111Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-07T18:59:58.111Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-07T18:59:58.114Z","level":"info","message":"🚀 Server running on port 3001"}
+{"timestamp":"2026-06-07T18:59:58.114Z","level":"info","message":"📊 Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-07T18:59:58.114Z","level":"info","message":"❤️  Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-07T18:59:58.114Z","level":"info","message":"🔐 Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-07T18:59:58.115Z","level":"info","message":"📦 Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-07T18:59:58.115Z","level":"info","message":"💾 Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-07T19:00:00.020Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-07T19:00:00.406Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 200 - 1926ms","statusCode":200,"duration":"1926ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T19:00:03.779Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 327ms","statusCode":304,"duration":"327ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T19:00:03.781Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-07T19:00:08.184Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 306ms","statusCode":304,"duration":"306ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T19:00:13.715Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 253ms","statusCode":304,"duration":"253ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T19:00:18.731Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 275ms","statusCode":304,"duration":"275ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T19:00:23.722Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 260ms","statusCode":304,"duration":"260ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T19:00:28.764Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 303ms","statusCode":304,"duration":"303ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-07T19:00:33.785Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 329ms","statusCode":304,"duration":"329ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
