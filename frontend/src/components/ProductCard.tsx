@@ -61,9 +61,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     if (hasExpired && !hasShownExpiredMessage) {
       setHasShownExpiredMessage(true);
       onRefresh();
+
       const timer = setTimeout(() => {
         clearExpiredNotification(product.id);
         setHasShownExpiredMessage(false);
+        onRefresh();
       }, 5000);
       return () => clearTimeout(timer);
     }
@@ -127,7 +129,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   };
 
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-linear-to-r from-emerald-300 via-white to-teal-400">
+    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-linear-to-r from-emerald-50 via-white to-teal-50">
       <CardHeader className="pb-3">
         <div className="flex justify-between items-start">
           <div>

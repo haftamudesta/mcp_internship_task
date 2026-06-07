@@ -10,7 +10,12 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "cy:run:e2e": "cypress run --e2e",
+    "test:e2e": "cypress run --e2e",
+    "cy:run:component": "cypress run --component",
+    "test:e2e:chrome": "cypress run --e2e --browser chrome",
+    "test:all": "npm run test:run && npm run test:e2e"
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",
