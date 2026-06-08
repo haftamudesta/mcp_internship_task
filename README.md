@@ -1,7 +1,20 @@
 # Limited-Stock Product Drop System <a name="readme-top"></a>
 
 <div align="center"> <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" /> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" /> <img src="https://img.shields.io/badge/Prisma-3982CE?style-for-the-badge&logo=Prisma&logoColor=white" alt="Prisma" /> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
- <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white" alt="JWT" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /> <h3><b>Limited-Stock Product Drop System</b></h3> <p>High-Concurrency Reservation System for Limited Edition Products</p> </div>
+ <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white" alt="JWT" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /> <h3><b>Limited-Stock Product Drop System</b></h3> <p>High-Concurrency Reservation System for Limited Edition Products</p> 
+ <!-- Live Demo Badges -->
+  <p>
+    <a href="https://dropzone-frontend.onrender.com" target="_blank">
+      <img src="https://img.shields.io/badge/_Live_Demo-View_App-FF5722?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo">
+    </a>
+    <a href="https://dropzone-backend-kt9c.onrender.com" target="_blank">
+      <img src="https://img.shields.io/badge/_Backend_API-Test_APIs-00C7B7?style=for-the-badge&logo=postman&logoColor=white" alt="Backend API">
+    </a>
+    <a href="https://github.com/haftamudesta/mpc_internship_task" target="_blank">
+      <img src="https://img.shields.io/badge/_GitHub-View_Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository">
+    </a>
+  </p>
+ </div>
 <!-- TABLE OF CONTENTS -->
 
 <details>
