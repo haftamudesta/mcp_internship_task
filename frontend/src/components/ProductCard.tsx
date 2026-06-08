@@ -32,8 +32,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   onRefresh,
 }) => {
   const [isCheckingOut, setIsCheckingOut] = useState<boolean>(false);
-  const [hasShownExpiredMessage, setHasShownExpiredMessage] =
-    useState<boolean>(false);
+  const [showExpiredMessage, setShowExpiredMessage] = useState<boolean>(false);
   const {
     createReservation,
     checkout,
@@ -58,20 +57,23 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const isSoldOut = product.availableStock === 0;
 
   useEffect(() => {
-    if (hasExpired && !hasShownExpiredMessage) {
-      setHasShownExpiredMessage(true);
+    if (hasExpired && !showExpiredMessage) {
+      setShowExpiredMessage(true);
       onRefresh();
 
       const timer = setTimeout(() => {
+        setShowExpiredMessage(false);
         clearExpiredNotification(product.id);
-        setHasShownExpiredMessage(false);
         onRefresh();
       }, 5000);
-      return () => clearTimeout(timer);
+
+      return () => {
+        clearTimeout(timer);
+      };
     }
   }, [
     hasExpired,
-    hasShownExpiredMessage,
+    showExpiredMessage,
     product.id,
     clearExpiredNotification,
     onRefresh,
@@ -79,9 +81,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
   useEffect(() => {
     if (hasActiveReservation) {
-      setHasShownExpiredMessage(false);
+      setShowExpiredMessage(false);
+      clearExpiredNotification(product.id);
     }
-  }, [hasActiveReservation]);
+  }, [hasActiveReservation, product.id, clearExpiredNotification]);
+
+  useEffect(() => {
+    setShowExpiredMessage(false);
+  }, [product.id]);
 
   const formatTimeLeft = (seconds: number): string => {
     const minutes = Math.floor(seconds / 60);
@@ -98,6 +105,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const handleReserve = async (): Promise<void> => {
     try {
       await createReservation(product.id, 1);
+      setShowExpiredMessage(false);
       onRefresh();
     } catch (err) {
       console.error("Reservation failed:", err);
@@ -129,7 +137,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   };
 
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-linear-to-r from-emerald-300 via-white to-teal-300">
+    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-linear-to-r from-emerald-50 via-white to-teal-50">
       <CardHeader className="pb-3">
         <div className="flex justify-between items-start">
           <div>
@@ -188,7 +196,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </Alert>
         )}
 
-        {hasExpired && hasShownExpiredMessage && (
+        {showExpiredMessage && (
           <Alert className="bg-yellow-50 border-yellow-200 animate-pulse">
             <Clock className="h-4 w-4 text-yellow-600" />
             <AlertDescription className="text-yellow-800 font-medium">
@@ -198,7 +206,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </Alert>
         )}
 
-        {isReserving && !hasActiveReservation && !hasExpired && (
+        {isReserving && !hasActiveReservation && !showExpiredMessage && (
           <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
             <div className="flex items-center justify-center gap-2">
               <Loader2 className="h-5 w-5 text-indigo-600 animate-spin" />
@@ -245,7 +253,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       </CardContent>
 
       <CardFooter className="flex gap-2">
-        {!hasActiveReservation && !hasExpired ? (
+        {!hasActiveReservation && !showExpiredMessage ? (
           <Button
             onClick={handleReserve}
             disabled={isSoldOut || isReserving}
@@ -297,14 +305,17 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         ) : null}
       </CardFooter>
 
-      {!hasActiveReservation && !isSoldOut && !isReserving && !hasExpired && (
-        <div className="px-6 pb-4">
-          <p className="text-xs text-muted-foreground text-center flex items-center justify-center gap-1">
-            <Clock className="h-3 w-3" />
-            You have 5 minutes to complete checkout after reserving
-          </p>
-        </div>
-      )}
+      {!hasActiveReservation &&
+        !isSoldOut &&
+        !isReserving &&
+        !showExpiredMessage && (
+          <div className="px-6 pb-4">
+            <p className="text-xs text-muted-foreground text-center flex items-center justify-center gap-1">
+              <Clock className="h-3 w-3" />
+              You have 5 minutes to complete checkout after reserving
+            </p>
+          </div>
+        )}
     </Card>
   );
 };
