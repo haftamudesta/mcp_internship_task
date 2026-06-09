@@ -9,7 +9,7 @@ import { SignUpPage } from "./pages/SignUpPage";
 import { HealthPage } from "./pages/HealthPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import TermOfServices from "./pages/TermOfServices";
-import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import { RefundPolicy } from "./pages/RefundPolicy";
 import { ReservationProvider } from "./context/ReservationContext";
 
@@ -25,6 +25,7 @@ function App() {
               <Route path="signup" element={<SignUpPage />} />
               <Route path="health" element={<HealthPage />} />
               <Route path="term-of-service" element={<TermOfServices />} />
+              <Route path="term-of-service" element={<PrivacyPolicy />} />
               <Route path="privacy-policy" element={<PrivacyPolicy />} />
               <Route path="refund-policy" element={<RefundPolicy />} />
 
