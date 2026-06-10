@@ -1,16 +1,4 @@
 import React from "react";
-import {
-  Shield,
-  Clock,
-  ShoppingBag,
-  AlertCircle,
-  RefreshCw,
-  CreditCard,
-  Calendar,
-  Package,
-  HelpCircle,
-} from "lucide-react";
-
 const RefundPolicy: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
