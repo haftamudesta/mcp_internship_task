@@ -9,7 +9,9 @@ import type{
   CheckoutRequest,
   ApiResponse,
   ApiSuccessResponse,
-  ApiErrorResponse
+  ApiErrorResponse,
+  CreateProductInput,
+  UpdateProductInput
 } from '../types';
 
 class ApiClient {
@@ -120,6 +122,7 @@ class ApiClient {
     return data.data;
   }
 
+ 
   async getProducts(params?: {
     page?: number;
     limit?: number;
@@ -136,6 +139,7 @@ class ApiClient {
     return data.data;
   }
 
+  
   async getProduct(id: string): Promise<Product> {
     const response = await this.client.get<ApiResponse<Product>>(`/api/products/${id}`);
     
@@ -145,6 +149,39 @@ class ApiClient {
     }
     return data.data;
   }
+
+ 
+  async createProduct(productData: CreateProductInput): Promise<Product> {
+    const response = await this.client.post<ApiResponse<Product>>('/api/products', productData);
+    
+    const data = response.data;
+    if (!this.isSuccessResponse(data)) {
+      throw new Error(data.error || 'Failed to create product');
+    }
+    return data.data;
+  }
+
+  
+  async updateProduct(id: string, productData: UpdateProductInput): Promise<Product> {
+    const response = await this.client.put<ApiResponse<Product>>(`/api/products/${id}`, productData);
+    
+    const data = response.data;
+    if (!this.isSuccessResponse(data)) {
+      throw new Error(data.error || 'Failed to update product');
+    }
+    return data.data;
+  }
+
+  
+  async deleteProduct(id: string): Promise<void> {
+    const response = await this.client.delete<ApiResponse<null>>(`/api/products/${id}`);
+    
+    const data = response.data;
+    if (!this.isSuccessResponse(data)) {
+      throw new Error(data.error || 'Failed to delete product');
+    }
+  }
+
 
   async createReservation(data: CreateReservationRequest, signal?: AbortSignal): Promise<CreateReservationResponse> {
     const response = await this.client.post<ApiResponse<CreateReservationResponse>>('/api/reservations', data, {
