@@ -10,7 +10,7 @@ import { HealthPage } from "./pages/HealthPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import TermOfServices from "./pages/TermOfServices";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import { RefundPolicy } from "./pages/RefundPolicy";
+import RefundPolicy from "./pages/RefundPolicy";
 import { ReservationProvider } from "./context/ReservationContext";
 
 function App() {
