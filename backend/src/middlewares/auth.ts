@@ -4,6 +4,7 @@ import jwt from 'jsonwebtoken';
 interface TokenPayload {
   id: string;
   email: string;
+  role: string; 
 }
 
 declare global {
@@ -55,3 +56,68 @@ export const authMiddleware = (req: Request, res: Response, next: NextFunction):
     });
   }
 };
+
+export const requireRole = (roles: string | string[]) => {
+  return (req: Request, res: Response, next: NextFunction): void => {
+    if (!req.user) {
+      res.status(401).json({ 
+        success: false, 
+        error: 'Authentication required.' 
+      });
+      return;
+    }
+
+    const allowedRoles = Array.isArray(roles) ? roles : [roles];
+    
+    if (!allowedRoles.includes(req.user.role)) {
+      res.status(403).json({ 
+        success: false, 
+        error: `Access denied. Required roles: ${allowedRoles.join(', ')}` 
+      });
+      return;
+    }
+    
+    next();
+  };
+};
+
+export const requireAdmin = (req: Request, res: Response, next: NextFunction): void => {
+  if (!req.user) {
+    res.status(401).json({ 
+      success: false, 
+      error: 'Authentication required.' 
+    });
+    return;
+  }
+
+  if (req.user.role !== 'ADMIN') {
+    res.status(403).json({ 
+      success: false, 
+      error: 'Access denied. Admin privileges required.' 
+    });
+    return;
+  }
+  
+  next();
+};
+
+export const requireAdminOrOwner = (req: Request, res: Response, next: NextFunction): void => {
+  if (!req.user) {
+    res.status(401).json({ 
+      success: false, 
+      error: 'Authentication required.' 
+    });
+    return;
+  }
+
+  if (req.user.role !== 'ADMIN' && req.user.role !== 'OWNER') {
+    res.status(403).json({ 
+      success: false, 
+      error: 'Access denied. Admin or owner privileges required.' 
+    });
+    return;
+  }
+  
+  next();
+};
+

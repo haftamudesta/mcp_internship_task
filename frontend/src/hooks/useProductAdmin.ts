@@ -1,3 +1,4 @@
+// useProductAdmin.ts
 import { useState } from 'react';
 import { apiClient } from '../services/api';
 import type { Product, CreateProductInput, UpdateProductInput } from '../types';
@@ -13,8 +14,9 @@ export const useProductAdmin = () => {
       const product = await apiClient.createProduct(data);
       return product;
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to create product');
-      return null;
+      const message = err instanceof Error ? err.message : 'Failed to create product';
+      setError(message);
+      return null; // Return null instead of throwing
     } finally {
       setLoading(false);
     }
@@ -27,8 +29,9 @@ export const useProductAdmin = () => {
       const product = await apiClient.updateProduct(id, data);
       return product;
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to update product');
-      return null;
+      const message = err instanceof Error ? err.message : 'Failed to update product';
+      setError(message);
+      return null; // Return null instead of throwing
     } finally {
       setLoading(false);
     }
@@ -41,17 +44,23 @@ export const useProductAdmin = () => {
       await apiClient.deleteProduct(id);
       return true;
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to delete product');
+      const message = err instanceof Error ? err.message : 'Failed to delete product';
+      setError(message);
       return false;
     } finally {
       setLoading(false);
     }
   };
 
+  const clearError = () => {
+    setError(null);
+  };
+
   return {
     createProduct,
     updateProduct,
     deleteProduct,
+    clearError,
     loading,
     error,
   };

@@ -11,6 +11,7 @@ interface User {
   id: string;
   email: string;
   name: string | null;
+  role: "USER" | "ADMIN" | "OWNER";
 }
 
 interface AuthContextType {
@@ -21,6 +22,10 @@ interface AuthContextType {
   register: (email: string, password: string, name?: string) => Promise<void>;
   logout: () => void;
   isAuthenticated: boolean;
+  isAdmin: boolean;
+  isOwner: boolean;
+  isUser: boolean;
+  hasRole: (roles: string | string[]) => boolean;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -55,7 +60,12 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
     try {
       const profile = await apiClient.getProfile();
-      setUser(profile);
+
+      const userWithRole = {
+        ...profile,
+        role: profile.role || "USER",
+      };
+      setUser(userWithRole);
     } catch (err) {
       apiClient.clearToken();
       setUser(null);
@@ -69,7 +79,12 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     try {
       const response = await apiClient.login(email, password);
       apiClient.setToken(response.token);
-      setUser(response.user);
+      // Ensure user has role field
+      const userWithRole = {
+        ...response.user,
+        role: response.user.role || "USER",
+      };
+      setUser(userWithRole);
     } catch (err) {
       const message = err instanceof Error ? err.message : "Login failed";
       setError(message);
@@ -86,7 +101,12 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     try {
       const response = await apiClient.register(email, password, name);
       apiClient.setToken(response.token);
-      setUser(response.user);
+      // Ensure user has role field (default should be 'USER' from backend)
+      const userWithRole = {
+        ...response.user,
+        role: response.user.role || "USER",
+      };
+      setUser(userWithRole);
     } catch (err) {
       const message =
         err instanceof Error ? err.message : "Registration failed";
@@ -101,6 +121,18 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     setError(null);
   };
 
+  // Helper function to check if user has specific role(s)
+  const hasRole = (roles: string | string[]): boolean => {
+    if (!user) return false;
+
+    const roleList = Array.isArray(roles) ? roles : [roles];
+    return roleList.includes(user.role);
+  };
+
+  const isAdmin = user?.role === "ADMIN";
+  const isOwner = user?.role === "OWNER";
+  const isUser = user?.role === "USER";
+
   return (
     <AuthContext.Provider
       value={{
@@ -111,6 +143,10 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         register,
         logout,
         isAuthenticated: !!user,
+        isAdmin,
+        isOwner,
+        isUser,
+        hasRole,
       }}
     >
       {children}

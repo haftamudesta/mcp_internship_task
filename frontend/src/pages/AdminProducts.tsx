@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useProducts } from "../hooks/useProducts";
 import { useAuth } from "../hooks/useAuth";
+import { useProductAdmin } from "../hooks/useProductAdmin";
 import { ProductForm } from "../components/ProductForm";
 import { DeleteConfirmDialog } from "../components/DeleteConfirmDialog";
 import { Button } from "../components/ui/button";
@@ -21,9 +22,10 @@ import {
   DollarSign,
   Layers,
   AlertCircle,
+  RefreshCw,
+  CheckCircle,
 } from "lucide-react";
 import { Alert, AlertDescription } from "../components/ui/alert";
-import apiClient from "../services/api";
 
 interface AdminProductsProps {
   onProductChange?: () => void;
@@ -32,7 +34,7 @@ interface AdminProductsProps {
 export const AdminProducts: React.FC<AdminProductsProps> = ({
   onProductChange,
 }) => {
-  const { user } = useAuth();
+  const { isAdmin, isOwner } = useAuth();
   const {
     products,
     loading,
@@ -49,63 +51,69 @@ export const AdminProducts: React.FC<AdminProductsProps> = ({
     autoRefresh: true,
   });
 
+  const {
+    createProduct,
+    updateProduct,
+    deleteProduct,
+    loading: adminLoading,
+    error: adminError,
+  } = useProductAdmin();
+
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [editingProduct, setEditingProduct] = useState<any>(null);
   const [deletingProduct, setDeletingProduct] = useState<any>(null);
-  const [actionError, setActionError] = useState<string | null>(null);
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
-  const isAdmin = user?.role === "admin" || user?.email === "admin@example.com";
+  const canManageProducts = isAdmin || isOwner;
+  const canDeleteProducts = isAdmin;
 
-  const handleCreateProduct = async (data: any) => {
-    setActionError(null);
-    try {
-      await apiClient.post("/products", data);
+  const handleCreateProduct = async (data: any): Promise<void> => {
+    const result = await createProduct(data);
+    if (result) {
+      setSuccessMessage("Product created successfully!");
       await refetch();
       onProductChange?.();
-    } catch (error: any) {
-      setActionError(
-        error.response?.data?.message || "Failed to create product",
-      );
-      throw error;
+      setTimeout(() => setSuccessMessage(null), 3000);
+    } else {
+      throw new Error(adminError || "Failed to create product");
     }
   };
 
-  const handleUpdateProduct = async (data: any) => {
-    setActionError(null);
-    try {
-      await apiClient.put(`/products/${editingProduct.id}`, data);
+  const handleUpdateProduct = async (data: any): Promise<void> => {
+    if (!editingProduct) return;
+    const result = await updateProduct(editingProduct.id, data);
+    if (result) {
+      setSuccessMessage("Product updated successfully!");
       await refetch();
       onProductChange?.();
       setEditingProduct(null);
-    } catch (error: any) {
-      setActionError(
-        error.response?.data?.message || "Failed to update product",
-      );
-      throw error;
+      setTimeout(() => setSuccessMessage(null), 3000);
+    } else {
+      throw new Error(adminError || "Failed to update product");
     }
   };
 
-  const handleDeleteProduct = async () => {
-    setActionError(null);
-    try {
-      await apiClient.delete(`/products/${deletingProduct.id}`);
+  const handleDeleteProduct = async (): Promise<void> => {
+    if (!deletingProduct) return;
+    const success = await deleteProduct(deletingProduct.id);
+    if (success) {
+      setSuccessMessage("Product deleted successfully!");
       await refetch();
       onProductChange?.();
       setDeletingProduct(null);
-    } catch (error: any) {
-      setActionError(
-        error.response?.data?.message || "Failed to delete product",
-      );
-      throw error;
+      setTimeout(() => setSuccessMessage(null), 3000);
+    } else {
+      throw new Error(adminError || "Failed to delete product");
     }
   };
 
-  if (!isAdmin) {
+  if (!canManageProducts) {
     return (
       <Alert variant="destructive">
         <AlertCircle className="h-4 w-4" />
         <AlertDescription>
-          You don't have permission to access this page. Admin access required.
+          You don't have permission to access this page. Admin or Moderator
+          access required.
         </AlertDescription>
       </Alert>
     );
@@ -128,23 +136,56 @@ export const AdminProducts: React.FC<AdminProductsProps> = ({
             Product Management
           </h1>
           <p className="text-gray-600 mt-1">
-            Create, edit, and manage your limited drop products
+            {isAdmin
+              ? "Full access: Create, edit, and delete products"
+              : "Moderator access: Create and edit products only"}
           </p>
         </div>
-        <Button onClick={() => setIsFormOpen(true)} className="gap-2">
-          <Plus className="h-4 w-4" />
-          Add Product
-        </Button>
+        <div className="flex gap-2">
+          <Button
+            variant="outline"
+            onClick={() => refetch()}
+            disabled={loading}
+          >
+            <RefreshCw
+              className={`h-4 w-4 mr-2 ${loading ? "animate-spin" : ""}`}
+            />
+            Refresh
+          </Button>
+          <Button onClick={() => setIsFormOpen(true)} className="gap-2">
+            <Plus className="h-4 w-4" />
+            Add Product
+          </Button>
+        </div>
       </div>
 
-      {actionError && (
-        <Alert variant="destructive">
-          <AlertCircle className="h-4 w-4" />
-          <AlertDescription>{actionError}</AlertDescription>
+      {isOwner && (
+        <Alert className="bg-yellow-50 border-yellow-200">
+          <AlertCircle className="h-4 w-4 text-yellow-600" />
+          <AlertDescription className="text-yellow-800">
+            You have owner permissions. You can create and edit products, but
+            you cannot delete them.
+          </AlertDescription>
         </Alert>
       )}
 
-      {loading && products.length === 0 ? (
+      {successMessage && (
+        <Alert className="bg-green-50 border-green-200">
+          <CheckCircle className="h-4 w-4 text-green-600" />
+          <AlertDescription className="text-green-800">
+            {successMessage}
+          </AlertDescription>
+        </Alert>
+      )}
+
+      {(adminError || error) && (
+        <Alert variant="destructive">
+          <AlertCircle className="h-4 w-4" />
+          <AlertDescription>{adminError || error}</AlertDescription>
+        </Alert>
+      )}
+
+      {(loading || adminLoading) && products.length === 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[...Array(6)].map((_, i) => (
             <div
@@ -153,6 +194,7 @@ export const AdminProducts: React.FC<AdminProductsProps> = ({
             >
               <div className="h-4 bg-gray-200 rounded w-3/4 mb-4"></div>
               <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+              <div className="h-10 bg-gray-200 rounded w-full mt-4"></div>
             </div>
           ))}
         </div>
@@ -176,7 +218,10 @@ export const AdminProducts: React.FC<AdminProductsProps> = ({
         <>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((product) => (
-              <Card key={product.id} className="relative group">
+              <Card
+                key={product.id}
+                className="relative group hover:shadow-lg transition-shadow"
+              >
                 <CardHeader>
                   <CardTitle className="pr-16">{product.name}</CardTitle>
                   <CardDescription>
@@ -202,6 +247,30 @@ export const AdminProducts: React.FC<AdminProductsProps> = ({
                       {product.availableStock} / {product.totalStock} in stock
                     </Badge>
                   </div>
+
+                  <div className="space-y-1">
+                    <div className="w-full bg-gray-200 rounded-full h-2">
+                      <div
+                        className={`h-2 rounded-full transition-all ${
+                          product.availableStock === 0
+                            ? "bg-red-500"
+                            : product.availableStock < 10
+                              ? "bg-yellow-500"
+                              : "bg-green-500"
+                        }`}
+                        style={{
+                          width: `${(product.availableStock / product.totalStock) * 100}%`,
+                        }}
+                      />
+                    </div>
+                    <p className="text-xs text-gray-500">
+                      {Math.round(
+                        (product.availableStock / product.totalStock) * 100,
+                      )}
+                      % available
+                    </p>
+                  </div>
+
                   <div className="text-xs text-gray-500">
                     Created: {new Date(product.createdAt).toLocaleDateString()}
                   </div>
@@ -215,6 +284,7 @@ export const AdminProducts: React.FC<AdminProductsProps> = ({
                       setEditingProduct(product);
                       setIsFormOpen(true);
                     }}
+                    disabled={adminLoading}
                   >
                     <Edit className="h-4 w-4 mr-2" />
                     Edit
@@ -224,6 +294,7 @@ export const AdminProducts: React.FC<AdminProductsProps> = ({
                     size="sm"
                     className="flex-1"
                     onClick={() => setDeletingProduct(product)}
+                    disabled={adminLoading || !canDeleteProducts}
                   >
                     <Trash2 className="h-4 w-4 mr-2" />
                     Delete
@@ -237,7 +308,7 @@ export const AdminProducts: React.FC<AdminProductsProps> = ({
             <div className="flex justify-center gap-2 pt-4">
               <button
                 onClick={() => setPage(currentPage - 1)}
-                disabled={currentPage === 1}
+                disabled={currentPage === 1 || adminLoading}
                 className="px-4 py-2 border border-gray-300 rounded-lg disabled:opacity-50 hover:bg-gray-50"
               >
                 Previous
@@ -247,7 +318,7 @@ export const AdminProducts: React.FC<AdminProductsProps> = ({
               </span>
               <button
                 onClick={() => setPage(currentPage + 1)}
-                disabled={currentPage === totalPages}
+                disabled={currentPage === totalPages || adminLoading}
                 className="px-4 py-2 border border-gray-300 rounded-lg disabled:opacity-50 hover:bg-gray-50"
               >
                 Next

@@ -45,11 +45,23 @@ export interface CheckoutResponse {
   totalAmount: number;
 }
 
+export type UserRole = 'USER' | 'ADMIN' | 'OWNER';
+
+export interface User {
+  id: string;
+  email: string;
+  name: string | null;
+  role: UserRole;
+  createdAt: string;
+  updatedAt: string;
+}
+
 export interface AuthResponse {
   user: {
     id: string;
     email: string;
     name: string | null;
+     role: UserRole;
   };
   token: string;
 }

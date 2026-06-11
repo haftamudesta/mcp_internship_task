@@ -14,6 +14,13 @@ import type{
   UpdateProductInput
 } from '../types';
 
+interface User {
+  id: string;
+  email: string;
+  name: string | null;
+  role: 'USER' | 'ADMIN' | 'OWNER';
+}
+
 class ApiClient {
   private client: AxiosInstance;
   private token: string | null = null;
@@ -112,8 +119,8 @@ class ApiClient {
     return data.data;
   }
 
-  async getProfile(): Promise<{ id: string; email: string; name: string | null }> {
-    const response = await this.client.get<ApiResponse<{ id: string; email: string; name: string | null }>>('/api/auth/me');
+  async getProfile(): Promise<User> {
+    const response = await this.client.get<ApiResponse<User>>('/api/auth/me');
     
     const data = response.data;
     if (!this.isSuccessResponse(data)) {
