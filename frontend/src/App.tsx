@@ -12,6 +12,7 @@ import TermOfServices from "./pages/TermOfServices";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RefundPolicy from "./pages/RefundPolicy";
 import { ReservationProvider } from "./context/ReservationContext";
+import { AdminProducts } from "./pages/AdminProducts";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
               <Route element={<ProtectedRoute />}>
                 <Route path="products" element={<ProductsPage />} />
                 <Route path="dashboard" element={<DashboardPage />} />
+                <Route path="admin_products" element={<AdminProducts />} />
               </Route>
             </Route>
           </Routes>
