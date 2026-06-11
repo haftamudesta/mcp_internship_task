@@ -14,11 +14,13 @@ import type{
   UpdateProductInput
 } from '../types';
 
-interface User {
+export interface User {
   id: string;
   email: string;
   name: string | null;
-  role: 'USER' | 'ADMIN' | 'OWNER';
+  role: 'USER' | 'ADMIN' | 'OWNER'; 
+  createdAt?: string; 
+  updatedAt?: string;
 }
 
 class ApiClient {
@@ -86,12 +88,33 @@ class ApiClient {
     return response.success === true;
   }
 
-  // Public GET method
-  async get<T = unknown>(url: string): Promise<T> {
-    const response = await this.client.get<T>(url);
+  // Generic HTTP methods
+  async get<T = unknown>(url: string, params?: any): Promise<T> {
+    const response = await this.client.get<T>(url, { params });
     return response.data;
   }
 
+  async post<T = unknown>(url: string, data?: any): Promise<T> {
+    const response = await this.client.post<T>(url, data);
+    return response.data;
+  }
+
+  async put<T = unknown>(url: string, data?: any): Promise<T> {
+    const response = await this.client.put<T>(url, data);
+    return response.data;
+  }
+
+  async patch<T = unknown>(url: string, data?: any): Promise<T> {
+    const response = await this.client.patch<T>(url, data);
+    return response.data;
+  }
+
+  async delete<T = unknown>(url: string): Promise<T> {
+    const response = await this.client.delete<T>(url);
+    return response.data;
+  }
+
+  // Auth endpoints
   async register(email: string, password: string, name?: string): Promise<AuthResponse> {
     const response = await this.client.post<ApiResponse<AuthResponse>>('/api/auth/register', {
       email,
@@ -129,7 +152,28 @@ class ApiClient {
     return data.data;
   }
 
- 
+  // User management endpoints (Admin only)
+  async getAllUsers(): Promise<{ data: User[] }> {
+    const response = await this.client.get<ApiResponse<User[]>>('/api/auth/users');
+    
+    const data = response.data;
+    if (!this.isSuccessResponse(data)) {
+      throw new Error(data.error || 'Failed to fetch users');
+    }
+    return { data: data.data };
+  }
+
+  async updateUserRole(userId: string, role: string): Promise<{ data: User }> {
+    const response = await this.client.put<ApiResponse<User>>('/api/auth/users/role', { userId, role });
+    
+    const data = response.data;
+    if (!this.isSuccessResponse(data)) {
+      throw new Error(data.error || 'Failed to update user role');
+    }
+    return { data: data.data };
+  }
+
+  // Product endpoints
   async getProducts(params?: {
     page?: number;
     limit?: number;
@@ -146,7 +190,6 @@ class ApiClient {
     return data.data;
   }
 
-  
   async getProduct(id: string): Promise<Product> {
     const response = await this.client.get<ApiResponse<Product>>(`/api/products/${id}`);
     
@@ -157,7 +200,6 @@ class ApiClient {
     return data.data;
   }
 
- 
   async createProduct(productData: CreateProductInput): Promise<Product> {
     const response = await this.client.post<ApiResponse<Product>>('/api/products', productData);
     
@@ -168,7 +210,6 @@ class ApiClient {
     return data.data;
   }
 
-  
   async updateProduct(id: string, productData: UpdateProductInput): Promise<Product> {
     const response = await this.client.put<ApiResponse<Product>>(`/api/products/${id}`, productData);
     
@@ -179,7 +220,6 @@ class ApiClient {
     return data.data;
   }
 
-  
   async deleteProduct(id: string): Promise<void> {
     const response = await this.client.delete<ApiResponse<null>>(`/api/products/${id}`);
     
@@ -189,7 +229,7 @@ class ApiClient {
     }
   }
 
-
+  // Reservation endpoints
   async createReservation(data: CreateReservationRequest, signal?: AbortSignal): Promise<CreateReservationResponse> {
     const response = await this.client.post<ApiResponse<CreateReservationResponse>>('/api/reservations', data, {
       signal
