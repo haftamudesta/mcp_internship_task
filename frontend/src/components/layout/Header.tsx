@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../../hooks/useAuth";
-import { ShoppingBag, LogOut, User, Menu, X } from "lucide-react";
+import { ShoppingBag, LogOut, User, Menu, X, Shield } from "lucide-react";
 
 export const Header: React.FC = () => {
-  const { user, isAuthenticated, logout } = useAuth();
+  const { user, isAuthenticated, logout, isAdmin, isOwner } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,6 +14,8 @@ export const Header: React.FC = () => {
     { name: "Products", href: "/products" },
     { name: "Health", href: "/health" },
   ];
+
+  const hasAdminAccess = isAdmin || isOwner;
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -52,6 +54,20 @@ export const Header: React.FC = () => {
                 {item.name}
               </Link>
             ))}
+
+            {hasAdminAccess && (
+              <Link
+                to="/admin"
+                className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 flex items-center gap-2 ${
+                  isActive("/admin") || location.pathname.startsWith("/admin")
+                    ? "bg-white/20 text-white backdrop-blur-sm shadow-lg"
+                    : "text-white/80 hover:bg-white/10 hover:text-white"
+                }`}
+              >
+                <Shield className="h-4 w-4" />
+                Admin
+              </Link>
+            )}
           </div>
 
           <div className="hidden md:flex md:items-center md:gap-4">
@@ -124,6 +140,21 @@ export const Header: React.FC = () => {
                   {item.name}
                 </Link>
               ))}
+
+              {hasAdminAccess && (
+                <Link
+                  to="/admin"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block px-4 py-3 text-sm font-medium flex items-center gap-2 ${
+                    isActive("/admin") || location.pathname.startsWith("/admin")
+                      ? "bg-linear-to-r from-indigo-50 to-purple-50 text-indigo-700 border-r-4 border-indigo-600"
+                      : "text-gray-700 hover:bg-gray-50"
+                  }`}
+                >
+                  <Shield className="h-4 w-4" />
+                  Admin Panel
+                </Link>
+              )}
 
               <div className="border-t border-gray-200 my-2"></div>
 
