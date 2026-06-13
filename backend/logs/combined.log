@@ -2499,3 +2499,51 @@
 {"timestamp":"2026-06-11T15:25:09.433Z","level":"info","message":"Auth endpoints available at http://localhost:3001/api/auth"}
 {"timestamp":"2026-06-11T15:25:09.433Z","level":"info","message":"Product endpoints available at http://localhost:3001/api/products"}
 {"timestamp":"2026-06-11T15:25:09.434Z","level":"info","message":"Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-11T18:27:55.075Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-11T18:27:55.091Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-11T18:27:55.091Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-11T18:27:55.094Z","level":"info","message":"Server running on port 3001"}
+{"timestamp":"2026-06-11T18:27:55.094Z","level":"info","message":"Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-11T18:27:55.094Z","level":"info","message":"Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-11T18:27:55.095Z","level":"info","message":"Readiness check at http://localhost:3001/ready"}
+{"timestamp":"2026-06-11T18:27:55.095Z","level":"info","message":"Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-11T18:27:55.095Z","level":"info","message":"Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-11T18:27:55.095Z","level":"info","message":"Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-11T18:28:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-11T18:28:00.524Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-11T18:28:02.095Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 200 - 6926ms","statusCode":200,"duration":"6926ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:02.341Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 243ms","statusCode":304,"duration":"243ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:03.581Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 262ms","statusCode":304,"duration":"262ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:09.125Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 236ms","statusCode":304,"duration":"236ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:14.172Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 276ms","statusCode":304,"duration":"276ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:19.124Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 232ms","statusCode":304,"duration":"232ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:24.805Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 923ms","statusCode":304,"duration":"923ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:30.015Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 1132ms","statusCode":304,"duration":"1132ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:34.477Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 587ms","statusCode":304,"duration":"587ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:39.194Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 295ms","statusCode":304,"duration":"295ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:44.514Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 622ms","statusCode":304,"duration":"622ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:49.117Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 226ms","statusCode":304,"duration":"226ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:54.939Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 1057ms","statusCode":304,"duration":"1057ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:28:59.282Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 399ms","statusCode":304,"duration":"399ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:29:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-11T18:29:00.429Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-11T18:29:04.093Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 216ms","statusCode":304,"duration":"216ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:29:09.103Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 210ms","statusCode":304,"duration":"210ms","ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:30:00.026Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-11T18:30:02.619Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-11T18:30:10.457Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 1571ms","statusCode":304,"duration":"1571ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:31:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-11T18:31:02.749Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-11T18:31:10.391Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 1511ms","statusCode":304,"duration":"1511ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:32:00.021Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-11T18:32:02.923Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-11T18:32:10.463Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 1571ms","statusCode":304,"duration":"1571ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:33:00.029Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-11T18:33:07.464Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-11T18:33:10.481Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 1598ms","statusCode":304,"duration":"1598ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:34:00.029Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-11T18:34:02.629Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-11T18:34:11.898Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 3009ms","statusCode":304,"duration":"3009ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-11T18:35:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-11T18:35:02.486Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-11T18:35:10.649Z","level":"info","message":"GET /?page=1&limit=9&search=&sortBy=createdAt&sortOrder=desc - 304 - 1764ms","statusCode":304,"duration":"1764ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}

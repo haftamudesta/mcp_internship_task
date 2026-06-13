@@ -13,6 +13,10 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RefundPolicy from "./pages/RefundPolicy";
 import { ReservationProvider } from "./context/ReservationContext";
 import { AdminProducts } from "./pages/AdminProducts";
+import { AdminLayout } from "./components/AdminLayout";
+import { AdminAnalytics } from "./components/AdminAnalytics";
+import { AdminDashboard } from "./components/AdminDashboard";
+import { AdminUsers } from "./components/AdminUsers";
 
 function App() {
   return (
@@ -20,20 +24,29 @@ function App() {
       <AuthProvider>
         <ReservationProvider>
           <Routes>
+            {/* Main Layout Routes */}
             <Route path="/" element={<Layout />}>
+              {/* Public Routes */}
               <Route index element={<HomePage />} />
               <Route path="signin" element={<SignInPage />} />
               <Route path="signup" element={<SignUpPage />} />
               <Route path="health" element={<HealthPage />} />
               <Route path="term-of-service" element={<TermOfServices />} />
-              <Route path="term-of-service" element={<PrivacyPolicy />} />
               <Route path="privacy-policy" element={<PrivacyPolicy />} />
               <Route path="refund-policy" element={<RefundPolicy />} />
 
+              {/* Protected Routes (require authentication) */}
               <Route element={<ProtectedRoute />}>
                 <Route path="products" element={<ProductsPage />} />
                 <Route path="dashboard" element={<DashboardPage />} />
-                <Route path="admin_products" element={<AdminProducts />} />
+
+                {/* Admin Routes nested inside main layout */}
+                <Route path="admin" element={<AdminLayout />}>
+                  <Route index element={<AdminDashboard />} />
+                  <Route path="products" element={<AdminProducts />} />
+                  <Route path="users" element={<AdminUsers />} />
+                  <Route path="analytics" element={<AdminAnalytics />} />
+                </Route>
               </Route>
             </Route>
           </Routes>
