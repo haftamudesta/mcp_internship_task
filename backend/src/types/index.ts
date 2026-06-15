@@ -4,6 +4,7 @@ export interface User {
   id: string;
   email: string;
   name?: string;
+  role?: 'USER' | 'ADMIN' | 'OWNER';
   createdAt: Date;
   updatedAt: Date;
 }
@@ -151,6 +152,7 @@ export interface AuthResponse {
     id: string;
     email: string;
     name: string | null;
+     role: 'USER' | 'ADMIN' | 'OWNER';
   };
   token: string;
 }
@@ -172,6 +174,7 @@ export interface CheckoutResult {
 export interface TokenPayload {
   id: string;
   email: string;
+  role: string;
   iat?: number;
   exp?: number;
 }

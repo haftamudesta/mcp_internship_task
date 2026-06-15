@@ -22,17 +22,19 @@ export class AuthService {
       data: {
         email,
         password: hashedPassword,
-        name: name || null
+        name: name || null,
+        role: 'USER' // Default role
       },
       select: {
         id: true,
         email: true,
         name: true,
+        role: true, 
         createdAt: true
       }
     });
 
-    const token = generateToken({ id: user.id, email: user.email });
+    const token = generateToken({ id: user.id, email: user.email, role: user.role });
 
     logger.info(`New user registered: ${user.email}`, { userId: user.id });
 
@@ -40,7 +42,8 @@ export class AuthService {
       user: {
         id: user.id,
         email: user.email,
-        name: user.name
+        name: user.name,
+        role: user.role 
       },
       token
     };
@@ -60,15 +63,17 @@ export class AuthService {
       throw new Error('Invalid email or password');
     }
 
-    const token = generateToken({ id: user.id, email: user.email });
+    // Include role in JWT token
+    const token = generateToken({ id: user.id, email: user.email, role: user.role });
 
-    logger.info(`User logged in: ${user.email}`, { userId: user.id });
+    logger.info(`User logged in: ${user.email}`, { userId: user.id, role: user.role });
 
     return {
       user: {
         id: user.id,
         email: user.email,
-        name: user.name
+        name: user.name,
+        role: user.role // Include role
       },
       token
     };
@@ -81,6 +86,7 @@ export class AuthService {
         id: true,
         email: true,
         name: true,
+        role: true, // Include role
         createdAt: true,
         updatedAt: true
       }
@@ -95,6 +101,7 @@ export class AuthService {
         id: true,
         email: true,
         name: true,
+        role: true, // Include role
         createdAt: true,
         updatedAt: true
       }

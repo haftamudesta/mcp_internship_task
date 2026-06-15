@@ -6,6 +6,7 @@ const EXPIRES_IN = (process.env.JWT_EXPIRES_IN || '7d') as SignOptions['expiresI
 export interface JWTPayload {
   id: string;
   email: string;
+   role: string;
 }
 
 export const generateToken = (payload: JWTPayload): string => {
