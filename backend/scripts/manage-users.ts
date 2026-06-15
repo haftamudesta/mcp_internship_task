@@ -1,6 +1,11 @@
+/// <reference types="node" />
+
 import { PrismaClient } from '@prisma/client';
 import * as readline from 'readline';
 import * as process from 'process';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 const prisma = new PrismaClient();
 
@@ -18,6 +23,18 @@ const question = (query: string): Promise<string> => {
 async function main() {
   console.log('\n📋 User Management CLI');
   console.log('=====================\n');
+
+  try {
+    await prisma.$connect();
+    console.log('✅ Database connected successfully\n');
+  } catch (error) {
+    console.error('❌ Database connection failed:', error);
+    console.log('\n💡 Make sure:');
+    console.log('   1. Your .env file exists with DATABASE_URL');
+    console.log('   2. You have run npx prisma generate');
+    console.log('   3. Your database is running\n');
+    process.exit(1);
+  }
 
   const action = await question('What do you want to do? (list/update/delete/exit): ');
 

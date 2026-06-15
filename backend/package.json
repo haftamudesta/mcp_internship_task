@@ -19,7 +19,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:concurrency": "jest --testNamePattern='Concurrency'"
+    "test:concurrency": "jest --testNamePattern='Concurrency'",
+    "manage-users": "ts-node scripts/manage-users.ts"
   },
   "keywords": [],
   "author": "",
