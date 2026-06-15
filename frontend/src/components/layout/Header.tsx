@@ -1,13 +1,26 @@
 import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../../hooks/useAuth";
-import { ShoppingBag, LogOut, User, Menu, X, Shield } from "lucide-react";
+import {
+  ShoppingBag,
+  LogOut,
+  User,
+  Menu,
+  X,
+  Shield,
+  LayoutDashboard,
+} from "lucide-react";
 
 export const Header: React.FC = () => {
   const { user, isAuthenticated, logout, isAdmin, isOwner } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  console.log("User object:", user);
+  console.log("isAdmin:", isAdmin);
+  console.log("isOwner:", isOwner);
+  console.log("hasAdminAccess:", isAdmin || isOwner);
 
   const navigation = [
     { name: "Home", href: "/" },
@@ -54,6 +67,19 @@ export const Header: React.FC = () => {
                 {item.name}
               </Link>
             ))}
+            {isAuthenticated && (
+              <Link
+                to="/dashboard"
+                className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 flex items-center gap-2 ${
+                  isActive("/dashboard")
+                    ? "bg-white/20 text-white backdrop-blur-sm shadow-lg"
+                    : "text-white/80 hover:bg-white/10 hover:text-white"
+                }`}
+              >
+                <LayoutDashboard className="h-4 w-4" />
+                Dashboard
+              </Link>
+            )}
 
             {hasAdminAccess && (
               <Link
@@ -82,6 +108,12 @@ export const Header: React.FC = () => {
                       {user?.name || user?.email?.split("@")[0]}
                     </p>
                     <p className="text-xs text-white/70">{user?.email}</p>
+                    {/* Show role badge */}
+                    {hasAdminAccess && (
+                      <p className="text-xs text-yellow-300">
+                        {isAdmin ? "Admin" : "Owner"}
+                      </p>
+                    )}
                   </div>
                 </div>
 
@@ -123,6 +155,7 @@ export const Header: React.FC = () => {
           </button>
         </div>
 
+        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden absolute left-0 right-0 top-16 bg-white shadow-xl rounded-b-2xl mx-4 z-50">
             <div className="py-4 space-y-2">
@@ -140,6 +173,21 @@ export const Header: React.FC = () => {
                   {item.name}
                 </Link>
               ))}
+
+              {isAuthenticated && (
+                <Link
+                  to="/dashboard"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block px-4 py-3 text-sm font-medium flex items-center gap-2 ${
+                    isActive("/dashboard")
+                      ? "bg-linear-to-r from-indigo-50 to-purple-50 text-indigo-700 border-r-4 border-indigo-600"
+                      : "text-gray-700 hover:bg-gray-50"
+                  }`}
+                >
+                  <LayoutDashboard className="h-4 w-4" />
+                  Dashboard
+                </Link>
+              )}
 
               {hasAdminAccess && (
                 <Link
@@ -160,13 +208,6 @@ export const Header: React.FC = () => {
 
               {isAuthenticated ? (
                 <>
-                  <Link
-                    to="/dashboard"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50"
-                  >
-                    Dashboard
-                  </Link>
                   <button
                     onClick={handleLogout}
                     className="flex w-full items-center gap-3 px-4 py-3 text-sm font-medium text-red-600 hover:bg-gray-50"

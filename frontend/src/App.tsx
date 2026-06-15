@@ -17,6 +17,7 @@ import { AdminLayout } from "./components/AdminLayout";
 import { AdminAnalytics } from "./components/AdminAnalytics";
 import { AdminDashboard } from "./components/AdminDashboard";
 import { AdminUsers } from "./components/AdminUsers";
+import { AdminReservations } from "./components/AdminReservations";
 
 function App() {
   return (
@@ -26,7 +27,6 @@ function App() {
           <Routes>
             {/* Main Layout Routes */}
             <Route path="/" element={<Layout />}>
-              {/* Public Routes */}
               <Route index element={<HomePage />} />
               <Route path="signin" element={<SignInPage />} />
               <Route path="signup" element={<SignUpPage />} />
@@ -35,18 +35,21 @@ function App() {
               <Route path="privacy-policy" element={<PrivacyPolicy />} />
               <Route path="refund-policy" element={<RefundPolicy />} />
 
-              {/* Protected Routes (require authentication) */}
+              {/* Protected Routes */}
               <Route element={<ProtectedRoute />}>
                 <Route path="products" element={<ProductsPage />} />
                 <Route path="dashboard" element={<DashboardPage />} />
+              </Route>
+            </Route>
 
-                {/* Admin Routes nested inside main layout */}
-                <Route path="admin" element={<AdminLayout />}>
-                  <Route index element={<AdminDashboard />} />
-                  <Route path="products" element={<AdminProducts />} />
-                  <Route path="users" element={<AdminUsers />} />
-                  <Route path="analytics" element={<AdminAnalytics />} />
-                </Route>
+            {/* Admin Routes */}
+            <Route element={<ProtectedRoute />}>
+              <Route path="/admin" element={<AdminLayout />}>
+                <Route index element={<AdminDashboard />} />
+                <Route path="products" element={<AdminProducts />} />
+                <Route path="users" element={<AdminUsers />} />
+                <Route path="reservations" element={<AdminReservations />} />
+                <Route path="analytics" element={<AdminAnalytics />} />
               </Route>
             </Route>
           </Routes>

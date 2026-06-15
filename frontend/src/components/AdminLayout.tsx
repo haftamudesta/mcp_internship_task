@@ -1,4 +1,3 @@
-// components/AdminLayout.tsx
 import React from "react";
 import { Outlet, NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
@@ -7,10 +6,10 @@ import {
   Users,
   Settings,
   LayoutDashboard,
-  ShoppingBag,
   LogOut,
   Shield,
   BarChart3,
+  Clock,
 } from "lucide-react";
 import { Button } from "./ui/button";
 import { Alert, AlertDescription } from "./ui/alert";
@@ -38,7 +37,7 @@ export const AdminLayout: React.FC = () => {
           </Button>
         </div>
       </div>
-    );
+    ); //
   }
 
   const navItems = [
@@ -46,19 +45,19 @@ export const AdminLayout: React.FC = () => {
       path: "/admin",
       label: "Dashboard",
       icon: <LayoutDashboard className="h-4 w-4" />,
-      allowed: ["ADMIN", "MODERATOR"],
+      allowed: ["ADMIN", "OWNER"],
     },
     {
       path: "/admin/products",
       label: "Products",
       icon: <Package className="h-4 w-4" />,
-      allowed: ["ADMIN", "MODERATOR"],
+      allowed: ["ADMIN", "OWNER"],
     },
     {
-      path: "/admin/orders",
-      label: "Orders",
-      icon: <ShoppingBag className="h-4 w-4" />,
-      allowed: ["ADMIN", "MODERATOR"],
+      path: "/admin/reservations",
+      label: "Reservations",
+      icon: <Clock className="h-4 w-4" />,
+      allowed: ["ADMIN", "OWNER"],
     },
     {
       path: "/admin/users",
@@ -101,7 +100,7 @@ export const AdminLayout: React.FC = () => {
                   Admin Dashboard
                 </h1>
                 <p className="text-sm text-gray-600">
-                  {isAdmin ? "Administrator" : "Moderator"} Access
+                  {isAdmin ? "Administrator" : "Owner"} Access
                 </p>
               </div>
             </div>

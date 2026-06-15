@@ -79,7 +79,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     try {
       const response = await apiClient.login(email, password);
       apiClient.setToken(response.token);
-      // Ensure user has role field
       const userWithRole = {
         ...response.user,
         role: response.user.role || "USER",
@@ -101,7 +100,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     try {
       const response = await apiClient.register(email, password, name);
       apiClient.setToken(response.token);
-      // Ensure user has role field (default should be 'USER' from backend)
       const userWithRole = {
         ...response.user,
         role: response.user.role || "USER",
