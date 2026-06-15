@@ -4,6 +4,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import routes from './routes';
+
 import { errorHandler } from './middlewares/errorHandler';
 import { requestLogger } from './middlewares/logging';
 import { additionalSecurityHeaders } from './middlewares/security';
@@ -138,6 +139,7 @@ class Server {
     });
 
     this.app.use(routes);
+    
   }
 
   private initializeErrorHandling(): void {

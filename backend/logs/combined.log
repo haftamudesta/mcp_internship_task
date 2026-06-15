@@ -3530,3 +3530,49 @@
 {"timestamp":"2026-06-15T19:13:55.345Z","level":"error","message":"GET /api/admin/reservations - 404 - 2ms","statusCode":404,"duration":"2ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
 {"timestamp":"2026-06-15T19:14:00.027Z","level":"info","message":"Running reservation expiration job"}
 {"timestamp":"2026-06-15T19:14:04.004Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-15T19:14:50.139Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-15T19:14:50.166Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-15T19:14:50.167Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-15T19:14:50.170Z","level":"info","message":"Server running on port 3001"}
+{"timestamp":"2026-06-15T19:14:50.170Z","level":"info","message":"Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-15T19:14:50.171Z","level":"info","message":"Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-15T19:14:50.171Z","level":"info","message":"Readiness check at http://localhost:3001/ready"}
+{"timestamp":"2026-06-15T19:14:50.171Z","level":"info","message":"Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-15T19:14:50.171Z","level":"info","message":"Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-15T19:14:50.172Z","level":"info","message":"Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-15T19:14:55.382Z","level":"error","message":"GET /api/admin/reservations - 404 - 17ms","statusCode":404,"duration":"17ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-15T19:15:00.025Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-15T19:15:03.397Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-15T19:15:55.379Z","level":"error","message":"GET /api/admin/reservations - 404 - 2ms","statusCode":404,"duration":"2ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-15T19:16:00.020Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-15T19:16:02.787Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-15T19:16:55.352Z","level":"error","message":"GET /api/admin/reservations - 404 - 1ms","statusCode":404,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-15T19:17:00.028Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-15T19:17:02.486Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-15T19:17:52.832Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-15T19:17:52.851Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-15T19:17:52.852Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-15T19:17:52.854Z","level":"info","message":"Server running on port 3001"}
+{"timestamp":"2026-06-15T19:17:52.854Z","level":"info","message":"Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-15T19:17:52.855Z","level":"info","message":"Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-15T19:17:52.855Z","level":"info","message":"Readiness check at http://localhost:3001/ready"}
+{"timestamp":"2026-06-15T19:17:52.856Z","level":"info","message":"Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-15T19:17:52.856Z","level":"info","message":"Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-15T19:17:52.856Z","level":"info","message":"Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-15T19:17:55.387Z","level":"error","message":"GET /api/admin/reservations - 404 - 19ms","statusCode":404,"duration":"19ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-15T19:18:00.023Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-15T19:18:02.803Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-15T19:18:55.355Z","level":"error","message":"GET /api/admin/reservations - 404 - 3ms","statusCode":404,"duration":"3ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-15T19:19:00.028Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-15T19:19:02.808Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-15T19:19:49.843Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-15T19:19:49.862Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-15T19:19:49.862Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-15T19:19:49.866Z","level":"info","message":"Server running on port 3001"}
+{"timestamp":"2026-06-15T19:19:49.867Z","level":"info","message":"Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-15T19:19:49.867Z","level":"info","message":"Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-15T19:19:49.868Z","level":"info","message":"Readiness check at http://localhost:3001/ready"}
+{"timestamp":"2026-06-15T19:19:49.868Z","level":"info","message":"Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-15T19:19:49.869Z","level":"info","message":"Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-15T19:19:49.869Z","level":"info","message":"Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-15T19:19:55.422Z","level":"error","message":"GET /reservations - 403 - 60ms","statusCode":403,"duration":"60ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
