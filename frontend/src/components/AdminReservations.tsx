@@ -1,4 +1,3 @@
-// components/AdminReservations.tsx
 import React, { useState, useEffect } from "react";
 import { useAuth } from "../hooks/useAuth";
 import { useReservation } from "../context/ReservationContext";
@@ -84,11 +83,23 @@ export const AdminReservations: React.FC = () => {
         "/api/admin/reservations",
       );
 
+      // Handle different response structures
+      let reservationsData: Reservation[] = [];
       if (response && response.data) {
-        setReservations(response.data);
-      } else {
-        setReservations([]);
+        if (Array.isArray(response.data)) {
+          reservationsData = response.data;
+        } else if (
+          response.data &&
+          (response.data as any).data &&
+          Array.isArray((response.data as any).data)
+        ) {
+          reservationsData = (response.data as any).data;
+        } else if (Array.isArray(response)) {
+          reservationsData = response;
+        }
       }
+
+      setReservations(reservationsData);
     } catch (err) {
       setError(
         err instanceof Error ? err.message : "Failed to fetch reservations",
@@ -104,7 +115,7 @@ export const AdminReservations: React.FC = () => {
       setCancellingId(reservationId);
       setError(null);
       await cancel(reservationId);
-      await fetchReservations(); // Refresh the list
+      await fetchReservations();
     } catch (err) {
       setError(
         err instanceof Error ? err.message : "Failed to cancel reservation",
@@ -116,7 +127,8 @@ export const AdminReservations: React.FC = () => {
   };
 
   const getStatusBadgeColor = (status: string) => {
-    switch (status.toUpperCase()) {
+    const upperStatus = status.toUpperCase();
+    switch (upperStatus) {
       case "ACTIVE":
         return "bg-green-100 text-green-800 border-green-200";
       case "EXPIRED":
@@ -154,21 +166,25 @@ export const AdminReservations: React.FC = () => {
 
   const filteredReservations = reservations.filter((reservation) => {
     if (filter === "all") return true;
-    return reservation.status.toLowerCase() === filter;
+    return reservation.status.toUpperCase() === filter.toUpperCase();
   });
 
   const stats = {
     total: reservations.length,
-    active: reservations.filter((r) => r.status === "ACTIVE").length,
-    expired: reservations.filter((r) => r.status === "EXPIRED").length,
-    cancelled: reservations.filter((r) => r.status === "CANCELLED").length,
+    active: reservations.filter((r) => r.status.toUpperCase() === "ACTIVE")
+      .length,
+    expired: reservations.filter((r) => r.status.toUpperCase() === "EXPIRED")
+      .length,
+    cancelled: reservations.filter(
+      (r) => r.status.toUpperCase() === "CANCELLED",
+    ).length,
   };
 
   if (!canManageReservations) {
     return (
       <Alert variant="destructive">
         <AlertCircle className="h-4 w-4" />
-        <AlertDescription>Admin or Moderator access required</AlertDescription>
+        <AlertDescription>Admin or Owner access required</AlertDescription>
       </Alert>
     );
   }
@@ -375,7 +391,7 @@ export const AdminReservations: React.FC = () => {
                         </Badge>
                       </td>
                       <td className="py-3 px-4">
-                        {reservation.status === "ACTIVE" ? (
+                        {reservation.status.toUpperCase() === "ACTIVE" ? (
                           <div
                             className={`flex items-center gap-1 ${getTimeLeftColor(reservation.expiresAt)}`}
                           >
@@ -397,7 +413,7 @@ export const AdminReservations: React.FC = () => {
                           : "-"}
                       </td>
                       <td className="py-3 px-4">
-                        {reservation.status === "ACTIVE" && (
+                        {reservation.status.toUpperCase() === "ACTIVE" && (
                           <Button
                             variant="destructive"
                             size="sm"
