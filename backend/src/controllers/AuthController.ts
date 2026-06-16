@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { AuthService } from '../services/AuthService';
 import { RegisterSchema, LoginSchema, ApiResponse, AuthResponse } from '../types';
+import prisma from '../lib/prisma';
 
 const authService = new AuthService();
 
@@ -148,4 +149,41 @@ export class AuthController {
       message: 'Profile updated successfully'
     });
   }
+
+  async getAllUsers(req: AuthRequest, res: Response<ApiResponse<any>>): Promise<Response> {
+    if (!req.user || req.user.role !== 'ADMIN') {
+      return res.status(403).json({
+        success: false,
+        error: 'Forbidden',
+        message: 'Only administrators can view all users'
+      });
+    }
+    try {
+      const users = await prisma.user.findMany({
+        select: {
+          id: true,
+          email: true,
+          name: true,
+          role: true,
+          createdAt: true,
+          updatedAt: true,
+        },
+        orderBy: {
+          createdAt: 'desc'
+        }
+      });
+      return res.json({
+        success: true,
+        data: users
+      });
+    } catch (error) {
+      console.error('Error fetching users:', error);
+      return res.status(500).json({
+        success: false,
+        error: 'Failed to fetch users',
+        message: error instanceof Error ? error.message : 'Unknown error'
+      });
+    }
+  }
+
 }
