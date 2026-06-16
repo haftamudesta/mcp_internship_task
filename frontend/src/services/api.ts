@@ -272,6 +272,10 @@ class ApiClient {
       throw new Error(data.error || 'Failed to cancel reservation');
     }
   }
+  async deleteReservation<T = unknown>(url: string): Promise<T> {
+  const response = await this.client.delete<T>(url);
+  return response.data;
+}
 }
 
 export const apiClient = new ApiClient();
