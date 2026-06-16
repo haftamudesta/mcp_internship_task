@@ -4,6 +4,7 @@ import { authMiddleware } from '../middlewares/auth';
 import { validate } from '../middlewares/validation';
 import { RegisterSchema, LoginSchema } from '../types';
 import rateLimit from 'express-rate-limit';
+import { requireAdmin } from '../middlewares/auth';
 
 const router = Router();
 const authController = new AuthController();
@@ -24,5 +25,10 @@ router.post('/login', authLimiter, validate(LoginSchema), authController.login.b
 
 router.get('/me', authMiddleware, authController.getProfile.bind(authController));
 router.put('/me', authMiddleware, authController.updateProfile.bind(authController));
+
+// Admin only routes
+router.get('/users', authMiddleware, requireAdmin, authController.getAllUsers.bind(authController));
+router.put('/users/role', authMiddleware, requireAdmin, authController.updateUserRole.bind(authController));
+router.delete('/users/:id', authMiddleware, requireAdmin, authController.deleteUser.bind(authController));
 
 export default router;
