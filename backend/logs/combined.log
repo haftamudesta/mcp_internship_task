@@ -3759,3 +3759,17 @@
 {"timestamp":"2026-06-16T06:34:08.916Z","level":"info","message":"Auth endpoints available at http://localhost:3001/api/auth"}
 {"timestamp":"2026-06-16T06:34:08.916Z","level":"info","message":"Product endpoints available at http://localhost:3001/api/products"}
 {"timestamp":"2026-06-16T06:34:08.916Z","level":"info","message":"Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-16T06:36:01.681Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-16T06:36:01.697Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-16T06:36:01.698Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-16T06:36:01.700Z","level":"info","message":"Server running on port 3001"}
+{"timestamp":"2026-06-16T06:36:01.700Z","level":"info","message":"Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-16T06:36:01.701Z","level":"info","message":"Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-16T06:36:01.701Z","level":"info","message":"Readiness check at http://localhost:3001/ready"}
+{"timestamp":"2026-06-16T06:36:01.701Z","level":"info","message":"Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-16T06:36:01.701Z","level":"info","message":"Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-16T06:36:01.702Z","level":"info","message":"Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-16T06:37:00.019Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-16T06:37:11.344Z","level":"error","message":"Error in expiration job: \nInvalid `prisma.reservation.findMany()` invocation:\n\n\nCan't reach database server at ep-steep-thunder-aqykkjvf-pooler.c-8.us-east-1.aws.neon.tech","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.reservation.findMany()` invocation:\n\n\nCan't reach database server at ep-steep-thunder-aqykkjvf-pooler.c-8.us-east-1.aws.neon.tech\n    at zr.handleRequestError (D:\\Internships\\mcp_internship_task\\backend\\node_modules\\@prisma\\client\\src\\runtime\\RequestHandler.ts:237:13)\n    at zr.handleAndLogRequestError (D:\\Internships\\mcp_internship_task\\backend\\node_modules\\@prisma\\client\\src\\runtime\\RequestHandler.ts:183:12)\n    at zr.request (D:\\Internships\\mcp_internship_task\\backend\\node_modules\\@prisma\\client\\src\\runtime\\RequestHandler.ts:152:12)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async a (D:\\Internships\\mcp_internship_task\\backend\\node_modules\\@prisma\\client\\src\\runtime\\getPrismaClient.ts:963:24)\n    at async ReservationService.expireReservations (D:\\Internships\\mcp_internship_task\\backend\\src\\services\\ReservationService.ts:226:33)\n    at async D:\\Internships\\mcp_internship_task\\backend\\src\\jobs\\ExpirationJob.ts:28:30\n    at async Timeout._onTimeout (D:\\Internships\\mcp_internship_task\\backend\\node_modules\\node-cron\\src\\scheduler\\runner.ts:100:30)","code":"P1001","meta":{"modelName":"Reservation","driverAdapterError":{"name":"DriverAdapterError","cause":{"kind":"DatabaseNotReachable","host":"ep-steep-thunder-aqykkjvf-pooler.c-8.us-east-1.aws.neon.tech"}}},"clientVersion":"7.8.0","name":"PrismaClientKnownRequestError"}
+{"timestamp":"2026-06-16T06:38:00.029Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-16T06:38:03.696Z","level":"info","message":"Found 0 expired reservations"}
