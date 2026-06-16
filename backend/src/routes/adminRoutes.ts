@@ -1,3 +1,4 @@
+// Admin routes
 import { Router } from 'express';
 import { AdminController } from '../controllers/AdminController';
 import { authMiddleware } from '../middlewares';
