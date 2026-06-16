@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/haftamudesta/mcp_internship_task/issues"
   },
-  "homepage": "https://github.com/haftamudesta/mcp_internship_task#readme"
+  "homepage": "https://github.com/haftamudesta/mcp_internship_task#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
 }
