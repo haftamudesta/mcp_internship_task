@@ -257,5 +257,59 @@ export class AuthController {
       });
     }
   }
+  async deleteUser(req: AuthRequest, res: Response<ApiResponse<any>>): Promise<Response> {
+    // Check if user is admin
+    if (!req.user || req.user.role !== 'ADMIN') {
+      return res.status(403).json({
+        success: false,
+        error: 'Forbidden',
+        message: 'Only administrators can delete users'
+      });
+    }
+    const userId = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
+
+    if (!userId) {
+      return res.status(400).json({
+        success: false,
+        error: 'Invalid user ID'
+      });
+    }
+     try {
+      // Check if user exists
+      const existingUser = await prisma.user.findUnique({
+        where: { id: userId }
+      });
+
+      if (!existingUser) {
+        return res.status(404).json({
+          success: false,
+          error: 'User not found'
+        });
+      }
+      // Prevent deleting own account
+      if (userId === req.user.id) {
+        return res.status(400).json({
+          success: false,
+          error: 'Cannot delete your own account'
+        });
+      }
+
+      await prisma.user.delete({
+        where: { id: userId }
+      });
+       return res.json({
+        success: true,
+        data: null,
+        message: 'User deleted successfully'
+      });
+    } catch (error) {
+      console.error('Error deleting user:', error);
+      return res.status(500).json({
+        success: false,
+        error: 'Failed to delete user',
+        message: error instanceof Error ? error.message : 'Unknown error'
+      });
+    }
+  }
 
 }
