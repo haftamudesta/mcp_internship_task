@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { AuthService } from '../services/AuthService';
 import { RegisterSchema, LoginSchema, ApiResponse, AuthResponse } from '../types';
+import prisma from '../lib/prisma';
 
 const authService = new AuthService();
 
@@ -148,4 +149,113 @@ export class AuthController {
       message: 'Profile updated successfully'
     });
   }
+
+  async getAllUsers(req: AuthRequest, res: Response<ApiResponse<any>>): Promise<Response> {
+    if (!req.user || req.user.role !== 'ADMIN') {
+      return res.status(403).json({
+        success: false,
+        error: 'Forbidden',
+        message: 'Only administrators can view all users'
+      });
+    }
+    try {
+      const users = await prisma.user.findMany({
+        select: {
+          id: true,
+          email: true,
+          name: true,
+          role: true,
+          createdAt: true,
+          updatedAt: true,
+        },
+        orderBy: {
+          createdAt: 'desc'
+        }
+      });
+      return res.json({
+        success: true,
+        data: users
+      });
+    } catch (error) {
+      console.error('Error fetching users:', error);
+      return res.status(500).json({
+        success: false,
+        error: 'Failed to fetch users',
+        message: error instanceof Error ? error.message : 'Unknown error'
+      });
+    }
+  }
+
+  async updateUserRole(req: AuthRequest, res: Response<ApiResponse<any>>): Promise<Response> {
+    // Check if user is admin
+    if (!req.user || req.user.role !== 'ADMIN') {
+      return res.status(403).json({
+        success: false,
+        error: 'Forbidden',
+        message: 'Only administrators can change user roles'
+      });
+    }
+    const { userId, role } = req.body;
+
+    if (!userId || !role) {
+      return res.status(400).json({
+        success: false,
+        error: 'Validation failed',
+        message: 'userId and role are required'
+      });
+    }
+    // Validate role
+    const validRoles = ['USER', 'ADMIN', 'OWNER'];
+    if (!validRoles.includes(role.toUpperCase())) {
+      return res.status(400).json({
+        success: false,
+        error: 'Invalid role',
+        message: 'Role must be one of: USER, ADMIN, OWNER'
+      });
+    }
+    try {
+      const existingUser = await prisma.user.findUnique({
+        where: { id: userId }
+      });
+
+      if (!existingUser) {
+        return res.status(404).json({
+          success: false,
+          error: 'User not found'
+        });
+      }
+      // Prevent changing own role (optional safety check)
+      if (userId === req.user.id) {
+        return res.status(400).json({
+          success: false,
+          error: 'Cannot change own role'
+        });
+      }
+       const updatedUser = await prisma.user.update({
+        where: { id: userId },
+        data: { role: role.toUpperCase() as any },
+        select: {
+          id: true,
+          email: true,
+          name: true,
+          role: true,
+          createdAt: true,
+          updatedAt: true,
+        }
+      });
+      return res.json({
+        success: true,
+        data: updatedUser,
+        message: `User role updated to ${role.toUpperCase()} successfully`
+      });
+    } catch (error) {
+      console.error('Error updating user role:', error);
+      return res.status(500).json({
+        success: false,
+        error: 'Failed to update user role',
+        message: error instanceof Error ? error.message : 'Unknown error'
+      });
+    }
+  }
+
 }
