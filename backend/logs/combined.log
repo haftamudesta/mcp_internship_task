@@ -3865,3 +3865,13 @@
 {"timestamp":"2026-06-16T07:28:02.048Z","level":"info","message":"Found 0 expired reservations"}
 {"timestamp":"2026-06-16T07:29:00.029Z","level":"info","message":"Running reservation expiration job"}
 {"timestamp":"2026-06-16T07:29:03.473Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-16T12:47:51.154Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-16T12:47:51.172Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-16T12:47:51.172Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-16T12:47:51.174Z","level":"info","message":"Server running on port 3001"}
+{"timestamp":"2026-06-16T12:47:51.175Z","level":"info","message":"Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-16T12:47:51.175Z","level":"info","message":"Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-16T12:47:51.175Z","level":"info","message":"Readiness check at http://localhost:3001/ready"}
+{"timestamp":"2026-06-16T12:47:51.176Z","level":"info","message":"Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-16T12:47:51.176Z","level":"info","message":"Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-16T12:47:51.176Z","level":"info","message":"Prisma Client Singleton initialized"}

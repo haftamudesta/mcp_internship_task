@@ -17,11 +17,6 @@ export const Header: React.FC = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  console.log("User object:", user);
-  console.log("isAdmin:", isAdmin);
-  console.log("isOwner:", isOwner);
-  console.log("hasAdminAccess:", isAdmin || isOwner);
-
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Products", href: "/products" },
