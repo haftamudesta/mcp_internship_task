@@ -5,6 +5,7 @@ import authRoutes from './authRoutes';
 import tokenRoutes from './tokenRoutes';
 import healthRoutes from './healthRoutes';
 import metricsRoutes from './metricsRoutes';
+import adminRoutes from './adminRoutes';
 
 const router = Router();
 
@@ -20,5 +21,6 @@ router.use('/api/auth', authRoutes);
 router.use('/api/products', productRoutes);
 router.use('/api/reservations', reservationRoutes);
 router.use('/api/token', tokenRoutes);
+router.use('/api/admin', adminRoutes);
 
 export default router;
