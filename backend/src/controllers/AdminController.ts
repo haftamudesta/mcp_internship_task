@@ -167,4 +167,39 @@ export class AdminController {
       });
     }
   }
+
+  async getDailyAnalytics(req: AuthRequest, res: Response): Promise<Response> {
+  if (!req.user || (req.user.role !== 'ADMIN' && req.user.role !== 'OWNER')) {
+    return res.status(403).json({
+      success: false,
+      error: 'Access denied. Admin or Owner privileges required.'
+    });
+  }
+   const days = parseInt(req.query.days as string) || 30;
+  const startDate = new Date();
+  startDate.setDate(startDate.getDate() - days);
+  try {
+    const dailyData = await prisma.$queryRaw`
+      SELECT 
+        DATE("createdAt") as date,
+        COUNT(*) as reservations,
+        COUNT(CASE WHEN status = 'COMPLETED' THEN 1 END) as completed,
+        SUM(CASE WHEN status = 'COMPLETED' THEN 1 ELSE 0 END) as revenue
+      FROM "Reservation"
+      WHERE "createdAt" >= ${startDate}
+      GROUP BY DATE("createdAt")
+      ORDER BY DATE("createdAt") ASC
+    `;
+    return res.json({
+      success: true,
+      data: dailyData
+    });
+  } catch (error) {
+    console.error('Error fetching daily analytics:', error);
+    return res.status(500).json({
+      success: false,
+      error: 'Failed to fetch daily analytics'
+    });
+  }
+}
 }
