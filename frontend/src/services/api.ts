@@ -173,7 +173,7 @@ class ApiClient {
     return { data: data.data };
   }
   async updateProfile(name: string): Promise<User> {
-  const response = await this.client.put<ApiResponse<User>>('/api/auth/profile', { name });
+  const response = await this.client.put<ApiResponse<User>>('/api/auth/me', { name });
   
   const data = response.data;
   if (!this.isSuccessResponse(data)) {
