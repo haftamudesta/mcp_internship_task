@@ -172,6 +172,15 @@ class ApiClient {
     }
     return { data: data.data };
   }
+  async updateProfile(name: string): Promise<User> {
+  const response = await this.client.put<ApiResponse<User>>('/api/auth/profile', { name });
+  
+  const data = response.data;
+  if (!this.isSuccessResponse(data)) {
+    throw new Error(data.error || 'Failed to update profile');
+  }
+  return data.data;
+}
 
   // Product endpoints
   async getProducts(params?: {

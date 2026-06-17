@@ -26,6 +26,7 @@ interface AuthContextType {
   isOwner: boolean;
   isUser: boolean;
   hasRole: (roles: string | string[]) => boolean;
+  updateUser: (userData: Partial<User>) => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -118,6 +119,11 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     setUser(null);
     setError(null);
   };
+  const updateUser = (userData: Partial<User>) => {
+    if (user) {
+      setUser({ ...user, ...userData });
+    }
+  };
 
   // Helper function to check if user has specific role(s)
   const hasRole = (roles: string | string[]): boolean => {
@@ -145,6 +151,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         isOwner,
         isUser,
         hasRole,
+        updateUser,
       }}
     >
       {children}
