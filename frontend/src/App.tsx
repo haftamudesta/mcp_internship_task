@@ -18,6 +18,7 @@ import { AdminAnalytics } from "./components/AdminAnalytics";
 import { AdminDashboard } from "./components/AdminDashboard";
 import { AdminUsers } from "./components/AdminUsers";
 import { AdminReservations } from "./components/AdminReservations";
+import { AdminSettings } from "./components/AdminSettings";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
                 <Route path="users" element={<AdminUsers />} />
                 <Route path="reservations" element={<AdminReservations />} />
                 <Route path="analytics" element={<AdminAnalytics />} />
+                <Route path="settings" element={<AdminSettings />} />
               </Route>
             </Route>
           </Routes>
