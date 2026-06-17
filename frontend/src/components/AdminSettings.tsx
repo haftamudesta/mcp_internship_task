@@ -14,7 +14,6 @@ import { Alert, AlertDescription } from "./ui/alert";
 import {
   User,
   Mail,
-  Shield,
   Bell,
   Moon,
   Sun,
