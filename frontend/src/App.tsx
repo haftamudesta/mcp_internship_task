@@ -19,45 +19,48 @@ import { AdminDashboard } from "./components/AdminDashboard";
 import { AdminUsers } from "./components/AdminUsers";
 import { AdminReservations } from "./components/AdminReservations";
 import { AdminSettings } from "./components/AdminSettings";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   return (
-    <Router>
-      <AuthProvider>
-        <ReservationProvider>
-          <Routes>
-            {/* Main Layout Routes */}
-            <Route path="/" element={<Layout />}>
-              <Route index element={<HomePage />} />
-              <Route path="signin" element={<SignInPage />} />
-              <Route path="signup" element={<SignUpPage />} />
-              <Route path="health" element={<HealthPage />} />
-              <Route path="term-of-service" element={<TermOfServices />} />
-              <Route path="privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="refund-policy" element={<RefundPolicy />} />
+    <ThemeProvider defaultTheme="system" storageKey="app-theme">
+      <Router>
+        <AuthProvider>
+          <ReservationProvider>
+            <Routes>
+              {/* Main Layout Routes */}
+              <Route path="/" element={<Layout />}>
+                <Route index element={<HomePage />} />
+                <Route path="signin" element={<SignInPage />} />
+                <Route path="signup" element={<SignUpPage />} />
+                <Route path="health" element={<HealthPage />} />
+                <Route path="term-of-service" element={<TermOfServices />} />
+                <Route path="privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="refund-policy" element={<RefundPolicy />} />
 
-              {/* Protected Routes */}
+                {/* Protected Routes */}
+                <Route element={<ProtectedRoute />}>
+                  <Route path="products" element={<ProductsPage />} />
+                  <Route path="dashboard" element={<DashboardPage />} />
+                </Route>
+              </Route>
+
+              {/* Admin Routes */}
               <Route element={<ProtectedRoute />}>
-                <Route path="products" element={<ProductsPage />} />
-                <Route path="dashboard" element={<DashboardPage />} />
+                <Route path="/admin" element={<AdminLayout />}>
+                  <Route index element={<AdminDashboard />} />
+                  <Route path="products" element={<AdminProducts />} />
+                  <Route path="users" element={<AdminUsers />} />
+                  <Route path="reservations" element={<AdminReservations />} />
+                  <Route path="analytics" element={<AdminAnalytics />} />
+                  <Route path="settings" element={<AdminSettings />} />
+                </Route>
               </Route>
-            </Route>
-
-            {/* Admin Routes */}
-            <Route element={<ProtectedRoute />}>
-              <Route path="/admin" element={<AdminLayout />}>
-                <Route index element={<AdminDashboard />} />
-                <Route path="products" element={<AdminProducts />} />
-                <Route path="users" element={<AdminUsers />} />
-                <Route path="reservations" element={<AdminReservations />} />
-                <Route path="analytics" element={<AdminAnalytics />} />
-                <Route path="settings" element={<AdminSettings />} />
-              </Route>
-            </Route>
-          </Routes>
-        </ReservationProvider>
-      </AuthProvider>
-    </Router>
+            </Routes>
+          </ReservationProvider>
+        </AuthProvider>
+      </Router>
+    </ThemeProvider>
   );
 }
 

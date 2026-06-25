@@ -10,6 +10,7 @@ import {
   Shield,
   LayoutDashboard,
 } from "lucide-react";
+import { ThemeToggle } from "../ThemeToggle";
 
 export const Header: React.FC = () => {
   const { user, isAuthenticated, logout, isAdmin, isOwner } = useAuth();
@@ -92,6 +93,8 @@ export const Header: React.FC = () => {
           </div>
 
           <div className="hidden md:flex md:items-center md:gap-4">
+            <ThemeToggle className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20" />
+
             {isAuthenticated ? (
               <>
                 <div className="flex items-center gap-3">
@@ -103,7 +106,6 @@ export const Header: React.FC = () => {
                       {user?.name || user?.email?.split("@")[0]}
                     </p>
                     <p className="text-xs text-white/70">{user?.email}</p>
-                    {/* Show role badge */}
                     {hasAdminAccess && (
                       <p className="text-xs text-yellow-300">
                         {isAdmin ? "Admin" : "Owner"}
@@ -200,6 +202,10 @@ export const Header: React.FC = () => {
               )}
 
               <div className="border-t border-gray-200 my-2"></div>
+
+              <div className="px-4 py-2">
+                <ThemeToggle className="w-full justify-center" showLabel />
+              </div>
 
               {isAuthenticated ? (
                 <>
