@@ -4726,3 +4726,35 @@
 {"timestamp":"2026-06-25T19:16:00.052Z","level":"info","message":"Running reservation expiration job"}
 {"timestamp":"2026-06-25T19:16:05.371Z","level":"info","message":"Found 0 expired reservations"}
 {"timestamp":"2026-06-25T19:16:22.829Z","level":"info","message":"Received shutdown signal, closing gracefully..."}
+{"timestamp":"2026-06-25T19:16:34.408Z","level":"info","message":"Database connected successfully"}
+{"timestamp":"2026-06-25T19:16:34.444Z","level":"info","message":"Reservation expiration job scheduled to run every minute"}
+{"timestamp":"2026-06-25T19:16:34.446Z","level":"info","message":"Background jobs initialized"}
+{"timestamp":"2026-06-25T19:16:34.452Z","level":"info","message":"Server running on port 3001"}
+{"timestamp":"2026-06-25T19:16:34.453Z","level":"info","message":"Metrics available at http://localhost:3001/metrics"}
+{"timestamp":"2026-06-25T19:16:34.453Z","level":"info","message":"Health check at http://localhost:3001/health"}
+{"timestamp":"2026-06-25T19:16:34.454Z","level":"info","message":"Readiness check at http://localhost:3001/ready"}
+{"timestamp":"2026-06-25T19:16:34.454Z","level":"info","message":"Auth endpoints available at http://localhost:3001/api/auth"}
+{"timestamp":"2026-06-25T19:16:34.454Z","level":"info","message":"Product endpoints available at http://localhost:3001/api/products"}
+{"timestamp":"2026-06-25T19:16:34.455Z","level":"info","message":"Prisma Client Singleton initialized"}
+{"timestamp":"2026-06-25T19:17:00.029Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-25T19:17:04.493Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-25T19:18:00.028Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-25T19:18:04.602Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-25T19:19:00.063Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-25T19:19:06.232Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-25T19:20:00.026Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-25T19:20:03.549Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-25T19:21:00.030Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-25T19:21:04.071Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-25T19:22:00.024Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-25T19:22:04.897Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-25T19:23:00.026Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-25T19:23:04.824Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-25T19:24:00.038Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-25T19:24:04.226Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-25T19:24:22.156Z","level":"info","message":"GET /health - 200 - 6858ms","statusCode":200,"duration":"6858ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-25T19:24:22.734Z","level":"info","message":"GET /health - 200 - 572ms","statusCode":200,"duration":"572ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-25T19:24:52.141Z","level":"info","message":"GET /health - 200 - 6147ms","statusCode":200,"duration":"6147ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"}
+{"timestamp":"2026-06-25T19:25:00.025Z","level":"info","message":"Running reservation expiration job"}
+{"timestamp":"2026-06-25T19:25:01.383Z","level":"info","message":"Found 0 expired reservations"}
+{"timestamp":"2026-06-25T19:25:20.912Z","level":"info","message":"GET /health - 200 - 4911ms","statusCode":200,"duration":"4911ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"}
